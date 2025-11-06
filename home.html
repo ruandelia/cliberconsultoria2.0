@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLiber consultoria - Home</title>
-    <link rel="stylesheet" href="assets/img/icone_Do_Navegador.png">
-    <link rel="stylesheet" href="assets/css/global/global.css">
+    <title>Cliber consultoria - Home</title>
+    <link rel="icon" href="assets/img/icone_Do_Navegador.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
- 
+
 <body>
     <header class="cabecalho" id="cabecalho">
         <div class="container-logo">
@@ -16,17 +21,57 @@
         </div>
         <nav>
             <ul>
-                <li><a href="" class="link-vaga">Vagas</a></li>
-                <li><a href="" class="link-servicos">Serviços</a></li>
-                <li><a href="" class="link-quem-somos">Quem somos</a></li>
-                <li><a href="" class="link-contato">Contato</a></li>
-                <div class="login-cadastrar">
-                    <li><a href="" class="link-cadastrar">Cadastrar</a></li>
-                    <span>|</span>
+                <li><a href="" class="link link-vaga">Vagas</a></li>
+                <li><a href="" class="link link-servicos">Serviços</a></li>
+                <li><a href="" class="link link-quem-somos">Quem somos</a></li>
+                <li><a href="" class="link link-contato">Contato</a></li>
+                <div class=" login-cadastrar">
+                    <li><a href="" class="link link-cadastrar">Cadastrar</a></li>
+                    <span></span>
                     <li><a href="" class="link-login">Login</a></li>
+                </div>
+                <div class="displayNone area-exclusiva">
+                    <a href="">
+                        <p>Olá, usuário</p>
+                        <p>Acesse sua área exclusiva</p>
+                    </a>
                 </div>
             </ul>
         </nav>
     </header>
+    <main>
+        <!-- meu modal do header; login e/ou cadastro -->
+        <section class="section-banner">
+            <dialog open="" class="modal-login-cadastrar">
+                <form action="">
+                    <img src="assets/img/icons/Close.png" alt="close-modal" class="close-modal">
+                    <h2>Login</h2>
+                    <!-- div destinada a alinhar e centralizar elementos -->
+                    <div class="alinha-inputs">
+                        <div class="label-input">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" autocomplete="off">
+                        </div>
+                        <div class="label-input">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha">
+                            <p class="senhaIncorreta">Usuário ou senha incorretas.</p>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-login">Entrar</button>
+                    <button type="button" class="btn btn-cadastrar">Cadastrar</button>
+                </form>
+            </dialog>
+            <div class="container-banner">
+                <div class="texto-banner">
+                    <h1>Consultoria estratégica em RH<br>
+                        para empresas que desejam crescer com propósito.</h1>
+                    <a class="link-btn" href="" class="btn btn-banner">Conheça nossos serviços <i class="seta"><img class="cursor-btn" src="assets/img/icons/cursor-3.png" alt=""></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/abrirFecharModal.js"></script>
 </body>
 </html>
