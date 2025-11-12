@@ -1,25 +1,61 @@
-const slider = document.getElementById('slider');
+const slider = document.querySelector('.slide');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 
 let currentSlide = 0;
-const totalCards = slider.children.length;
-const cardsPerView = 4;
-const maxSlide = Math.ceil(totalCards / cardsPerView) - 1;
 
-function updateSlider() {
-  const cardWidth = slider.clientWidth / cardsPerView;
-  slider.style.transform = `translateX(-${currentSlide * cardWidth * cardsPerView}px)`;
+function getCardsPerView() {
+  if (window.innerWidth <= 500) return 1;
+  if (window.innerWidth <= 900) return 2;
+  return 3;
 }
 
-// Voltar ao início se passar do último
+
+function updateSlider() {
+  const cardWidth = slider.children[0].offsetWidth + 30; // margem aproximada
+  const cardsPerView = getCardsPerView();
+  const offset = currentSlide * cardWidth;
+
+  slider.style.transition = 'transform 0.5s ease-in-out';
+  slider.style.transform = `translateX(-${offset}px)`;
+}
+
+function getMaxSlides() {
+  const cardsPerView = getCardsPerView();
+  const totalCards = slider.children.length;
+  return totalCards - cardsPerView;
+}
+
 nextBtn.addEventListener('click', () => {
-  currentSlide = (currentSlide + 1) > maxSlide ? 0 : currentSlide + 1;
+  console.log(window.innerWidth);
+  const cardsPerView = getCardsPerView();
+  const maxSlide = getMaxSlides();
+
+  if (currentSlide + cardsPerView <= maxSlide) {
+    currentSlide += cardsPerView;
+  } else {
+    currentSlide = 0; // volta ao início
+  }
+
   updateSlider();
 });
 
-// Ir para o último se voltar do primeiro
 prevBtn.addEventListener('click', () => {
-  currentSlide = (currentSlide - 1) < 0 ? maxSlide : currentSlide - 1;
+  const cardsPerView = getCardsPerView();
+  const maxSlide = getMaxSlides();
+
+  if (currentSlide - cardsPerView >= 0) {
+    currentSlide -= cardsPerView;
+  } else {
+    currentSlide = maxSlide; // vai para o fim
+  }
+
+  updateSlider();
+});
+
+
+// Atualiza ao redimensionar a janela
+window.addEventListener('resize', () => {
+  currentSlide = 0;
   updateSlider();
 });
