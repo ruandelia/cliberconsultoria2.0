@@ -20,7 +20,7 @@ body a{
     --cor-azul-escuro: #001730;
     --cor-azul-claro: #6B9BB8;
     --cor-azul-medio: #092c43;
-    --cor-azul-dark: #203E50;
+    --cor-azul-dark: #001730;
     --cor-azul-claro-30: #6b9bb836;
     --cor-azul-claro-hover: #5e98bc40;
     --cor-vermelho: #6F0000;
@@ -85,7 +85,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 6rem;
     height: 90px;
     border-bottom: 2px solid var(--cor-azul-claro-30);
     z-index: 1000;
@@ -418,7 +418,7 @@ input::placeholder {
 .texto-banner .link-btn {
     position: absolute;
     right: 0;
-    top: 110px;
+    top: 100px;
     font-weight: 600;
     font-family: var(--fonte-montserrat);
 }
@@ -472,89 +472,20 @@ input::placeholder {
 
 .carrosel-container{
     margin-bottom: 200px;
-    /* background-color: pink; */
-    
 }
 
-.carrosel-container .col{
-    /* background-color: pink; */
-    padding: 40px  0;
-}
 
-.carrosel-container .card{
-    background: var(--cor-azul-escuro);
-    
-    color: var(--cor-bege);
-    text-align: left;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 345px;
-    padding: 20px;
-    padding-bottom: 40px;
-    box-shadow: 5px 5px 10px var(--cor-azul-dark);
-    .img-container img{
-        max-width: 300px !important;
-        /* border: 3px solid var(--cor-azul-dark); */
-    }
-}
 
-.card2{
-    background-color: #420000 !important;
-    border-color: var(--cor-laranja) !important;
-    .card2, .img-container img, p{
-    border: 2px solid var(--cor-laranja) !important;
-}
-}
 
-.card, .img-container img, p{
-    border: 3px solid var(--cor-azul-dark);
-}
 
-.card .text-container{
-    padding-left: 5px;
-    width: fit-content;
-}
 
-.card .img-container img{
-    border-radius: 10px;
-}
-
-.card .titulo-card{
-    font-size: 20px;
-    font-weight: 600;
-    margin: 20px 0;
-    margin-top: 30px;
-    padding-left: 5px;
-}
-
-.card .p-container{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-.card .p-container p{
-    font-size: 15px;
-    font-weight: 300;
-    width: fit-content;
-    padding: 5px 10px;
-    padding-top: 7px;
-    /* border: 2px solid var(--cor-azul-dark); */
-    border-radius: 10px;
-}
-
-.card .text-container a{
-    width: fit-content;
-}
 
 
 
 
 .cv-ia {
     /* compensando a section !!! */
-    margin-top: 750px;
-    /* ============================================================================================================= */
+    margin-top: 400px;
     padding-top: 500px;
     background: #000000;
     background: linear-gradient(122deg, rgba(0, 0, 0, 1) 16%, rgba(0, 23, 48, 1) 43%, rgba(0, 23, 48, 1) 54%, rgba(0, 0, 0, 1) 88%);
@@ -577,6 +508,7 @@ input::placeholder {
 .cv-ia .container {
     /* background-color: rgba(173, 216, 230, 0.761); */
     position: relative;
+    width: 65%;
     margin: 30px 0;
     margin-top: 100px;
     margin-bottom: 12.5rem;
@@ -586,7 +518,7 @@ input::placeholder {
 }
 
 .cv-ia .titulo {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 600;
     margin: 40px 0;
 }
@@ -631,6 +563,11 @@ input::placeholder {
     background-color: var(--cor-azul-claro-30);
     border: 2px solid var(--cor-azul-claro);
 }
+
+.txt-container button img{
+    margin-left: 35px !important;
+}
+
 .cv-ia .txt-container {
     width: 65%;
     /* background-color: rgba(255, 192, 203, 0.033); */
@@ -641,8 +578,7 @@ input::placeholder {
 
 .cv-ia .img-container {
     position: absolute;
-    right: 7%;
-    top: 150px;
+    right: 20px;
     margin-left: 10px;
     background-color: var(--cor-vermelho-escuro);
     border: 3px solid var(--cor-vermelho);

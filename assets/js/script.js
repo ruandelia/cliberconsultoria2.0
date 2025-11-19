@@ -1,61 +1,22 @@
-const slider = document.querySelector('.slide');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+const linkQuemSomos = document.querySelector(".");
+const txt = linkQuemSomos.textContent;
+console.log(txt); // 'Quem Somos' (ou o que estiver no HTML)
 
-let currentSlide = 0;
+function animaTexto(elementoParaAnimar, textoCompleto) {
+    // 1. Limpa o conteúdo atual do elemento
+    elementoParaAnimar.textContent = 'crescer com propósito.'; 
 
-function getCardsPerView() {
-  if (window.innerWidth <= 500) return 1;
-  if (window.innerWidth <= 900) return 2;
-  return 3;
+    // 2. Transforma o texto em um array de caracteres
+    const arrayDeCaracteres = textoCompleto.split('');
+
+    // 3. Itera sobre o array para animar
+    arrayDeCaracteres.forEach((caractere, index) => {
+        setTimeout(() => {
+            // Adiciona o caractere ao elemento
+            elementoParaAnimar.textContent += caractere;
+        }, 20 * index); // 35ms de delay para cada caractere
+    });
 }
 
-
-function updateSlider() {
-  const cardWidth = slider.children[0].offsetWidth + 30; // margem aproximada
-  const cardsPerView = getCardsPerView();
-  const offset = currentSlide * cardWidth;
-
-  slider.style.transition = 'transform 0.5s ease-in-out';
-  slider.style.transform = `translateX(-${offset}px)`;
-}
-
-function getMaxSlides() {
-  const cardsPerView = getCardsPerView();
-  const totalCards = slider.children.length;
-  return totalCards - cardsPerView;
-}
-
-nextBtn.addEventListener('click', () => {
-  console.log(window.innerWidth);
-  const cardsPerView = getCardsPerView();
-  const maxSlide = getMaxSlides();
-
-  if (currentSlide + cardsPerView <= maxSlide) {
-    currentSlide += cardsPerView;
-  } else {
-    currentSlide = 0; // volta ao início
-  }
-
-  updateSlider();
-});
-
-prevBtn.addEventListener('click', () => {
-  const cardsPerView = getCardsPerView();
-  const maxSlide = getMaxSlides();
-
-  if (currentSlide - cardsPerView >= 0) {
-    currentSlide -= cardsPerView;
-  } else {
-    currentSlide = maxSlide; // vai para o fim
-  }
-
-  updateSlider();
-});
-
-
-// Atualiza ao redimensionar a janela
-window.addEventListener('resize', () => {
-  currentSlide = 0;
-  updateSlider();
-});
+// Chama a função passando o elemento e o texto
+animaTexto(linkQuemSomos, txt);
