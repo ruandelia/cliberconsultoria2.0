@@ -47,24 +47,26 @@
         <!-- meu modal do header; login e/ou cadastro -->
         <section class="section-banner">
             <dialog open="" class="modal-login-cadastrar">
-                <form action="">
-                    <img src="assets/img/icons/Close.png" alt="close-modal" class="close-modal">
-                    <h2>Login</h2>
-                    <!-- div destinada a alinhar e centralizar elementos -->
-                    <div class="alinha-inputs">
-                        <div class="label-input">
-                            <label for="email">Email</label>
-                            <input type="text" id="email" autocomplete="off">
+                <div class="form-container">
+                    <form action="">
+                        <img src="assets/img/icons/Close.png" alt="close-modal" class="close-modal">
+                        <h2>Login</h2>
+                        <!-- div destinada a alinhar e centralizar elementos -->
+                        <div class="alinha-inputs">
+                            <div class="label-input">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" autocomplete="off">
+                            </div>
+                            <div class="label-input">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" id="senha">
+                                <p class="senhaIncorreta">Usuário ou senha incorretas.</p>
+                            </div>
                         </div>
-                        <div class="label-input">
-                            <label for="senha">Senha</label>
-                            <input type="password" name="senha" id="senha">
-                            <p class="senhaIncorreta">Usuário ou senha incorretas.</p>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-login">Entrar</button>
-                    <button type="button" class="btn btn-cadastrar">Cadastrar</button>
-                </form>
+                        <button type="submit" class="btn btn-login">Entrar</button>
+                        <button type="button" class="btn btn-cadastrar">Cadastrar</button>
+                    </form>
+                </div>
             </dialog>
             <div class="container-banner">
                 <div class="texto-banner">
@@ -89,17 +91,17 @@
                                 <div class="container text-center">
                                     <div class="row align-items-start">
                                         <div class="col">
-                                            <div class="card">
+                                            <div class="card card-esquerda">
                                                 <div class="img-container">
-                                                    <img style="max-width: 400px;"
-                                                        src="assets/img/recrutamento-selecao-card.jpg" alt="">
+                                                    <img 
+                                                        src="assets/img/imgs-cards/recrutamento-selecao-card.jpg" alt="">
                                                 </div>
                                                 <div class="text-container">
                                                     <h4 class="titulo-card">Recrutamento e seleção</h4>
                                                     <div class="p-container">
                                                         <p class="p-card">Condução humanizada</p>
-                                                        <p class="p-card">Tecnologia a favor da eficiência</p>
                                                         <p class="p-card">Entendimento da cultura</p>
+                                                        <p class="p-card">Tecnologia a favor da eficiência</p>
                                                     </div>
                                                     <a class="link-btn" href="" class="btn btn-banner">Saiba mais<i
                                                             class="icon"><img class="cursor-btn"
@@ -112,15 +114,15 @@
                                         <div class="col">
                                             <div class="card card2">
                                                 <div class="img-container">
-                                                    <img style="max-width: 400px;"
-                                                        src="assets/img/clima-cultura-card.jpg" alt="">
+                                                    <img 
+                                                        src="assets/img/imgs-cards/clima-cultura-card.jpg" alt="">
                                                 </div>
                                                 <div class="text-container">
                                                     <h4 class="titulo-card">Clima e cultura</h4>
                                                     <div class="p-container">
-                                                        <p class="p-card">Condução humanizada</p>
-                                                        <p class="p-card">Tecnologia a favor da eficiência</p>
-                                                        <p class="p-card">Entendimento da cultura</p>
+                                                        <p class="p-card">Projetos personalizados</p>
+                                                        <p class="p-card">Acompanhamento contínuo</p>
+                                                        <p class="p-card">Suporte psicológico especializado</p>
                                                     </div>
                                                     <a class="link-btn" href="" class="btn btn-banner">Saiba mais<i
                                                             class="icon"><img class="cursor-btn"
@@ -131,17 +133,17 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="card">
+                                            <div class="card card-direita">
                                                 <div class="img-container">
-                                                    <img style="max-width: 400px;"
-                                                        src="assets/img/recrutamento-selecao-card.jpg" alt="">
+                                                    <img 
+                                                        src="assets/img/imgs-cards/plano-sucessao-card.jpg" alt="">
                                                 </div>
                                                 <div class="text-container">
-                                                    <h4 class="titulo-card">Recrutamento e seleção</h4>
+                                                    <h4 class="titulo-card">Plano de Sucessão</h4>
                                                     <div class="p-container">
-                                                        <p class="p-card">Condução humanizada</p>
-                                                        <p class="p-card">Tecnologia a favor da eficiência</p>
-                                                        <p class="p-card">Entendimento da cultura</p>
+                                                        <p class="p-card">Análise crítica de carreira</p>
+                                                        <p class="p-card">Visão preventiva e estratégica</p>
+                                                        <p class="p-card">Mapeamento de talentos internos</p>
                                                     </div>
                                                     <a class="link-btn" href="" class="btn btn-banner">Saiba mais<i
                                                             class="icon"><img class="cursor-btn"
@@ -158,17 +160,17 @@
                                 <div class="container text-center">
                                     <div class="row align-items-start">
                                         <div class="col">
-                                            <div class="card">
+                                            <div class="card card-esquerda">
                                                 <div class="img-container">
-                                                    <img style="max-width: 400px;"
-                                                        src="assets/img/recrutamento-selecao-card.jpg" alt="">
+                                                    <img 
+                                                        src="assets/img/imgs-cards/pesquisa-de-clima-card.jpg" alt="">
                                                 </div>
                                                 <div class="text-container">
-                                                    <h4 class="titulo-card">Recrutamento e seleção</h4>
+                                                    <h4 class="titulo-card">Pesquisa de Clima</h4>
                                                     <div class="p-container">
-                                                        <p class="p-card">Condução humanizada</p>
-                                                        <p class="p-card">Tecnologia a favor da eficiência</p>
-                                                        <p class="p-card">Entendimento da cultura</p>
+                                                        <p class="p-card">Análise de dados</p>
+                                                        <p class="p-card">Diagnóstico preciso</p>
+                                                        <p class="p-card">Plano de ação pós-pesquisa</p>
                                                     </div>
                                                     <a class="link-btn" href="" class="btn btn-banner">Saiba mais<i
                                                             class="icon"><img class="cursor-btn"
@@ -181,15 +183,15 @@
                                         <div class="col">
                                             <div class="card">
                                                 <div class="img-container">
-                                                    <img style="max-width: 400px;"
-                                                        src="assets/img/recrutamento-selecao-card.jpg" alt="">
+                                                    <img 
+                                                        src="assets/img/imgs-cards/diversidade-card.jpg" alt="">
                                                 </div>
                                                 <div class="text-container">
-                                                    <h4 class="titulo-card">Recrutamento e seleção</h4>
+                                                    <h4 class="titulo-card titulo-card-menor">Diversidade, Equidade e Inclusão (DE&I)</h4>
                                                     <div class="p-container">
-                                                        <p class="p-card">Condução humanizada</p>
-                                                        <p class="p-card">Tecnologia a favor da eficiência</p>
-                                                        <p class="p-card">Entendimento da cultura</p>
+                                                        <p class="p-card">mapeamento da diversidade</p>
+                                                        <p class="p-card">Criação de políticas e programas...</p>
+                                                        <p class="p-card">Definição de metas, indicadores e...</p>
                                                     </div>
                                                     <a class="link-btn" href="" class="btn btn-banner">Saiba mais<i
                                                             class="icon"><img class="cursor-btn"
@@ -200,17 +202,16 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="card">
+                                            <div class="card card-direita">
                                                 <div class="img-container">
-                                                    <img style="max-width: 400px;"
-                                                        src="assets/img/recrutamento-selecao-card.jpg" alt="">
+                                                    <img src="assets/img/imgs-cards/tecnologia-card.jpg" alt="">
                                                 </div>
                                                 <div class="text-container">
-                                                    <h4 class="titulo-card">Recrutamento e seleção</h4>
+                                                    <h4 class="titulo-card" id="titulo-card-tecnologia">Tecnologia a Serviço do Humano</h4>
                                                     <div class="p-container">
-                                                        <p class="p-card">Condução humanizada</p>
-                                                        <p class="p-card">Tecnologia a favor da eficiência</p>
-                                                        <p class="p-card">Entendimento da cultura</p>
+                                                        <p class="p-card">People Analytics</p>
+                                                        <p class="p-card">Plataformas de aprendizagem</p>
+                                                        <p class="p-card">Automatização inteligente</p>
                                                     </div>
                                                     <a class="link-btn" href="" class="btn btn-banner">Saiba mais<i
                                                             class="icon"><img class="cursor-btn"
