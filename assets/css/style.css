@@ -72,6 +72,8 @@ body {
     /* Opcional: define a cor do texto para preto */
 }
 
+
+
 .displayNone {
     display: none !important;
 }
@@ -480,6 +482,7 @@ input::placeholder {
 
 .carrosel-container{
     margin-bottom: 150px;
+    display: block;
 }
 
 /* Seleciona o ícone de seta para a esquerda */
@@ -492,7 +495,7 @@ input::placeholder {
     height: 50px;
 }
 
-.carrosel-container .col{
+.col{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -505,7 +508,7 @@ input::placeholder {
 
 
 .carrosel-container .card{
-    min-height: 480px;
+    max-height: 580px;
     background-color: #500202;
     color: #ffe2e2;
     box-shadow: 0 5px 20px rgb(50, 0, 0);
@@ -545,13 +548,13 @@ input::placeholder {
 }
 
  .card .titulo-card-menor{
-    font-size: 1.2rem;
-}
-/*
-#titulo-card-tecnologia{
     font-size: 1.1rem;
 }
- */
+
+#titulo-card-tecnologia{
+    font-size: 1.2rem;
+}
+
 .card .p-container{
     /* display: flex; */
     /* flex-direction: column; */
@@ -816,6 +819,95 @@ p {
     }
 
 }
+
+
+@media (max-width:1325px){
+    html{
+        font-size: 12px;
+    }
+
+    .cabecalho{
+        gap: 1.5rem !important;
+    }
+    .cabecalho .img-logo{
+        width: 100px;
+    }
+    .cabecalho ul{
+        gap: 4rem !important;
+        
+    }
+
+    .cabecalho li a{
+        font-size: 12px;
+    }
+    .modal-login-cadastrar{
+        width: 250px;
+    }
+    .section-banner{
+        height: 550px;
+    }
+    .texto-banner .frase-banner{
+        font-size: 1.5rem;
+    }
+    .texto-banner .link-btn{
+        top: 60px;
+        padding: 12.5px;
+        font-size: 10px;
+        border-radius: 12.5px;
+    }
+    .texto-banner .link-btn .cursor-btn{
+        max-width: 15px;
+        padding: 3px;
+        right: 5px;
+        top: 5px;
+    }
+    .texto-banner .link-btn .icon{
+        margin-left: 15px;
+    }
+    .solucoes .card{
+        width: 265px;
+    }
+    .card .img-container img{
+        max-width: 240px;
+    }
+    .cv-ia{
+        margin-top: 400px;
+    }
+}
+
+
+/* MEDIA QUERIE PARA OS CARROSEIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* Padrão: Ambos invisíveis (Mobile) */
+#carrosel-desktop{
+    display: none;
+}
+
+#carrosel-tablet{
+    display: none;
+}
+
+/* 💻 Regra 1: Desktop (a partir de 1025px) */
+@media (min-width: 1401px){
+    #carrosel-desktop{
+        display: block;
+    }
+    /* Esconde o carrossel de tablet quando o desktop aparece */
+    #carrosel-tablet{
+        display: none;
+    }
+}
+
+/* 📱 Regra 2: Tablet (de 426px até 1024px) */
+@media (min-width: 426px) and (max-width: 1400px){
+    #carrosel-tablet{
+        display: block; /* Apenas visível na faixa de tablet */
+    }
+}
+
+
+
 
 footer {
     border-top: 2px solid var(--cor-azul-medio);
