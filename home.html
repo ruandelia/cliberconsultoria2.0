@@ -23,7 +23,7 @@
                 <img class="img-logo" src="assets/img/logo.png" alt="Logo-cliber consultoria">
             </a>
         </div>
-        <nav>
+        <nav id="nav-desktop">
             <ul>
                 <li><a href="" class="link link-vaga">Vagas</a></li>
                 <li><a href="#solucoes" class="link link-servicos">Serviços</a></li>
@@ -42,10 +42,32 @@
                 </div>
             </ul>
         </nav>
+        <nav id="nav-tablet">
+            <img class="bntAbrir " src="assets/img/icons/Menu.png" alt="">
+            <img class="btnFechar displayNone" src="assets/img/icons/Close.png" alt="">
+        </nav>
     </header>
     <main>
+        <!-- Modal para o menu em telas menores -->
         <!-- meu modal do header; login e/ou cadastro -->
         <section class="section-banner">
+            <dialog class="menu-tablet displayNone">
+                <a href="">Vagas</a>
+                <a href="">Serviços</a>
+                <a href="">Quem somos</a>
+                <a href="">Contato</a>
+                <div class="login-cadastrar-tablet">
+                    <a href="" class="link-login">Login</a>
+                    <span></span>
+                    <a href="" class="link-cadastrar">Cadastrar</a>
+                </div>
+                <div class="area-exclusiva displayNone">
+                    <a href="">
+                        <p>Olá, usuário</p>
+                        <p>Acesse sua área exclusiva</p>
+                    </a>
+                </div>
+            </dialog>
             <dialog open="" class="modal-login-cadastrar">
                 <div class="form-container">
                     <form action="">
@@ -83,8 +105,8 @@
             <div class="fundo-solucoes">
                 <h3 class="titulo-solucoes" id="titulo-solucoes">Soluções</h3>
 
-                <div class="carrosel-container" id="carrosel-desktop">
-                    <div id="carouselExampleDesktop" class="carousel slide **d-none d-lg-block**">
+                <div class="carrosel-container" id="carrosel-desktop"> 
+                    <div id="carouselExampleDesktop" class="carousel slide displayNone">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="container text-center">
@@ -236,14 +258,15 @@
 
                 </div>
                 <div class="carrosel-container" id="carrosel-tablet">
-                    <div id="carouselExampleTablet" class="carousel slide **d-none d-md-block d-lg-none**">
+                    <div id="carouselExampleTablet" class="carousel slide displayNone">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
 
+                            <!-- ITEM 1 (ACTIVE): Recrutamento e Seleção + Clima e Cultura -->
+                            <div class="carousel-item active">
                                 <div class="container text-center">
                                     <div class="row align-items-start">
                                         <div class="col">
-                                            <div class="card card-esquerda">
+                                             <div class="card card-esquerda">
                                                 <div class="img-container">
                                                     <img src="assets/img/imgs-cards/recrutamento-selecao-card.jpg"
                                                         alt="">
@@ -285,10 +308,10 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="carousel-item">
 
+                            <!-- ITEM 2: Plano de Sucessão + Pesquisa de Clima -->
+                            <div class="carousel-item">
                                 <div class="container text-center">
                                     <div class="row align-items-start">
                                         <div class="col">
@@ -314,7 +337,8 @@
                                         <div class="col">
                                             <div class="card card-direita">
                                                 <div class="img-container">
-                                                    <img src="assets/img/imgs-cards/pesquisa-de-clima-card.jpg" alt="">
+                                                    <img src="assets/img/imgs-cards/pesquisa-de-clima-card.jpg"
+                                                        alt="Pesquisa de Clima">
                                                 </div>
                                                 <div class="text-container">
                                                     <h4 class="titulo-card">Pesquisa de Clima</h4>
@@ -323,27 +347,26 @@
                                                         <p class="p-card">Diagnóstico preciso</p>
                                                         <p class="p-card">Plano de ação pós-pesquisa</p>
                                                     </div>
-                                                    <a class="link-btn" href="" class="btn btn-banner">Saiba mais<i
+                                                    <a class="link-btn" href="#" class="btn btn-banner">Saiba mais<i
                                                             class="icon"><img class="cursor-btn"
-                                                                src="assets/img/icons/cursor-3.png" alt=""></i></a>
-
+                                                                src="assets/img/icons/cursor-3.png"
+                                                                alt=""></i></a>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
-                            <div class="carousel-item">
 
+                            <!-- ITEM 3: Diversidade + Tecnologia -->
+                            <div class="carousel-item">
                                 <div class="container text-center">
                                     <div class="row align-items-start">
                                         <div class="col">
                                             <div class="card card-esquerda">
                                                 <div class="img-container">
-                                                    <img src="assets/img/imgs-cards/diversidade-card.jpg" alt="">
+                                                    <img src="assets/img/imgs-cards/diversidade-card.jpg"
+                                                        alt="Diversidade, Equidade e Inclusão (DE&I)">
                                                 </div>
                                                 <div class="text-container">
                                                     <h4 class="titulo-card titulo-card-menor">Diversidade, Equidade e
@@ -353,18 +376,18 @@
                                                         <p class="p-card">Criação de políticas e programas...</p>
                                                         <p class="p-card">Definição de metas, indicadores e...</p>
                                                     </div>
-                                                    <a class="link-btn" href="" class="btn btn-banner">Saiba mais<i
+                                                    <a class="link-btn" href="#" class="btn btn-banner">Saiba mais<i
                                                             class="icon"><img class="cursor-btn"
-                                                                src="assets/img/icons/cursor-3.png" alt=""></i></a>
-
+                                                                src="assets/img/icons/cursor-3.png"
+                                                                alt=""></i></a>
                                                 </div>
-
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="card card-direita">
                                                 <div class="img-container">
-                                                    <img src="assets/img/imgs-cards/tecnologia-card.jpg" alt="">
+                                                    <img src="assets/img/imgs-cards/tecnologia-card.jpg"
+                                                        alt="Tecnologia a Serviço do Humano">
                                                 </div>
                                                 <div class="text-container">
                                                     <h4 class="titulo-card" id="titulo-card-tecnologia">Tecnologia a
@@ -374,20 +397,19 @@
                                                         <p class="p-card">Plataformas de aprendizagem</p>
                                                         <p class="p-card">Automatização inteligente</p>
                                                     </div>
-                                                    <a class="link-btn" href="" class="btn btn-banner">Saiba mais<i
+                                                    <a class="link-btn" href="#" class="btn btn-banner">Saiba mais<i
                                                             class="icon"><img class="cursor-btn"
-                                                                src="assets/img/icons/cursor-3.png" alt=""></i></a>
-
+                                                                src="assets/img/icons/cursor-3.png"
+                                                                alt=""></i></a>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
+
                         </div>
+                        <!-- Controles do Carrossel Tablet -->
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleTablet"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -400,6 +422,176 @@
                         </button>
                     </div>
                 </div>
+
+                <!-- 2. ESTRUTURA PARA MOBILE (1 CARD POR SLIDE) -->
+                <!-- VISÍVEL APENAS EM TELAS PEQUENAS (sm) -->
+                <div class="carrosel-container" id="carrosel-mobile-container">
+                    <!-- O ID do carrossel foi corrigido para 'carouselExampleMobile' para evitar duplicação -->
+                    <div id="carouselExampleMobile" class="carousel slide displayNone">
+                        <div class="carousel-inner">
+
+                            <!-- ITEM 1 (ACTIVE): Recrutamento e seleção -->
+                            <div class="carousel-item active">
+                                <div class="col">
+                                     <div class="card">
+                                                <div class="img-container">
+                                                    <img src="assets/img/imgs-cards/recrutamento-selecao-card.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="text-container">
+                                                    <h4 class="titulo-card">Recrutamento e seleção</h4>
+                                                    <div class="p-container">
+                                                        <p class="p-card">Condução humanizada</p>
+                                                        <p class="p-card">Entendimento da cultura</p>
+                                                        <p class="p-card">Tecnologia a favor da eficiência</p>
+                                                    </div>
+                                                    <a class="link-btn" href="" class="btn btn-banner">Saiba mais<i
+                                                            class="icon"><img class="cursor-btn"
+                                                                src="assets/img/icons/cursor-3.png" alt=""></i></a>
+
+                                                </div>
+
+                                            </div>
+                                </div>
+                            </div>
+
+                            <!-- ITEM 2: Clima e cultura -->
+                            <div class="carousel-item">
+                                <div class="col">
+                                    <div class="card card2">
+                                        <div class="img-container">
+                                            <img src="assets/img/imgs-cards/clima-cultura-card.jpg"
+                                                alt="Clima e cultura">
+                                        </div>
+                                        <div class="text-container">
+                                            <h4 class="titulo-card">Clima e cultura</h4>
+                                            <div class="p-container">
+                                                <p class="p-card">Projetos personalizados</p>
+                                                <p class="p-card">Acompanhamento contínuo</p>
+                                                <p class="p-card">Suporte psicológico especializado</p>
+                                            </div>
+                                            <a class="link-btn" href="#" class="btn btn-banner">Saiba mais<i
+                                                    class="icon"><img class="cursor-btn"
+                                                        src="assets/img/icons/cursor-3.png"
+                                                        alt=""></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ITEM 3: Plano de Sucessão -->
+                            <div class="carousel-item">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="img-container">
+                                            <img src="assets/img/imgs-cards/plano-sucessao-card.jpg"
+                                                alt="Plano de Sucessão">
+                                        </div>
+                                        <div class="text-container">
+                                            <h4 class="titulo-card">Plano de Sucessão</h4>
+                                            <div class="p-container">
+                                                <p class="p-card">Análise crítica de carreira</p>
+                                                <p class="p-card">Visão preventiva e estratégica</p>
+                                                <p class="p-card">Mapeamento de talentos internos</p>
+                                            </div>
+                                            <a class="link-btn" href="#" class="btn btn-banner">Saiba mais<i
+                                                    class="icon"><img class="cursor-btn"
+                                                        src="assets/img/icons/cursor-3.png"
+                                                        alt=""></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ITEM 4: Pesquisa de Clima -->
+                            <div class="carousel-item">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="img-container">
+                                            <img src="assets/img/imgs-cards/pesquisa-de-clima-card.jpg"
+                                                alt="Pesquisa de Clima">
+                                        </div>
+                                        <div class="text-container">
+                                            <h4 class="titulo-card">Pesquisa de Clima</h4>
+                                            <div class="p-container">
+                                                <p class="p-card">Análise de dados</p>
+                                                <p class="p-card">Diagnóstico preciso</p>
+                                                <p class="p-card">Plano de ação pós-pesquisa</p>
+                                            </div>
+                                            <a class="link-btn" href="#" class="btn btn-banner">Saiba mais<i
+                                                    class="icon"><img class="cursor-btn"
+                                                        src="assets/img/icons/cursor-3.png"
+                                                        alt=""></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ITEM 5: Diversidade, Equidade e Inclusão (DE&I) -->
+                            <div class="carousel-item">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="img-container">
+                                            <img src="assets/img/imgs-cards/diversidade-card.jpg"
+                                                alt="Diversidade, Equidade e Inclusão (DE&I)">
+                                        </div>
+                                        <div class="text-container">
+                                            <h4 class="titulo-card titulo-card-menor">Diversidade, Equidade e Inclusão
+                                                (DE&I)</h4>
+                                            <div class="p-container">
+                                                <p class="p-card">mapeamento da diversidade</p>
+                                                <p class="p-card">Criação de políticas e programas...</p>
+                                                <p class="p-card">Definição de metas, indicadores e...</p>
+                                            </div>
+                                            <a class="link-btn" href="#" class="btn btn-banner">Saiba mais<i
+                                                    class="icon"><img class="cursor-btn"
+                                                        src="assets/img/icons/cursor-3.png"
+                                                        alt=""></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ITEM 6: Tecnologia a Serviço do Humano -->
+                            <div class="carousel-item">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="img-container">
+                                            <img src="assets/img/imgs-cards/tecnologia-card.jpg"
+                                                alt="Tecnologia a Serviço do Humano">
+                                        </div>
+                                        <div class="text-container">
+                                            <h4 class="titulo-card" id="titulo-card-tecnologia">Tecnologia a Serviço do
+                                                Humano</h4>
+                                            <div class="p-container">
+                                                <p class="p-card">People Analytics</p>
+                                                <p class="p-card">Plataformas de aprendizagem</p>
+                                                <p class="p-card">Automatização inteligente</p>
+                                            </div>
+                                            <a class="link-btn" href="#" class="btn btn-banner">Saiba mais<i
+                                                    class="icon"><img class="cursor-btn"
+                                                        src="assets/img/icons/cursor-3.png"
+                                                        alt=""></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Controles do Carrossel Mobile -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleMobile"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleMobile"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
             </div>
 
@@ -461,12 +653,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/abrirFecharMenu.js"></script>
     <script src="assets/js/abrirFecharModal.js"></script>
-    <script src="">
+    <script src="assets/js/logicaCarrosel.js">
 
 
     </script>

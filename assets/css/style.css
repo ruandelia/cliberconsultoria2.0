@@ -11,7 +11,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body a{
+body a {
     color: inherit;
     text-decoration: none;
 }
@@ -72,14 +72,20 @@ body {
     /* Opcional: define a cor do texto para preto */
 }
 
-
-
 .displayNone {
     display: none !important;
 }
 
 .displayBlock {
     display: block !important;
+}
+
+#nav-tablet{
+    display: none;
+}
+
+#nav-tablet img{
+        max-width: 40px;
 }
 
 .cabecalho {
@@ -97,7 +103,7 @@ body {
     width: 130px;
 }
 
-.cabecalho nav ul {
+.cabecalho #nav-desktop ul {
     display: flex;
     align-items: center;
     gap: 8rem;
@@ -111,7 +117,6 @@ body {
     padding-bottom: 8px;
     /* Aumentei o padding para dar espaço à borda */
 }
-
 
 .cabecalho .link::after {
     content: '';
@@ -144,28 +149,28 @@ body {
     border-radius: 25%;
 }
 
-.cabecalho nav ul li {
+.cabecalho #nav-desktop ul li {
     color: var(--cor-bege);
     font-family: var(--fonte-cinzel);
     font-weight: 200 !important;
 }
 
-.cabecalho nav ul li a {
+.cabecalho #nav-desktop ul li a {
     color: var(--cor-bege);
 }
 
-.cabecalho nav ul .login-cadastrar {
+.cabecalho #nav-desktop ul .login-cadastrar {
     display: flex;
     gap: 1.5rem;
 
 }
 
-.cabecalho nav ul .login-cadastrar span {
+.cabecalho #nav-desktop ul .login-cadastrar span {
     border-right: 2.5px solid var(--cor-bege);
     border-radius: 30px;
 }
 
-.cabecalho nav ul .login-cadastrar .link-login {
+.cabecalho #nav-desktop ul .login-cadastrar .link-login {
     background: var(--cor-azul-claro-30);
     padding: 0.5rem 1rem;
     border-radius: 10px;
@@ -237,7 +242,72 @@ body {
 
 
 /* ========================================== FIM DO HEADER ========================================== */
+.menu-tablet{
+    z-index: 999;
+    position: absolute;
+    padding: 20px;
+    right: 0;
+    left: unset;
+    margin: 0;
 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-bege);
+    font-family: var(--fonte-cinzel);
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-left: 2px solid var(--cor-azul-dark);
+    border-bottom: 2px solid var(--cor-azul-dark);
+}
+
+.menu-tablet a{
+    padding: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 40px;
+}
+
+.menu-tablet .login-cadastrar-tablet{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-tablet .login-cadastrar-tablet .link-login{
+    background-color: var(--cor-azul-claro-30);
+    border-radius: 10px;
+    border: 2px solid var(--cor-azul-claro);
+}
+
+.menu-tablet .login-cadastrar-tablet span{
+    border-bottom: 2px solid var(--cor-bege);
+    border-radius: 50px;
+}
+
+.menu-tablet .login-cadastrar-tablet .link-cadastrar{
+    background-color: var(--cor-fundo-cinza);
+    border: 2px solid var(--cor-preto-50);
+    border-radius: 10px;
+}
+
+.menu-tablet .area-exclusiva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid var(--cor-azul-dark);
+}
+
+.menu-tablet .area-exclusiva p{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-tablet .area-exclusiva p:last-child{
+    font-size: 1rem;
+}
 /* ========================================== MODAL/DIALOG ========================================== */
 
 .modal-login-cadastrar {
@@ -287,6 +357,7 @@ body {
     /* Traz o modal de volta para sua posição original (0px de deslocamento) */
     transform: translateX(0);
 }
+
 /* 
 .modal-login-cadastrar .form-container{
     display: flex;
@@ -342,7 +413,7 @@ body {
     font-size: 1.1rem;
 }
 
-.alinha-inputs input:focus{
+.alinha-inputs input:focus {
     background-color: var(--cor-azul-medio);
 }
 
@@ -419,7 +490,7 @@ input::placeholder {
     flex-direction: column;
 }
 
-.texto-banner .frase-banner{
+.texto-banner .frase-banner {
     font-size: 2.2rem;
 }
 
@@ -462,15 +533,15 @@ input::placeholder {
     /* Use o mesmo valor para simetria */
 
     /* É importante que este elemento tenha uma altura definida ou que seu conteúdo o preencha */
-    min-height: 700px;
+    /* min-height: 700px; */
     /* Adicione uma altura mínima, se necessário, para ver o efeito */
     width: 100%;
     color: var(--cor-bege);
     font-family: var(--fonte-comfortaa);
-
+/* 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .solucoes .titulo-solucoes {
@@ -480,7 +551,7 @@ input::placeholder {
     margin-bottom: 70px;
 }
 
-.carrosel-container{
+.carrosel-container {
     margin-bottom: 150px;
     display: block;
 }
@@ -495,19 +566,26 @@ input::placeholder {
     height: 50px;
 }
 
-.col{
+#carrosel-tablet .col-6{
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+}
+
+.col {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
 }
 
-.card, .card .img-container img,.card .text-container p{
+.card,
+.card .img-container img,
+.card .text-container p {
     border: 3px solid #7d0707;
 }
 
-
-.carrosel-container .card{
+.carrosel-container .card {
     max-height: 580px;
     background-color: #500202;
     color: #ffe2e2;
@@ -519,27 +597,27 @@ input::placeholder {
     flex-direction: column;
     padding: 10px;
     padding-bottom: 40px;
-    
+
 }
 
-.card .img-container img{
-        max-width: 300px;
-    }
+.card .img-container img {
+    max-width: 300px;
+}
 
-.card .text-container{
+.card .text-container {
     padding-left: 5px;
     width: fit-content;
 }
 
-.card .img-container{
+.card .img-container {
     width: fit-content;
 }
 
-.card .img-container img{
+.card .img-container img {
     border-radius: 10px;
 }
 
-.card .titulo-card{
+.card .titulo-card {
     font-size: 1.4rem;
     font-weight: 600;
     margin: 25px 0;
@@ -547,21 +625,21 @@ input::placeholder {
     padding-left: 5px;
 }
 
- .card .titulo-card-menor{
+.card .titulo-card-menor {
     font-size: 1.1rem;
 }
 
-#titulo-card-tecnologia{
+#titulo-card-tecnologia {
     font-size: 1.2rem;
 }
 
-.card .p-container{
+.card .p-container {
     /* display: flex; */
     /* flex-direction: column; */
     margin-bottom: 30px;
 }
 
-.card .p-container p{
+.card .p-container p {
     font-size: 0.9rem;
     font-weight: 300;
     width: fit-content;
@@ -571,18 +649,18 @@ input::placeholder {
     border-radius: 10px;
 }
 
-.card .text-container a{
+.card .text-container a {
     width: fit-content;
 }
 
-.card .link-btn{
+.card .link-btn {
     padding: 15px;
     border-radius: 10px;
     background-color: #6b9bb81b;
 }
 
-.card .link-btn .cursor-btn{
-    
+.card .link-btn .cursor-btn {
+
     max-width: 20px;
     padding: 4px;
     top: 8px;
@@ -592,7 +670,7 @@ input::placeholder {
 
 .cv-ia {
     /* compensando a section !!! */
-    margin-top: 570px;
+    margin-top: 500px;
     /* ============================================================================================================= */
     padding-top: 500px;
     background: #000000;
@@ -607,10 +685,10 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.cv-ia .img-container img{
+.cv-ia .img-container img {
     max-width: 200px;
 }
 
@@ -655,7 +733,8 @@ input::placeholder {
 
     /* 2. CLIPE: Garante que o fundo apareça SÓ onde houver texto */
     -webkit-background-clip: text;
-    background-clip: text; /* Versão padrão para navegadores modernos */
+    background-clip: text;
+    /* Versão padrão para navegadores modernos */
 
     /* 3. COR: Torna a cor do texto transparente para que o fundo apareça */
     color: transparent;
@@ -666,7 +745,7 @@ input::placeholder {
     font-weight: 800;
 }
 
-.txt-container span:last-child{
+.txt-container span:last-child {
     color: var(--cor-laranja);
 }
 
@@ -711,202 +790,406 @@ p {
     font-size: 0.8rem;
 }
 
-@media (max-width: 2000px){
-    html{
+@media (max-width: 2000px) {
+    html {
         font-size: 15px;
     }
 
-    .cv-ia .titulo{
+    .cv-ia .titulo {
         font-size: 2.85rem;
     }
 
-    .cv-ia .txt-container{
+    .cv-ia .txt-container {
         gap: 3rem;
     }
 }
 
-@media(max-width:1800px){
-    html{
+@media(max-width:1800px) {
+    html {
         font-size: 13.6px;
     }
 
-    .cabecalho{
+    .cabecalho {
         gap: 8rem;
     }
 
-    .cabecalho nav ul{
+    .cabecalho nav ul {
         gap: 9rem;
     }
-    .img-container img{
+
+    .img-container img {
         max-width: 260px;
     }
 
-    .cv-ia{
+    .cv-ia {
         margin-top: 500px;
     }
 
-    .cv-ia .titulo{
+    .cv-ia .titulo {
         font-size: 3.2rem;
     }
 
-    .txt-container{
+    .txt-container {
         gap: 3.7rem !important;
     }
 }
 
 @media(max-width: 1650px) {
-    html{
+    html {
         font-size: 13px;
     }
 
-    .section-banner{
+    .section-banner {
         height: 650px;
     }
 
-    .cabecalho{
+    .cabecalho {
         gap: 5rem;
-        nav ul{
+
+        nav ul {
             gap: 7rem;
         }
     }
 
-    .texto-banner .frase-banner{
+    .texto-banner .frase-banner {
         font-size: 2rem;
     }
 
-    .texto-banner .link-btn{
+    .texto-banner .link-btn {
         top: 80px;
     }
-    
-    .card{
+
+    .card {
         max-width: 290px !important;
     }
 
-    .card-esquerda{
+    .card-esquerda {
         margin-left: 100px;
     }
 
-    .card-direita{
+    .card-direita {
         margin-right: 100px;
     }
 
-    .card .img-container img{
+    .card .img-container img {
         max-width: 260px;
     }
 
-    .carrosel-container{
+    .carrosel-container {
         margin-bottom: 100px;
     }
 
-    .cv-ia{
+    .cv-ia {
         margin-top: 450px;
     }
 
-    .cv-ia .titulo{
+    .cv-ia .titulo {
         font-size: 3.2rem;
     }
 
-    .cv-ia .txt-container{
+    .cv-ia .txt-container {
         gap: 4.2rem !important;
     }
 
-    .cv-ia .txt-container p{
+    .cv-ia .txt-container p {
         width: 80%;
     }
 
-    .cv-ia .img-container{
+    .cv-ia .img-container {
         right: 50px;
     }
 
 }
 
 
-@media (max-width:1325px){
-    html{
-        font-size: 12px;
-    }
-
+@media (max-width:1440px) {
     .cabecalho{
-        gap: 1.5rem !important;
+        height:80px;
     }
-    .cabecalho .img-logo{
+    .cabecalho .img-logo {
         width: 100px;
     }
-    .cabecalho ul{
-        gap: 4rem !important;
-        
+
+    .cabecalho li a {
+        font-size: 13px;
     }
 
-    .cabecalho li a{
-        font-size: 12px;
-    }
-    .modal-login-cadastrar{
+    .modal-login-cadastrar {
         width: 250px;
     }
-    .section-banner{
+
+    .section-banner {
         height: 550px;
     }
-    .texto-banner .frase-banner{
+
+    .texto-banner .frase-banner {
         font-size: 1.5rem;
     }
-    .texto-banner .link-btn{
+
+    .texto-banner .link-btn {
         top: 60px;
         padding: 12.5px;
         font-size: 10px;
         border-radius: 12.5px;
     }
-    .texto-banner .link-btn .cursor-btn{
+
+    .texto-banner .link-btn .cursor-btn {
         max-width: 15px;
         padding: 3px;
         right: 5px;
         top: 5px;
     }
-    .texto-banner .link-btn .icon{
+
+    .texto-banner .link-btn .icon {
         margin-left: 15px;
     }
-    .solucoes .card{
-        width: 265px;
+
+    .card {
+        max-width: 255px !important;
     }
-    .card .img-container img{
-        max-width: 240px;
+
+     .card .img-container img {
+        width: 220px !important;
     }
-    .cv-ia{
+    
+    .card .titulo-card{
+        font-size: 15px;
+    }
+    
+    .titulo-card-menor{
+        font-size: 11px !important;
+    }
+    .card .p-container p{
+        font-size: 10px;
+    }
+
+    .card-esquerda {
+        margin-left: 140px;
+    }
+
+    .card-direita {
+        margin-right: 140px;
+    }
+
+    .cv-ia {
         margin-top: 400px;
     }
-}
 
-
-/* MEDIA QUERIE PARA OS CARROSEIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-
-/* Padrão: Ambos invisíveis (Mobile) */
-#carrosel-desktop{
-    display: none;
-}
-
-#carrosel-tablet{
-    display: none;
-}
-
-/* 💻 Regra 1: Desktop (a partir de 1025px) */
-@media (min-width: 1401px){
-    #carrosel-desktop{
-        display: block;
+    .cv-ia .container {
+        width: 890px;
     }
-    /* Esconde o carrossel de tablet quando o desktop aparece */
-    #carrosel-tablet{
+
+    .cv-ia .titulo {
+        font-size: 2.8rem;
+    }
+    .cv-ia .img-container{
+        top: 140px;
+        right: 20px;
+        padding: 20px;
+    }
+    .cv-ia .img-container img {
+        max-width: 150px;
+    }
+    
+
+    .img-container h5 {
+        font-size: 1.3rem;
+    }
+
+    .img-container p {
+        font-size: 0.7rem;
+    }
+    .cv-ia .txt-container{
+        width: 70%;
+        gap: 2.8rem !important;
+    }
+    .cv-ia .txt-container p {
+        /* width: 90%; */
+        font-size: 1.4rem;
+    }
+    .cv-ia .txt-container .link-btn{
+        font-size: 15px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+    .txt-container .link-btn .cursor-btn{
+        right: 5px;
+        top: 5px;
+    }
+    .txt-container .link-btn .cursor-btn{
+        max-width: 20px;
+        padding: 5px;
+    }
+    footer{
+        height: 120px;
+    }
+    .logo-justificada-container img{
+        width: 110px;
+    }
+    .redes-sociais a img{
+        max-width: 25px;
+    }
+    .redes-sociais-container p{
+        font-size: 10px;
+    }
+    .btn-topo{
+        padding: 6px !important;
+    }
+    .btn-topo a{
+        font-size: 1rem !important;
+        padding-bottom: 1px !important;
+    }
+    .btn-e-dev-container a{
+        font-size: 11px;
+    }
+    
+}
+
+@media (max-width:1024px) {
+    html {
+        font-size: 12px;
+    }
+
+    .cabecalho {
+        gap: 3rem !important;
+    }
+
+    .cabecalho ul {
+        gap: 5rem !important;
+    }
+
+    .card {
+        max-width: 230px !important;
+    }
+
+    .card .img-container img {
+        max-width: 205px !important;
+    }
+
+    .card .titulo-card{
+        font-size: 1.15rem;
+    }
+
+    .card .p-container p{
+        font-size: 0.7rem;
+    }
+
+    .card-esquerda {
+        margin-left: 140px;
+    }
+
+    .card-direita {
+        margin-right: 140px;
+    }
+
+    .cv-ia {
+        margin-top: 350px !important;
+    }
+
+    .cv-ia .container {
+        width: 600px;
+        margin-bottom: 120px;
+    }
+
+    .cv-ia .titulo {
+        font-size: 2rem;
+    }
+    .cv-ia .img-container{
+        top: 120px;
+        right: 20px;
+        padding: 10px;
+    }
+    .cv-ia .img-container img {
+        max-width: 110px;
+    }
+    
+
+    .img-container h5 {
+        font-size: 0.9rem;
+    }
+
+    .img-container p {
+        font-size: 0.6rem;
+    }
+    .cv-ia .txt-container{
+        width: 75%;
+        gap: 1.7rem !important;
+    }
+    .cv-ia .txt-container .link-btn{
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .txt-container .link-btn .cursor-btn{
+        right: 5px;
+        top: 5px;
+    }
+    .txt-container .link-btn .cursor-btn{
+        max-width: 15px;
+        padding: 3px;
+    }
+
+    .cv-ia .txt-container p {
+        /* width: 90%; */
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 10px;
+    }
+    #nav-desktop{
         display: none;
     }
-}
-
-/* 📱 Regra 2: Tablet (de 426px até 1024px) */
-@media (min-width: 426px) and (max-width: 1400px){
-    #carrosel-tablet{
-        display: block; /* Apenas visível na faixa de tablet */
+    #nav-tablet{
+        display: block;
     }
+    .cabecalho{
+        gap: 45rem !important;
+    }
+    .texto-banner .frase-banner{
+        font-size: 1.35rem;
+    }
+    .texto-banner .link-btn{
+        top: 40px;
+        font-size: 8px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .texto-banner .link-btn .cursor-btn{
+        max-width: 13px;
+        padding: 2px;
+    }
+
+
+    .col{
+        /* background-color: #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+        
+    }
+    .cv-ia{
+        margin-top: 250px !important;
+    }
+
+    .cv-ia .img-container{
+        right: 50px;
+    }
+
+    .cv-ia .titulo{
+        font-size: 2.3rem;
+    }
+
 }
 
-
+/* MEDIA QUERIE PARA OS CARROSEIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* #carrosel-tablet{
+    display: block;
+}
+ */
 
 
 footer {
@@ -964,12 +1247,12 @@ footer .redes-sociais-container {
     margin-bottom: 20px;
 }
 
-.btn-topo a{
+.btn-topo a {
     /* top: 10px; */
     padding-bottom: 5px;
     font-size: 1.1rem;
 }
 
 .btn-e-dev-container img {
-    max-width: 18px;
+    max-width: 18px
 }
