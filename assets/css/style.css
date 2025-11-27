@@ -1135,7 +1135,7 @@ p {
     }
 }
 
-@media(max-width:768px){
+@media(max-width:991px){
     html{
         font-size: 10px;
     }
@@ -1181,6 +1181,39 @@ p {
 
     .cv-ia .titulo{
         font-size: 2.3rem;
+    }
+
+
+    footer{
+        gap: 7rem !important;
+    }
+    footer .logo-justificada{
+        max-width: 100px !important;
+    }
+    footer .redes-sociais-container p, .btn-e-dev-container p{
+        font-size: 0.8rem !important;
+    }
+
+}
+
+@media(max-width: 625px){
+    html{
+    
+        font-size: 10px;
+    }
+    .cabecalho{
+        gap: 25rem !important;
+    }
+    .frase-banner{
+        /* background-color: pink; */
+        font-size: 1.2rem !important;
+        text-wrap: nowrap;
+    }
+    .solucoes .titulo-solucoes{
+        margin-top: 100px;
+    }
+    .col{
+        padding: 20px !important;
     }
 
 }
