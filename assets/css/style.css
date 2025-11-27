@@ -331,7 +331,7 @@ body {
     /* Começa transparente */
 
     /* Empurra o modal para fora da tela (100% da sua própria largura) */
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
 
     /* Define o tempo da animação (0.5 segundos em todos os atributos) */
     transition: all 0.2s ease-out;

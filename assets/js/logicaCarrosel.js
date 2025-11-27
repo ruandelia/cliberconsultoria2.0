@@ -36,7 +36,7 @@ function ajustarCarrosseis() {
         carroselDesktop.classList.remove("displayNone");
     } else if (larguraPG >= 1024) {
         carroselTablet.classList.remove("displayNone");
-    } else {
+    } else if(larguraPG < 1023){
         carroselMobile.classList.remove("displayNone");
     }
 }
