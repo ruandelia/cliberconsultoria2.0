@@ -1,5 +1,5 @@
 
-const modal = document.querySelector(".modal-login-cadastrar");
+const modal = document.querySelector("#modal-login");
 const closeBotao = document.querySelector(".close-modal");
 const linkLogin = document.querySelector(".link-login");
 // Removida: const linkCadastrar = document.querySelector(".link-cadastrar");
@@ -49,6 +49,6 @@ document.addEventListener("keydown", (e) => {
 })
 
 
-/* if(Window.innerWidth >= 1024){
-    modal.style.transform = "translateX(100%)"
-} */
+if(Window.innerWidth >= 1024){
+    modal.classList.remove("modal-login-cadastrar")
+}
