@@ -49,6 +49,7 @@ document.addEventListener("keydown", (e) => {
 })
 
 
-if(Window.innerWidth >= 1024){
+if(Window.innerWidth >= 991){
     modal.classList.remove("modal-login-cadastrar")
+    modal.computedStyleMap.transform = "translateX(0px) !important"
 }

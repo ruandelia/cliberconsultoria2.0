@@ -260,6 +260,7 @@ body {
     border-bottom-left-radius: 10px;
     border-left: 2px solid var(--cor-azul-dark);
     border-bottom: 2px solid var(--cor-azul-dark);
+    transition: 0.5s ease-in-out;
 }
 
 .menu-tablet a{
@@ -1135,7 +1136,7 @@ p {
     }
 }
 
-@media(max-width:768px){
+@media(max-width:991px){
     html{
         font-size: 10px;
     }
@@ -1147,6 +1148,9 @@ p {
     }
     .cabecalho{
         gap: 45rem !important;
+    }
+    .modal-login-cadastrar{
+        transform: translateX(0px);
     }
     .texto-banner .frase-banner{
         font-size: 1.35rem;
@@ -1196,13 +1200,23 @@ p {
 
 }
 
-@media(max-width: 425px){
+@media(max-width: 625px){
     html{
     
         font-size: 10px;
     }
     .cabecalho{
-        gap: 25rem !important;
+        gap: 17rem !important;
+    }
+    .menu-tablet a{
+        margin: 10px !important;
+        
+    }
+    .menu-tablet .link{
+        padding: 5px 0px;
+    }
+    .modal-login-cadastrar{
+        transform: translateX(0px);
     }
     .frase-banner{
         /* background-color: pink; */
@@ -1214,7 +1228,65 @@ p {
     }
     .col{
         padding: 20px !important;
+       padding-left: 40px !important;
     }
+
+    .cv-ia{
+        margin-top: 200px !important;
+    }
+
+    .cv-ia .container{
+        width: 320px;
+        margin-bottom: 90px;
+    }
+
+    .cv-ia .titulo{
+        font-size: 1.3rem;
+        text-wrap: nowrap !important;
+        margin:  20px 0;
+    }
+
+    .cv-ia .txt-container{
+        gap: 0.7rem !;
+    }
+
+    .cv-ia .txt-container p{
+        font-size: 0.8rem;
+    }
+
+    .cv-ia .txt-container .link-btn{
+        padding: 8px !important;
+        font-size: 0.7rem;
+    }
+
+    .cv-ia .link-btn .cursor-btn{
+        padding: 3px !important;
+        max-width: 13px;
+    }
+
+    .cv-ia .icon{
+        margin-left: 15px;
+    }
+
+    .cv-ia .img-container{
+        padding: 8px;
+        right: 0 !important;
+        top: 65px;
+        border-radius: 8px !important;
+    }
+
+    .cv-ia .img-container img{
+        max-width: 60px;
+    }
+
+    .cv-ia .img-container .titulo-cv{
+        font-size: 8px;
+    }
+
+    .cv-ia .img-container p{
+        font-size: 5px;
+    }
+
 
 }
 
