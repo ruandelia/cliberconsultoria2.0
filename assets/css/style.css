@@ -331,7 +331,7 @@ body {
     /* Começa transparente */
 
     /* Empurra o modal para fora da tela (100% da sua própria largura) */
-    /* transform: translateX(100%); */
+    transform: translateX(100%);
 
     /* Define o tempo da animação (0.5 segundos em todos os atributos) */
     transition: all 0.2s ease-out;
@@ -1135,7 +1135,7 @@ p {
     }
 }
 
-@media(max-width:991px){
+@media(max-width:768px){
     html{
         font-size: 10px;
     }
@@ -1196,7 +1196,7 @@ p {
 
 }
 
-@media(max-width: 625px){
+@media(max-width: 425px){
     html{
     
         font-size: 10px;

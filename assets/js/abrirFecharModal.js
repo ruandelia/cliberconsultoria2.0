@@ -47,3 +47,8 @@ document.addEventListener("keydown", (e) => {
         modal.classList.remove("displayBlock"); // Fecha o modal
     }
 })
+
+
+/* if(Window.innerWidth >= 1024){
+    modal.style.transform = "translateX(100%)"
+} */
