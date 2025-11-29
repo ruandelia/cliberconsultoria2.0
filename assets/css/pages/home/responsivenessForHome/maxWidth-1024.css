@@ -1,0 +1,91 @@
+
+
+@media (max-width:1024px) {
+    html {
+        font-size: 12px;
+    }
+
+    .cabecalho {
+        gap: 3rem !important;
+    }
+
+    .cabecalho ul {
+        gap: 5rem !important;
+    }
+
+    .card {
+        max-width: 230px !important;
+    }
+
+    .card .img-container img {
+        max-width: 205px !important;
+    }
+
+    .card .titulo-card{
+        font-size: 1.15rem;
+    }
+
+    .card .p-container p{
+        font-size: 0.7rem;
+    }
+
+    .card-esquerda {
+        margin-left: 140px;
+    }
+
+    .card-direita {
+        margin-right: 140px;
+    }
+
+    .cv-ia {
+        margin-top: 350px !important;
+    }
+
+    .cv-ia .container {
+        width: 600px;
+        margin-bottom: 120px;
+    }
+
+    .cv-ia .titulo {
+        font-size: 2rem;
+    }
+    .cv-ia .img-container{
+        top: 120px;
+        right: 20px;
+        padding: 10px;
+    }
+    .cv-ia .img-container img {
+        max-width: 110px;
+    }
+    
+
+    .img-container h5 {
+        font-size: 0.9rem;
+    }
+
+    .img-container p {
+        font-size: 0.6rem;
+    }
+    .cv-ia .txt-container{
+        width: 75%;
+        gap: 1.7rem !important;
+    }
+    .cv-ia .txt-container .link-btn{
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .txt-container .link-btn .cursor-btn{
+        right: 5px;
+        top: 5px;
+    }
+    .txt-container .link-btn .cursor-btn{
+        max-width: 15px;
+        padding: 3px;
+    }
+
+    .cv-ia .txt-container p {
+        /* width: 90%; */
+        font-size: 1.1rem;
+    }
+}

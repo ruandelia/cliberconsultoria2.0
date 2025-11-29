@@ -1,0 +1,121 @@
+.cv-ia {
+    /* compensando a section !!! */
+    margin-top: 500px;
+    /* ============================================================================================================= */
+    padding-top: 500px;
+    background: #000000;
+    background: linear-gradient(122deg, rgba(0, 0, 0, 1) 16%, rgba(0, 23, 48, 1) 43%, rgba(0, 23, 48, 1) 54%, rgba(0, 0, 0, 1) 88%);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    border-top: 10px solid var(--cor-vermelho);
+
+    color: var(--cor-bege);
+    font-family: var(--fonte-comfortaa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cv-ia .img-container img {
+    max-width: 200px;
+}
+
+.cv-ia .container {
+    position: relative;
+    width: 1050px;
+    margin: 30px 0;
+    margin-top: 100px;
+    margin-bottom: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.cv-ia .txt-container {
+    width: 65%;
+    /* background-color: rgba(255, 192, 203, 0.033); */
+    display: flex;
+    flex-direction: column;
+    gap: 3.7rem;
+}
+
+.cv-ia .titulo {
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+.txt-img-container {
+    display: flex;
+}
+
+
+
+.txt-container p {
+    font-size: 1.5rem;
+}
+
+.txt-container span:first-child {
+    /* 1. Define o gradiente como a imagem de fundo */
+    background-image: linear-gradient(122deg, rgba(255, 92, 92, 1) 0%, rgba(107, 155, 184, 1) 100%);
+
+    /* 2. CLIPE: Garante que o fundo apareça SÓ onde houver texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Versão padrão para navegadores modernos */
+
+    /* 3. COR: Torna a cor do texto transparente para que o fundo apareça */
+    color: transparent;
+
+    /* (Opcional) Você pode usar o 'color' simples como um fallback */
+    /* color: #FF5C5C; */
+
+    font-weight: 800;
+}
+
+.txt-container span:last-child {
+    color: var(--cor-laranja);
+}
+
+.txt-container button {
+    font-style: var(--fonte-comfortaa);
+    font-size: 1.3rem;
+    /* width: fit-content; */
+    padding: 15px;
+    border-radius: 15px;
+    color: var(--cor-bege);
+    border: none;
+    background-color: var(--cor-azul-claro-30);
+    border: 2px solid var(--cor-azul-claro);
+}
+
+
+.cv-ia .img-container {
+    position: absolute;
+    right: 1rem;
+    top: 150px;
+    margin-left: 10px;
+    background-color: var(--cor-vermelho-escuro);
+    border: 3px solid var(--cor-vermelho);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 0.68rem;
+    text-align: center;
+    height: fit-content;
+}
+
+.img-container h5,
+p {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.img-container h5 {
+    font-size: 1.3rem;
+}
+
+.img-container p {
+    font-size: 0.8rem;
+}

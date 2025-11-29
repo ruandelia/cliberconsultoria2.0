@@ -1,0 +1,91 @@
+
+@media(max-width: 400px){
+    .cabecalho{
+        gap: 9rem !important;
+    }
+     .menu-tablet a{
+        margin: 5px !important;
+        font-size: 12px;
+        
+    }
+    .menu-tablet .link{
+        padding: 5px 0px;
+    }
+    .modal-login-cadastrar{
+        transform: translateX(0px);
+    }
+    .section-banner{
+        height: 700px;
+    }
+    .frase-banner{
+        /* background-color: pink; */
+        font-size: 1rem !important;
+        text-wrap: nowrap;
+    }
+    .col{
+        padding: 20px !important;
+       padding-left: 25px !important;
+    }
+    .card .img-container img{
+        max-width: 180px !important;
+    }
+
+    .cv-ia{
+        margin-top: 150px !important;
+    }
+
+    .cv-ia .container{
+        width: 320px;
+        margin-bottom: 60px;
+    }
+
+    .cv-ia .titulo{
+        font-size: 1.1rem;
+        text-wrap: nowrap !important;
+        margin:  20px 0;
+        margin-left: 25px;
+    }
+
+    .cv-ia .txt-container{
+        gap: 0.6rem !important;
+        margin-left: 25px;
+    }
+
+    .cv-ia .txt-container p{
+        font-size: 0.6rem;
+    }
+
+    .cv-ia .txt-container .link-btn{
+        padding: 8px !important;
+        font-size: 0.6rem;
+        border-radius: 8px !important;
+    }
+
+    .cv-ia .link-btn .cursor-btn{
+        padding: 3px !important;
+        max-width: 13px;
+    }
+
+    .cv-ia .icon{
+        margin-left: 15px;
+    }
+
+    .cv-ia .img-container{
+        padding: 6px;
+        right: 25px !important;
+        top: 65px;
+        border-radius: 8px !important;
+    }
+
+    .cv-ia .img-container img{
+        max-width: 40px;
+    }
+
+    .cv-ia .img-container .titulo-cv{
+        font-size: 6px;
+    }
+
+    .cv-ia .img-container p{
+        font-size: 3px;
+    }
+}

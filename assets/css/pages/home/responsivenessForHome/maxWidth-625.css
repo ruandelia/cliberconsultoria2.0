@@ -1,0 +1,139 @@
+
+@media(max-width: 625px){
+    html{
+    
+        font-size: 10px;
+    }
+    .cabecalho{
+        gap: 17rem !important;
+    }
+    .menu-tablet a{
+        margin: 10px !important;
+        
+    }
+    .menu-tablet .link{
+        padding: 5px 0px;
+    }
+    .modal-login-cadastrar{
+        transform: translateX(0px);
+    }
+    .section-banner{
+        height: 600px;
+    }
+    .frase-banner{
+        /* background-color: pink; */
+        font-size: 1.2rem !important;
+        text-wrap: nowrap;
+    }
+    .solucoes .titulo-solucoes{
+        margin-top: 100px;
+    }
+    .col{
+        padding: 20px !important;
+       padding-left: 30px !important;
+    }/* 
+    .card .img-container img{
+        max-width: 180px !important;
+    } */
+
+    .cv-ia{
+        margin-top: 180px !important;
+    }
+
+    .cv-ia .container{
+        width: 320px;
+        margin-bottom: 90px;
+    }
+    .cv-ia .container{
+        margin-left: 0px;
+    }
+
+    .cv-ia .titulo{
+        font-size: 1.3rem;
+        text-wrap: nowrap !important;
+        margin:  20px 0;
+    }
+
+    .cv-ia .txt-container{
+        gap: 1.9rem !important;
+    }
+
+    .cv-ia .txt-container p{
+        font-size: 0.8rem;
+    }
+
+    .cv-ia .txt-container .link-btn{
+        padding: 8px !important;
+        font-size: 0.7rem;
+        border-radius: 8px !important;
+    }
+
+    .cv-ia .link-btn .cursor-btn{
+        padding: 3px !important;
+        max-width: 13px;
+    }
+
+    .cv-ia .icon{
+        margin-left: 15px;
+    }
+
+    .cv-ia .img-container{
+        padding: 10px;
+        right: 0 !important;
+        top: 65px;
+        border-radius: 8px !important;
+    }
+    .cv-ia .desativaConteudo{
+        display: none;
+    }
+
+    .cv-ia .img-container img{
+        max-width: 80px;
+    }
+
+    .cv-ia .img-container .titulo-cv{
+        font-size: 0.9rem;
+    }
+
+    .cv-ia .img-container p{
+        font-size: 0.7rem;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 2.5rem !important;
+        height: fit-content;
+    }
+    
+    footer .redes-sociais a img{
+        max-width: 20px !important;
+    }
+    footer .redes-sociais-container p, .btn-e-dev-container p{
+        font-size: 0.8rem;
+    }
+    .logo-justificada-container img{
+        max-width: 100px !important;
+    }
+    .redes-sociais-container p{
+        font-size: 0.8rem !important;
+    }
+    .btn-topo{
+        padding: 6px !important;
+        border-radius: 5px !important;
+    }
+    .btn-topo a{
+        font-size: 0.8rem !important;
+        padding-bottom: 1px !important;
+    }
+    .btn-topo a img{
+        max-width: 10px !important;
+    }
+    .btn-e-dev-container a{
+        font-size: 11px;
+    }
+    .btn-topo{  
+        left: 35px;
+    }
+
+
+}

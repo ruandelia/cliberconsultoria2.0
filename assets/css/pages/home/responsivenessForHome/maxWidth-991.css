@@ -1,0 +1,68 @@
+@media(max-width:991px){
+    html{
+        font-size: 10px;
+    }
+    #nav-desktop{
+        display: none;
+    }
+    #nav-tablet{
+        display: block;
+    }
+    .cabecalho{
+        gap: 45rem !important;
+    }
+    .modal-login-cadastrar{
+        transform: translateX(0px);
+    }
+    .texto-banner .frase-banner{
+        font-size: 1.35rem;
+    }
+    .texto-banner .link-btn{
+        top: 40px;
+        font-size: 8px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .texto-banner .link-btn .cursor-btn{
+        max-width: 13px;
+        padding: 2px;
+    }
+
+
+    .col{
+        /* background-color: #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px !important;
+        padding-left: 35px !important;
+        
+    }
+    .cv-ia{
+        margin-top: 250px !important;
+    }
+
+    .cv-ia .container{
+        margin-left: 50px;
+    }
+
+    .cv-ia .img-container{
+        right: 50px;
+    }
+
+    .cv-ia .titulo{
+        font-size: 2.3rem;
+    }
+
+
+    footer{
+        gap: 7rem !important;
+    }
+    footer .logo-justificada{
+        max-width: 100px !important;
+    }
+    footer .redes-sociais-container p, .btn-e-dev-container p{
+        font-size: 0.8rem;
+    }
+
+}

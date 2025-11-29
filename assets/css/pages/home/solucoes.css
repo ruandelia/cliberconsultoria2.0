@@ -1,0 +1,162 @@
+.solucoes {
+    position: relative;
+    background-color: var(--cor-vermelho);
+}
+
+.solucoes .fundo-solucoes {
+    width: 100%;
+    position: absolute;
+    top: -60px;
+    /* Gradiente que você já definiu */
+    background: #320000;
+    background: linear-gradient(122deg, rgba(50, 0, 0, 1) 15%, rgba(55, 1, 1, 1) 25%, rgba(115, 0, 0, 1) 65%, rgba(75, 13, 13, 1) 100%);
+
+    background-size: cover;
+    background-position: center;
+    /* padding: 50px; */
+
+    /* CURVA NA PARTE DE CIMA (Como você já tinha) */
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+
+    /* 🌟 NOVO: CURVA NA PARTE DE BAIXO (O "U" invertido) 🌟 */
+    /* Isso fará com que a parte de baixo da div seja arredondada, criando o arco. */
+    border-bottom-left-radius: 60px;
+    /* Use o mesmo valor para simetria */
+    border-bottom-right-radius: 60px;
+    /* Use o mesmo valor para simetria */
+
+    /* É importante que este elemento tenha uma altura definida ou que seu conteúdo o preencha */
+    /* min-height: 700px; */
+    /* Adicione uma altura mínima, se necessário, para ver o efeito */
+    width: 100%;
+    color: var(--cor-bege);
+    font-family: var(--fonte-comfortaa);
+/* 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.solucoes .titulo-solucoes {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 170px;
+    margin-bottom: 70px;
+}
+
+.carrosel-container {
+    margin-bottom: 150px;
+    display: block;
+}
+
+/* Seleciona o ícone de seta para a esquerda */
+.carousel-control-prev-icon,
+/* Seleciona o ícone de seta para a direita */
+.carousel-control-next-icon {
+    /* Define a largura (exemplo: 50 pixels) */
+    width: 50px;
+    /* Define a altura (exemplo: 50 pixels) */
+    height: 50px;
+}
+
+#carrosel-tablet .col-6{
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.card,
+.card .img-container img,
+.card .text-container p {
+    border: 3px solid #7d0707;
+}
+
+.carrosel-container .card {
+    max-height: 580px;
+    background-color: #500202;
+    color: #ffe2e2;
+    box-shadow: 0 5px 20px rgb(50, 0, 0);
+    max-width: 330px;
+    text-align: left;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 40px;
+
+}
+
+.card .img-container img {
+    max-width: 300px;
+}
+
+.card .text-container {
+    padding-left: 5px;
+    width: fit-content;
+}
+
+.card .img-container {
+    width: fit-content;
+}
+
+.card .img-container img {
+    border-radius: 10px;
+}
+
+.card .titulo-card {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 25px 0;
+    margin-top: 30px;
+    padding-left: 5px;
+}
+
+.card .titulo-card-menor {
+    font-size: 1.1rem;
+}
+
+#titulo-card-tecnologia {
+    font-size: 1.2rem;
+}
+
+.card .p-container {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-bottom: 30px;
+}
+
+.card .p-container p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    width: fit-content;
+    padding: 5px 10px;
+    padding-top: 7px;
+    /* border: 2px solid var(--cor-azul-dark); */
+    border-radius: 10px;
+}
+
+.card .text-container a {
+    width: fit-content;
+}
+
+.card .link-btn {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #6b9bb81b;
+}
+
+.card .link-btn .cursor-btn {
+
+    max-width: 20px;
+    padding: 4px;
+    top: 8px;
+    right: 8px;
+}

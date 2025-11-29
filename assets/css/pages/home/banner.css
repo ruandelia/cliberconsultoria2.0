@@ -1,0 +1,31 @@
+.section-banner {
+    background-image: url('../../../img/banner.jpg');
+    color: var(--cor-bege);
+    font-family: var(--fonte-comfortaa);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    position: relative;
+}
+
+.texto-banner {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-banner .frase-banner {
+    font-size: 2.2rem;
+}
+
+.texto-banner .link-btn {
+    position: absolute;
+    right: 0;
+    top: 110px;
+    font-weight: 600;
+    font-family: var(--fonte-montserrat);
+}

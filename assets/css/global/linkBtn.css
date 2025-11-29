@@ -1,0 +1,43 @@
+
+.link-btn {
+    position: relative;
+    background-color: var(--cor-azul-claro-30);
+    border: 2px solid var(--cor-azul-claro);
+    padding: 20px;
+    border-radius: 20px;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.link-btn .cursor-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    max-width: 25px;
+    padding: 6px;
+    background-color: var(--cor-azul-claro);
+    border-radius: 100%;
+    transition: 0.5s;
+
+}
+
+.link-btn:active {
+    scale: 0.95;
+}
+
+.link-btn:hover {
+    box-shadow: 1px 1px 2px #375262;
+    background-color: var(--cor-azul-claro-hover);
+    border: 2px solid var(--cor-azul-claro);
+    padding-left: 21px;
+    padding-right: 21px;
+
+}
+
+.link-btn .icon {
+    margin-left: 25px;
+}
+
+.link-btn:hover .cursor-btn {
+    rotate: 80deg;
+}

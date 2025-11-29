@@ -1,0 +1,157 @@
+.modal-login-cadastrar {
+    /* 1. POSICIONAMENTO FIXO E NO CANTO */
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    left: unset;
+    border-bottom-left-radius: 15px;
+
+    /* Defina o tamanho do modal (Ex: 300px de largura) */
+    width: 300px;
+
+    /* 2. ESTADO INICIAL ESCONDIDO E TRANSIÇÃO */
+    display: block;
+    /* Mude de 'none' para 'block' ou 'flex' para permitir o Transform */
+    visibility: hidden;
+    /* Esconde o modal, mas permite a animação */
+    opacity: 80%;
+    /* Começa transparente */
+
+    /* Empurra o modal para fora da tela (100% da sua própria largura) */
+    transform: translateX(100%);
+
+    /* Define o tempo da animação (0.5 segundos em todos os atributos) */
+    transition: all 0.2s ease-out;
+
+    /* Outros estilos... */
+    background: var(--cor-preto-50);
+    background: linear-gradient(180deg, rgba(0, 9, 18, 1) 0%, rgba(0, 16, 33, 1) 50%, rgba(0, 9, 18, 1) 100%);
+    border-left: 2px solid var(--cor-azul-dark);
+    border-bottom: 2px solid var(--cor-azul-dark);
+    border-top: none;
+    border-right: none;
+    z-index: 1000;
+    padding: 30px 0;
+}
+
+/* No seu style.css, crie a classe de exibição */
+.modal-login-cadastrar.displayBlock {
+    visibility: visible;
+    /* Torna ele visível */
+    opacity: 1;
+    /* Torna ele opaco */
+
+    /* Traz o modal de volta para sua posição original (0px de deslocamento) */
+    transform: translateX(0);
+}
+
+/* 
+.modal-login-cadastrar .form-container{
+    display: flex;
+    justify-content: center;
+} */
+
+.modal-login-cadastrar img {
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.modal-login-cadastrar form h2 {
+    color: var(--cor-bege);
+    font-family: var(--fonte-comfortaa);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.modal-login-cadastrar form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-login-cadastrar form label {
+    font-family: var(--fonte-comfortaa);
+    color: var(--cor-bege);
+    font-size: 1.6rem;
+}
+
+.modal-login-cadastrar .alinha-inputs {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 90%;
+    /* background-color: #007bff; */
+}
+
+.alinha-inputs input {
+    width: 100%;
+    background-color: var(--cor-azul-escuro);
+    border: 2px solid var(--cor-azul-claro);
+    padding: 0.2rem;
+    border-radius: 5px;
+    border-bottom-right-radius: 15px;
+    color: var(--cor-bege);
+    font-size: 1.1rem;
+}
+
+.alinha-inputs input:focus {
+    background-color: var(--cor-azul-medio);
+}
+
+.alinha-inputs input:focus,
+input::placeholder {
+    outline: none;
+    color: var(--cor-bege);
+    font-family: var(--fonte-montserrat);
+}
+
+.label-input {
+    margin: 10px 0;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.label-input p {
+    color: var(--cor-laranja);
+    font-family: var(--fonte-montserrat);
+    font-size: 0.9rem;
+}
+
+.modal-login-cadastrar .btn {
+    width: 50%;
+    padding: 0.7rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: var(--fonte-comfortaa);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-login-cadastrar .btn:hover {
+    width: 55%;
+}
+
+.modal-login-cadastrar .btn-login {
+    background-color: var(--cor-azul-claro-30);
+    color: var(--cor-bege);
+    border: 2px solid var(--cor-azul-claro);
+}
+
+.modal-login-cadastrar .btn-cadastrar {
+    /* background-color: ; */
+    background-color: var(--cor-fundo-cinza);
+    color: var(--cor-bege);
+    border: 2px solid var(--cor-preto-50);
+}

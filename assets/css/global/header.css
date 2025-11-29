@@ -1,0 +1,116 @@
+
+#nav-tablet{
+    display: none;
+}
+
+#nav-tablet img{
+        max-width: 40px;
+}
+
+.cabecalho {
+    background-color: var(--cor-azul-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    height: 90px;
+    border-bottom: 2px solid var(--cor-azul-claro-30);
+    z-index: 1000;
+}
+
+.cabecalho .img-logo {
+    width: 130px;
+}
+
+.cabecalho #nav-desktop ul {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    font-size: 1.2rem;
+    margin: 0 !important;
+}
+
+.cabecalho .link {
+    /* 1. Torna o link um contêiner para o pseudo-elemento */
+    position: relative;
+    padding-bottom: 8px;
+    /* Aumentei o padding para dar espaço à borda */
+}
+
+.cabecalho .link::after {
+    content: '';
+    /* Essencial para pseudo-elementos */
+    position: absolute;
+    bottom: 0;
+    /* Coloca a "borda" na parte inferior do link */
+
+    /* Ponto de partida: O meio */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Garante o alinhamento central */
+
+    /* Estado inicial: A borda não existe (width: 0) */
+    width: 0;
+    height: 2px;
+    /* Altura da sua borda */
+    background-color: var(--cor-azul-claro);
+    /* A cor da borda final */
+
+    /* Transição para a animação de largura */
+    transition: width 0.3s ease-out;
+    /* Ajuste o tempo (0.3s) e o tipo de transição */
+}
+
+/* 4. Estilo no Hover (o estado final animado) */
+.cabecalho .link:hover::after {
+    width: 100%;
+    /* A borda se expande para a largura total */
+    border-radius: 25%;
+}
+
+.cabecalho #nav-desktop ul li {
+    color: var(--cor-bege);
+    font-family: var(--fonte-cinzel);
+    font-weight: 200 !important;
+}
+
+.cabecalho #nav-desktop ul li a {
+    color: var(--cor-bege);
+}
+
+.cabecalho #nav-desktop ul .login-cadastrar {
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.cabecalho #nav-desktop ul .login-cadastrar span {
+    border-right: 2.5px solid var(--cor-bege);
+    border-radius: 30px;
+}
+
+.cabecalho #nav-desktop ul .login-cadastrar .link-login {
+    background: var(--cor-azul-claro-30);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--cor-azul-claro);
+    font-size: 1.1rem;
+}
+
+.cabecalho .area-exclusiva {
+    position: relative;
+}
+
+.cabecalho .area-exclusiva p:first-child {
+    font-size: 1rem;
+}
+
+.cabecalho .area-exclusiva p:last-child {
+    font-size: 0.6rem;
+}
+
+.cabecalho .area-exclusiva a p {
+    color: var(--cor-bege);
+    font-family: var(--fonte-cinzel);
+    font-size: 0.8rem;
+}
