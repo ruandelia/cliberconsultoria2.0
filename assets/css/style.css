@@ -13,19 +13,45 @@
 @import url(pages/home/responsivenessForHome/maxWidth-625.css);
 @import url(pages/home/responsivenessForHome/maxWidth-400.css);
 
-/* =========================================  SECTION SOLUCOES ========================================= */
-
-
-
-
-
-
-
-
-
-/* MEDIA QUERIE PARA OS CARROSEIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* #carrosel-tablet{
-    display: block;
+.quemSomos-section{
+    position: relative;
+    background: #00010B;
+background: linear-gradient(180deg,rgba(0, 1, 11, 1) 0%, rgba(0, 13, 27, 1) 75%, rgba(0, 0, 0, 1) 100%);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    color: var(--cor-bege);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-family: var(--fonte-montserrat);
+    
 }
- */
 
+.containers{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.quemSomos-div-container{
+    background-color: var(--cor-vermelho-30);
+    border: 2px solid var(--cor-vermelho);
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+.quemSomos-div-container .titulo{
+    font-size: 2rem;
+}
+
+.quemSomos-div-container p{
+    font-size: 0.75rem;
+}
+
+.missao-container .p-missao-1{
+    font-size: 1rem;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliber consultoria - Quem somos</title>
+    <link rel="icon" href="assets/img/icone_Do_Navegador.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <div class="container-logo">
+            <a href="home.html">
+                <img class="img-logo" src="assets/img/logo.png" alt="Logo-cliber consultoria">
+            </a>
+        </div>
+        <nav id="nav-desktop">
+            <ul>
+                <li><a href="" class="link link-vaga">Vagas</a></li>
+                <li><a href="#solucoes" class="link link-servicos">Serviços</a></li>
+                <li><a href="" class="link link-quem-somos">Quem somos</a></li>
+                <li><a href="" class="link link-contato">Contato</a></li>
+                <div class=" login-cadastrar">
+                    <li><a href="" class="link link-cadastrar">Cadastrar</a></li>
+                    <span></span>
+                    <li><a href="" class="link-login">Login</a></li>
+                </div>
+                <div class="displayNone area-exclusiva">
+                    <a href="">
+                        <p>Olá, usuário</p>
+                        <p>Acesse sua área exclusiva</p>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+        <nav id="nav-tablet">
+            <img class="bntAbrir " src="assets/img/icons/Menu.png" alt="">
+            <img class="btnFechar displayNone" src="assets/img/icons/Close.png" alt="">
+        </nav>
+    </header>
+    <main>
+        <section class="quemSomos-section">
+            <dialog class="menu-tablet displayNone">
+                <a href="" class="link">Vagas</a>
+                <a href="" class="link">Serviços</a>
+                <a href="" class="link">Quem somos</a>
+                <a href="" class="link">Contato</a>
+                <div class="login-cadastrar-tablet displayNone">
+                    <a href="" class="link-login">Login</a>
+                    <span></span>
+                    <a href="" class="link-cadastrar">Cadastrar</a>
+                </div>
+                <div class="area-exclusiva ">
+                    <a href="">
+                        <p>Olá, usuário</p>
+                        <p>Acesse sua área exclusiva</p>
+                    </a>
+                </div>
+            </dialog>
+            <dialog class="modal-login-cadastrar" id="modal-login">
+                <div class="form-container">
+                    <form action="">
+                        <img src="assets/img/icons/Close.png" alt="close-modal" class="close-modal">
+                        <h2>Login</h2>
+                        <!-- div destinada a alinhar e centralizar elementos -->
+                        <div class="alinha-inputs">
+                            <div class="label-input">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" autocomplete="off">
+                            </div>
+                            <div class="label-input">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" id="senha">
+                                <p class="senhaIncorreta">Usuário ou senha incorretas.</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-login">Entrar</button>
+                        <button type="button" class="btn btn-cadastrar">Cadastrar</button>
+                    </form>
+                </div>
+            </dialog>
+            <!-- FIM DOS DIALOGS -->
+            <div class="containers">
+                <div class="historia-container quemSomos-div-container">
+                    <h2 class="historia-titulo titulo">
+                        Quem somos
+                    </h2>
+                    <p class="historia-p">
+                        Com três anos de atuação no mercado, a Cliber Consultoria oferece soluções estratégicas em
+                        Recursos Humanos, unindo tecnologia e abordagem humanizada para gerar resultados consistentes e
+                        sustentáveis.
+                    </p>
+                </div>
+                <div class="visao-container quemSomos-div-container">
+                    <h2 class="visao-titulo titulo">Visão</h2>
+                    <p>Ser referência em confiança e apoio no processo de transformação quando se fala em RH, garantindo
+                        que nossos clientes transformem dados em resultados, diversidade em inovação e gestão de pessoas
+                        em legados que transcendem gerações.</p>
+                </div>
+
+                <div class="missao-container quemSomos-div-container">
+                    <h3 class="titulo-missao titulo">Missão</h3>
+                    <p class="p-missao-1">Nossa missão é clara e genuína:</p>
+                    <p class="p-missao-2">Oferecer consultoria especializada em RH que vai além das expectativas, unindo
+                        tecnologia, dados e humanização para criar soluções sob medida. Nosso propósito é transformar
+                        desafios em resultados tangíveis, fortalecendo organizações através de pessoas mais engajadas,
+                        processos inovadores e um impacto social positivo - porque acreditamos que um RH estratégico é a
+                        chave para negócios sustentáveis e sociedades mais justas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/abrirFecharMenu.js"></script>
+    <script src="assets/js/abrirFecharModal.js"></script>
+</body>
+
+</html>

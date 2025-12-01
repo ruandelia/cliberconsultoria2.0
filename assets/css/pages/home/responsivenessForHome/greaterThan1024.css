@@ -60,11 +60,23 @@
     }
 
     .texto-banner .frase-banner {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .texto-banner .link-btn {
-        top: 80px;
+        top: 60px;
+        padding: 13px;
+        border-radius: 15px;
+    }
+
+    .texto-banner .link-btn .cursor-btn{
+        right: 6px;
+        top: 6px;
+    }
+
+    .texto-banner .link-btn .icon{
+        padding: 3px !important;
+        max-width: 5px !important;
     }
 
     .card {
