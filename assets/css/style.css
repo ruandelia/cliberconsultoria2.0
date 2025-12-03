@@ -104,3 +104,11 @@
         width: 80%;
     }
 }
+@media(max-width:426px){
+    .containers .quemSomos-div-container{
+        width: 85%;
+    }
+    .containers .quemSomos-div-container p{
+    font-size: 0.8rem;
+    }
+}
