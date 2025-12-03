@@ -48,77 +48,176 @@
         </nav>
     </header>
     <main>
-        <section id="quemSomos-section">
-            <dialog class="menu-tablet displayNone">
-                <a href="" class="link">Vagas</a>
-                <a href="" class="link">Serviços</a>
-                <a href="" class="link">Quem somos</a>
-                <a href="" class="link">Contato</a>
-                <div class="login-cadastrar-tablet displayNone">
-                    <a href="" class="link-login">Login</a>
-                    <span></span>
-                    <a href="" class="link-cadastrar">Cadastrar</a>
-                </div>
-                <div class="area-exclusiva displayNone">
-                    <a href="">
-                        <p>Olá, usuário</p>
-                        <p>Acesse sua área exclusiva</p>
-                    </a>
-                </div>
-            </dialog>
-            <dialog class="modal-login-cadastrar" id="modal-login">
-                <div class="form-container">
-                    <form action="">
-                        <img src="assets/img/icons/Close.png" alt="close-modal" class="close-modal">
-                        <h2>Login</h2>
-                        <!-- div destinada a alinhar e centralizar elementos -->
-                        <div class="alinha-inputs">
-                            <div class="label-input">
-                                <label for="email">Email</label>
-                                <input type="text" id="email" autocomplete="off">
+        <div id="fundo-quemSomos">
+            <section id="quemSomos-section">
+                <dialog class="menu-tablet displayNone">
+                    <a href="" class="link">Vagas</a>
+                    <a href="" class="link">Serviços</a>
+                    <a href="" class="link">Quem somos</a>
+                    <a href="" class="link">Contato</a>
+                    <div class="login-cadastrar-tablet displayNone">
+                        <a href="" class="link-login">Login</a>
+                        <span></span>
+                        <a href="" class="link-cadastrar">Cadastrar</a>
+                    </div>
+                    <div class="area-exclusiva displayNone">
+                        <a href="">
+                            <p>Olá, usuário</p>
+                            <p>Acesse sua área exclusiva</p>
+                        </a>
+                    </div>
+                </dialog>
+                <dialog class="modal-login-cadastrar" id="modal-login">
+                    <div class="form-container">
+                        <form action="">
+                            <img src="assets/img/icons/Close.png" alt="close-modal" class="close-modal">
+                            <h2>Login</h2>
+                            <!-- div destinada a alinhar e centralizar elementos -->
+                            <div class="alinha-inputs">
+                                <div class="label-input">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" autocomplete="off">
+                                </div>
+                                <div class="label-input">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" name="senha" id="senha">
+                                    <p class="senhaIncorreta">Usuário ou senha incorretas.</p>
+                                </div>
                             </div>
-                            <div class="label-input">
-                                <label for="senha">Senha</label>
-                                <input type="password" name="senha" id="senha">
-                                <p class="senhaIncorreta">Usuário ou senha incorretas.</p>
+                            <button type="submit" class="btn btn-login">Entrar</button>
+                            <button type="button" class="btn btn-cadastrar">Cadastrar</button>
+                        </form>
+                    </div>
+                </dialog>
+                <!-- FIM DOS DIALOGS -->
+                <h1 class="titulo-section elemento">Quem somos</h1>
+                <div class="containers">
+                    <div class="historia-container quemSomos-div-container elemento">
+                        <h2 class="historia-titulo titulo">
+                            História
+                        </h2>
+                        <p class="historia-p">
+                            Com três anos de atuação no mercado, a Cliber Consultoria oferece soluções estratégicas em
+                            Recursos Humanos, unindo tecnologia e abordagem humanizada para gerar resultados
+                            consistentes e
+                            sustentáveis.
+                        </p>
+                    </div>
+                    <div class="visao-container quemSomos-div-container elemento">
+                        <h2 class="visao-titulo titulo">Visão</h2>
+                        <p>Ser referência em confiança e apoio no processo de transformação quando se fala em RH,
+                            garantindo
+                            que nossos clientes transformem dados em resultados, diversidade em inovação e gestão de
+                            pessoas
+                            em legados que transcendem gerações.</p>
+                    </div>
+
+                    <div class="missao-container quemSomos-div-container elemento">
+                        <h3 class="titulo-missao titulo">Missão</h3>
+                        <p class="p-missao-1">Nossa missão é clara e genuína:</p>
+                        <p class="p-missao-2">Oferecer consultoria especializada em RH que vai além das expectativas,
+                            unindo
+                            tecnologia, dados e humanização para criar soluções sob medida. Nosso propósito é
+                            transformar
+                            desafios em resultados tangíveis, fortalecendo organizações através de pessoas mais
+                            engajadas,
+                            processos inovadores e um impacto social positivo - porque acreditamos que um RH estratégico
+                            é a
+                            chave para negócios sustentáveis e sociedades mais justas.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="valores">
+                <h1 class="titulo-section">
+                    Valores
+                </h1>
+                <div class="accordion-container">
+                    <div class="container">
+                        <div class="accordion ac-1" id="ac-1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Inovação com propósito
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#ac-1">
+                                    <div class="accordion-body">
+                                        Não seguimos achismos ou tendências passageiras. Criamos soluções criativas e
+                                        estratégicas, baseadas em tecnologia e dados, para transformar desafios em
+                                        conquistas reais, sempre com foco em resultados consistentes e duradouros.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion ac-2" id="ac-2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne2" aria-expanded="false"
+                                        aria-controls="collapseOne2">
+                                        Impacto e Responsabilidade Social como Prioridade
+                                    </button>
+                                </h2>
+                                <div id="collapseOne2" class="accordion-collapse collapse"
+                                    data-bs-parent="#ac-2">
+                                    <div class="accordion-body">
+                                        Acreditamos que empresas só prosperam verdadeiramente quando contribuem para uma
+                                        sociedade mais justa. Ajudamos as organizações a promover diversidade, inclusão
+                                        práticas ESG
+                                        não por obrigação, mas por convicção.
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-login">Entrar</button>
-                        <button type="button" class="btn btn-cadastrar">Cadastrar</button>
-                    </form>
-                </div>
-            </dialog>
-            <!-- FIM DOS DIALOGS -->
-            <h1 class="titulo-quem-somos elemento">Quem somos</h1>
-            <div class="containers">
-                <div class="historia-container quemSomos-div-container elemento">
-                    <h2 class="historia-titulo titulo">
-                        História
-                    </h2>
-                    <p class="historia-p">
-                        Com três anos de atuação no mercado, a Cliber Consultoria oferece soluções estratégicas em
-                        Recursos Humanos, unindo tecnologia e abordagem humanizada para gerar resultados consistentes e
-                        sustentáveis.
-                    </p>
-                </div>
-                <div class="visao-container quemSomos-div-container elemento">
-                    <h2 class="visao-titulo titulo">Visão</h2>
-                    <p>Ser referência em confiança e apoio no processo de transformação quando se fala em RH, garantindo
-                        que nossos clientes transformem dados em resultados, diversidade em inovação e gestão de pessoas
-                        em legados que transcendem gerações.</p>
-                </div>
+                        <div class="accordion ac-3" id="ac-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne3" aria-expanded="false"
+                                        aria-controls="collapseOne2">
+                                        Parceria Genuína
+                                    </button>
+                                </h2>
+                                <div id="collapseOne3" class="accordion-collapse collapse"
+                                    data-bs-parent="#ac-3">
+                                    <div class="accordion-body">
+                                        Unimos tecnologia e repertório de capital humano para colocar pessoas no centro.
+                                        Valorizamos
+                                        a expertise técnica, mas nunca às custas da ética, empatia e respeito. Não somos
+                                        fornecedores,
+                                        somos aliados. Escutamos profundamente, agimos com transparência e assumimos a
+                                        responsabilidade de entregar impacto que transforma.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion ac-4" id="ac-4">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne4" aria-expanded="false"
+                                        aria-controls="collapseOne4">
+                                        Crescimento sustentavél e Excelencia Humana
+                                    </button>
+                                </h2>
+                                <div id="collapseOne4" class="accordion-collapse collapse"
+                                    data-bs-parent="#ac-4">
+                                    <div class="accordion-body">
+                                        Buscamos resultados sem atalhos:
+                                        lucratividade com responsabilidade, escala com qualidade,
+                                        e expansão com legado positivo.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="missao-container quemSomos-div-container elemento">
-                    <h3 class="titulo-missao titulo">Missão</h3>
-                    <p class="p-missao-1">Nossa missão é clara e genuína:</p>
-                    <p class="p-missao-2">Oferecer consultoria especializada em RH que vai além das expectativas, unindo
-                        tecnologia, dados e humanização para criar soluções sob medida. Nosso propósito é transformar
-                        desafios em resultados tangíveis, fortalecendo organizações através de pessoas mais engajadas,
-                        processos inovadores e um impacto social positivo - porque acreditamos que um RH estratégico é a
-                        chave para negócios sustentáveis e sociedades mais justas.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="logo-justificada-container">
