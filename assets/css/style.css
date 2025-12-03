@@ -13,45 +13,94 @@
 @import url(pages/home/responsivenessForHome/maxWidth-625.css);
 @import url(pages/home/responsivenessForHome/maxWidth-400.css);
 
-.quemSomos-section{
-    position: relative;
+@keyframes aparecer {
+  0% {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Começa 20 pixels abaixo */
+  }
+  100% {
+    opacity: 1; /* Termina totalmente visível */
+    transform: translateY(0); /* Termina na posição normal */
+  }
+}
+
+.elemento {
+  /* 1. Define a animação a ser usada, duração e função de tempo */
+  animation-name: aparecer;
+  animation-duration: 0.5s; /* O elemento levará 0.5 segundos para aparecer */
+  animation-timing-function: ease-out; /* Começa rápido e desacelera */
+  
+  /* 2. MUITO IMPORTANTE: Garante que os estilos do 100% (totalmente visível)
+        sejam mantidos APÓS o término da animação. */
+  animation-fill-mode: forwards; 
+
+  /* 3. Define o estado inicial: o elemento DEVE estar invisível (opacidade 0)
+        ANTES da animação começar. Se você não fizer isso, ele aparece
+        imediatamente e a animação começa do nada. */
+  opacity: 0;
+}
+
+.titulo-quem-somos.elemento { 
+  animation-delay: 0.2s;
+}
+
+.containers > .elemento:nth-child(1) {
+  animation-delay: 0.7s; /* Depois do H1 */
+}
+
+.containers > .elemento:nth-child(2) {
+  animation-delay: 1.2s; /* Depois do 1º elemento interno */
+}
+
+.containers > .elemento:nth-child(3) {
+  animation-delay: 1.7s; /* Depois do 2º elemento interno */
+}
+
+#quemSomos-section {
     background: #00010B;
-background: linear-gradient(180deg,rgba(0, 1, 11, 1) 0%, rgba(0, 13, 27, 1) 75%, rgba(0, 0, 0, 1) 100%);
-    background-size: cover;
-    background-position: center;
-    min-height: 600px;
+    background: linear-gradient(180deg, rgba(0, 1, 11, 1) 0%, rgba(0, 13, 27, 1) 75%, rgba(0, 0, 0, 1) 100%);
     color: var(--cor-bege);
-    padding-left: 4rem;
-    padding-right: 4rem;
     font-family: var(--fonte-montserrat);
-    
+    position: relative;
+}
+
+#quemSomos-section .titulo-quem-somos {
+    text-align: center;
+    padding: 80px 0;
+    font-weight: 600;
+    font-family: var(--fonte-comfortaa);
 }
 
 .containers{
-    padding-top: 4rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
-    font-weight: 500;
-    font-style: italic;
 }
 
-.quemSomos-div-container{
+.containers .quemSomos-div-container{
     background-color: var(--cor-vermelho-30);
-    border: 2px solid var(--cor-vermelho);
-    padding: 15px;
+    border: 3px solid var(--cor-vermelho);
+    width: 60%;
     border-radius: 10px;
-    
+    padding: 15px;
+    font-style: italic;
+    box-shadow: 1px 1px 6px var(--cor-vermelho);
 }
 
 .quemSomos-div-container .titulo{
-    font-size: 2rem;
+    font-weight: 500;
 }
 
 .quemSomos-div-container p{
-    font-size: 0.75rem;
+    font-weight: 500;
 }
 
-.missao-container .p-missao-1{
-    font-size: 1rem;
+@media(max-width:769px){
+    #quemSomos-section .titulo-quem-somos{
+        padding: 50px 0;
+    }
+    .containers .quemSomos-div-container{
+        width: 80%;
+    }
 }
