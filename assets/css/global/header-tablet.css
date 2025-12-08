@@ -1,12 +1,23 @@
-.menu-tablet{
-    z-index: 999;
-    position: absolute;
+.menu-tablet {
+    /* Corrigido: Usar 0.8 para 80% de opacidade */
+    opacity: 0.8; 
+    /* Esta linha é o PONTO DE PARTIDA, fora da tela */
+    transform: translateX(100%); 
+    /* Esta linha é quem faz a MÁGICA da animação. Está correta. */
+    transition: all 0.2s ease-in-out; /* Adicionei o 'ease-in-out' para um movimento mais suave */
+
+    visibility: hidden;
+
+    /* Garante que o menu esteja no topo de outros elementos */
+    z-index: 999; 
+    /* Permite posicionamento em relação ao elemento pai ou à viewport */
+    position: absolute; 
+    
+    /* Demais estilos - Mantidos como estavam */
     padding: 20px;
     right: 0;
     left: unset;
     margin: 0;
-    transition: all 0.5s ease-in;
-    display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: var(--cor-azul-escuro);
@@ -16,8 +27,28 @@
     border-bottom-left-radius: 10px;
     border-left: 2px solid var(--cor-azul-dark);
     border-bottom: 2px solid var(--cor-azul-dark);
-    transition: 0.5s ease-in-out;
+    
+    /* Importante para menus que começam escondidos: 
+       Isso fará com que o menu não ocupe espaço nem possa ser clicado enquanto estiver 'escondido' */
+    display: flex !important; 
 }
+/* ------------------------------------------------------------- */
+.menu-tablet.displayBlock {
+    /* CORREÇÃO CHAVE: Mudar o display de 'none' para 'flex' */
+    display: flex !important; /* O !important não é necessário, a não ser que haja um conflito. */
+    
+    /* Corrigido: Opacidade total quando o menu está visível */
+    opacity: 1; 
+    visibility: visible;
+    /* A posição FINAL do menu (na tela) */
+    transform: translateX(0);
+    
+    /* Esta propriedade é redundante/desnecessária se você está usando display: none / display: flex
+       A visibilidade (visibility) geralmente é usada quando se quer esconder algo sem remover o espaço que ele ocupa,
+       o que não é o caso aqui, já que queremos remover ele completamente quando está fechado. */
+    /* visibility: visible; */ 
+}
+
 
 .menu-tablet a{
     padding: 10px;

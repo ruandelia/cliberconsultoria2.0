@@ -32,27 +32,30 @@
 
     .cv-ia{
         margin-top: 150px !important;
+        justify-content: flex-start !important;
     }
 
     .cv-ia .container{
         width: 320px;
         margin-bottom: 60px;
+        margin-left: 0px;
     }
 
     .cv-ia .titulo{
         font-size: 1.1rem;
         text-wrap: nowrap !important;
         margin:  20px 0;
-        margin-left: 25px;
+        margin-left: 20px;
     }
 
     .cv-ia .txt-container{
         gap: 0.6rem !important;
-        margin-left: 25px;
+        margin-left: 20px;
     }
 
     .cv-ia .txt-container p{
         font-size: 0.6rem;
+        width: 90%;
     }
 
     .cv-ia .txt-container .link-btn{
