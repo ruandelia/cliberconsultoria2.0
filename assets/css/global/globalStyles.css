@@ -61,10 +61,14 @@ html::-webkit-scrollbar-thumb:hover {
 
 }
 
-body {
-    /* background-color: #320000; */
-    /* position: relative; */
-    overflow-x: hidden;
+html, body {
+    /* Define o ponto de partida do documento */
+    width: 100%; 
+    /* Remove preenchimentos e margens que alguns navegadores adicionam por padrão */
+    margin: 0; 
+    padding: 0;
+    /* O mais importante: Esconde qualquer coisa que ultrapasse a largura do viewport (a tela) */
+    overflow-x: hidden; 
 }
 
 ::selection {
