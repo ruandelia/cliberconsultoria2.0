@@ -14,49 +14,59 @@
 @import url(pages/home/responsivenessForHome/maxWidth-400.css);
 
 @keyframes aparecer {
-  0% {
-    opacity: 0; /* Começa invisível */
-    transform: translateY(20px); /* Começa 20 pixels abaixo */
-  }
-  100% {
-    opacity: 1; /* Termina totalmente visível */
-    transform: translateY(0); /* Termina na posição normal */
-  }
+    0% {
+        opacity: 0;
+        /* Começa invisível */
+        transform: translateY(20px);
+        /* Começa 20 pixels abaixo */
+    }
+
+    100% {
+        opacity: 1;
+        /* Termina totalmente visível */
+        transform: translateY(0);
+        /* Termina na posição normal */
+    }
 }
 
 .elemento {
-  /* 1. Define a animação a ser usada, duração e função de tempo */
-  animation-name: aparecer;
-  animation-duration: 0.5s; /* O elemento levará 0.5 segundos para aparecer */
-  animation-timing-function: ease-out; /* Começa rápido e desacelera */
-  
-  /* 2. MUITO IMPORTANTE: Garante que os estilos do 100% (totalmente visível)
-        sejam mantidos APÓS o término da animação. */
-  animation-fill-mode: forwards; 
+    /* 1. Define a animação a ser usada, duração e função de tempo */
+    animation-name: aparecer;
+    animation-duration: 0.5s;
+    /* O elemento levará 0.5 segundos para aparecer */
+    animation-timing-function: ease-out;
+    /* Começa rápido e desacelera */
 
-  /* 3. Define o estado inicial: o elemento DEVE estar invisível (opacidade 0)
+    /* 2. MUITO IMPORTANTE: Garante que os estilos do 100% (totalmente visível)
+        sejam mantidos APÓS o término da animação. */
+    animation-fill-mode: forwards;
+
+    /* 3. Define o estado inicial: o elemento DEVE estar invisível (opacidade 0)
         ANTES da animação começar. Se você não fizer isso, ele aparece
         imediatamente e a animação começa do nada. */
-  opacity: 0;
+    opacity: 0;
 }
 
-.titulo-section.elemento { 
-  animation-delay: 0.2s;
+.titulo-section.elemento {
+    animation-delay: 0.2s;
 }
 
-.containers > .elemento:nth-child(1) {
-  animation-delay: 0.7s; /* Depois do H1 */
+.containers>.elemento:nth-child(1) {
+    animation-delay: 0.7s;
+    /* Depois do H1 */
 }
 
-.containers > .elemento:nth-child(2) {
-  animation-delay: 1.2s; /* Depois do 1º elemento interno */
+.containers>.elemento:nth-child(2) {
+    animation-delay: 1.2s;
+    /* Depois do 1º elemento interno */
 }
 
-.containers > .elemento:nth-child(3) {
-  animation-delay: 1.7s; /* Depois do 2º elemento interno */
+.containers>.elemento:nth-child(3) {
+    animation-delay: 1.7s;
+    /* Depois do 2º elemento interno */
 }
 
-#fundo-quemSomos{
+#fundo-quemSomos {
     background: #00010B;
     background: linear-gradient(180deg, rgba(0, 1, 11, 1) 0%, rgba(0, 13, 27, 1) 75%, rgba(0, 0, 0, 1) 100%);
     color: var(--cor-bege);
@@ -74,73 +84,61 @@
     font-family: var(--fonte-comfortaa);
 }
 
-.containers{
+.containers {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
-.containers .quemSomos-div-container{
+.containers .quemSomos-div-container {
     background-color: var(--cor-vermelho-30);
     border: 3px solid var(--cor-vermelho);
     width: 60%;
     border-radius: 10px;
     padding: 15px;
     font-style: italic;
-    box-shadow: 1px 1px 6px var(--cor-vermelho);
+    /* box-shadow: 1px 1px 12px var(--cor-vermelho); */
 }
 
-.quemSomos-div-container .titulo{
+.quemSomos-div-container .titulo {
     font-weight: 500;
 }
 
-.quemSomos-div-container p{
+.quemSomos-div-container p {
     font-weight: 500;
 }
 
-.accordion-container{
+.accordion-container {
     /* background-color: lightcoral; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 80px;
 }
 
-.accordion-container .container{
+.accordion-container .container {
     width: 60%;
     /* background-color: lightgreen; */
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-/* 
-.accordion-container .ac-1{
-    width: 35%;
+
+#ac-1,
+#ac-2,
+#ac-3,
+#ac-4 {
+    width: fit-content;
 }
 
-.accordion-container .ac-2{
-    width: 62%;
-}
-
-.accordion-container .ac-3{
-    width: 27%;
-}
-
-.accordion-container .ac-4{
-    width: 55%;
-     
-}
- */
-
- #ac-1, #ac-2, #ac-3, #ac-4{
-   width: fit-content;
-}
 /* 2. ESTILO DO BOTÃO DO CABEÇALHO (QUANDO ESTÁ FECHADO) */
 .accordion .accordion-button {
     /* Cor de fundo do botão (quando não está aberto) */
-    background-color: transparent; /* Azul primário */
+    background-color: transparent;
+    /* Azul primário */
     /* Remover sombra */
-    box-shadow: none; 
+    box-shadow: none;
     font-size: 1.2rem;
     background-color: var(--cor-azul-claro-30) !important;
     border: 2px solid var(--cor-azul-claro);
@@ -148,7 +146,7 @@
     padding-right: 1.6rem;
     display: flex;
     /* Alinha o conteúdo verticalmente ao centro */
-    align-items: center; 
+    align-items: center;
     /* Coloca o texto e o ícone nas extremidades */
     justify-content: space-between;
     margin-right: 1.5rem;
@@ -157,13 +155,33 @@
 /* 4. ESTILO DO CORPO DO ACCORDION (O CONTEÚDO QUE ABRE) */
 .accordion .accordion-body {
     /* Cor de fundo do conteúdo */
-    background-color: transparent; /* Outro cinza claro */
-    color: var(--cor-bege); /* Cor do texto do conteúdo */
+    background-color: transparent;
+    /* Outro cinza claro */
+    color: var(--cor-bege);
+    /* Cor do texto do conteúdo */
     /* Remover padding padrão e adicionar o seu */
     padding: 15px;
-    background-color: var(--cor-azul-claro-30) !important; 
-    border-radius: 0  0 5px 5px ;
+    background-color: var(--cor-azul-claro-30) !important;
     font-style: italic;
+    border-radius: 0 0 8px 8px;
+}
+
+/* 🎯 1. QUANDO O ACCORDION ESTÁ ABERTO (Botão SEM a classe .collapsed) */
+/* O raio deve ser aplicado SOMENTE nos cantos superiores (top-left, top-right) */
+.accordion .accordion-button:not(.collapsed) {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    /* Força os cantos inferiores a ficarem retos (0) */
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* 🎯 2. QUANDO O ACCORDION ESTÁ FECHADO (Botão COM a classe .collapsed) */
+/* O raio deve ser aplicado nos 4 cantos, mas você deve ser específico no último item 
+   se houver mais de um. Assumindo que este é o único item ou você quer este efeito nele: */
+.accordion .accordion-button.collapsed {
+    border-radius: 8px !important;
+    /* Arredonda todos os 4 cantos */
 }
 
 .accordion {
@@ -176,17 +194,21 @@
     width: fit-content;
     border-radius: 20px !important;
 }
+
 .accordion .accordion-button::after {
     position: static !important;
     /* 1. AUMENTA A LARGURA E ALTURA DA CAIXA */
     /* Por padrão, o Bootstrap usa 1.25rem. Mude para o tamanho desejado. */
-    width: 2rem;   /* Exemplo: Aumenta a largura em 0.25rem */
-    height: 2rem;  /* Exemplo: Aumenta a altura em 0.25rem */
-    
+    width: 2rem;
+    /* Exemplo: Aumenta a largura em 0.25rem */
+    height: 2rem;
+    /* Exemplo: Aumenta a altura em 0.25rem */
+
     /* 2. AUMENTA O TAMANHO DA IMAGEM DE FUNDO */
     /* Esta propriedade é crucial para que o ícone preencha a nova caixa. */
-    background-size: 2rem; /* Deve ser o mesmo valor de width/height */
-    
+    background-size: 2rem;
+    /* Deve ser o mesmo valor de width/height */
+
     /* Mantenha o seu código de 'filter' aqui para manter a cor */
     /* filter: ... seu filtro ...; */
 }
@@ -194,37 +216,190 @@
 .accordion {
     /* Código com cor #f5f5dc para o ícone fechado */
     --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f5f5dc'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    
+
     /* Código com cor #ffffff para o ícone aberto */
     --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-@media(max-width:769px){
-    #quemSomos-section .titulo-quem-somos{
+#encerrando {
+    /* background-color: rgba(255, 192, 203, 0.135); */
+}
+
+#encerrando .container {
+    /* background-color: rgba(74, 54, 54, 0.146); */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+}
+
+#encerrando .container .titulo-encerrando {
+    font-size: 2rem;
+}
+
+#encerrando .texto-img-container {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 20px;
+    padding-left: 3px;
+}
+
+#encerrando .texto-container {
+    /* background-color: rgba(0, 128, 0, 0.081); */
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#encerrando .img-container img {
+    width: 200px;
+}
+
+#encerrando .texto-container p {
+
+    font-size: 1rem;
+}
+
+#encerrando .texto-container .link-btn {
+    background-color: var(--cor-vermelho-30);
+    color: var(--cor-bege);
+    border-color: var(--cor-vermelho);
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#encerrando .texto-container .link-btn .cursor-btn {
+    background-color: var(--cor-vermelho);
+    padding: 5px;
+    width: 30px !important;
+    rotate: -80deg;
+    top: 5px;
+    right: 5px;
+}
+
+/* #encerrando .texto-container .link-btn .cursor-btn .icon{
+    width: 40px;
+} */
+
+#encerrando .link-btn:active {
+    scale: 0.95;
+}
+
+#encerrando .link-btn:hover {
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+#encerrando .link-btn:hover .cursor-btn {
+    rotate: 0deg;
+}
+
+
+.link-btn .icon {
+    margin-left: 25px;
+}
+
+@media(max-width:769px) {
+    .titulo-section {
         padding: 50px 0;
     }
-    .containers .quemSomos-div-container{
+
+    .containers .quemSomos-div-container {
         width: 80%;
     }
-    .accordion-container .container{
+
+    .accordion-container .container {
         width: 80%;
     }
 }
-@media(max-width:426px){
 
-    .containers .quemSomos-div-container{
+@media(max-width:426px) {
+
+    .containers .quemSomos-div-container {
         width: 85%;
         padding: 10px;
     }
-    .containers .quemSomos-div-container p{
-    font-size: 0.9rem;
+
+    .containers .quemSomos-div-container p {
+        font-size: 0.9rem;
     }
-    .accordion-container .container{
+
+    .accordion-container .container {
         width: 85%;
     }
-    .accordion .accordion-button{
+
+    .accordion .accordion-button {
         font-size: 1rem;
     }
 
+    #encerrando .container {
+        width: 85% !important;
+        padding-bottom: 80px;
+    }
+
+    #encerrando .container .titulo-encerrando {
+        font-size: 1.3rem;
+    }
+
+    #encerrando .texto-container {
+        /* background-color: rgba(0, 128, 0, 0.081); */
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #encerrando .img-container img {
+        width: 140px;
+    }
+
+    #encerrando .texto-container p {
+        font-size: 0.9rem;
+    }
+
+    #encerrando .texto-container .link-btn {
+        background-color: var(--cor-vermelho-30);
+        color: var(--cor-bege);
+        border-color: var(--cor-vermelho);
+        box-shadow: none;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+
+    #encerrando .texto-container .link-btn .cursor-btn {
+        background-color: var(--cor-vermelho);
+        padding: 3px;
+        width: 16px !important;
+        rotate: -80deg;
+        top: 5px;
+        right: 5px;
+    }
+
+    /* #encerrando .texto-container .link-btn .cursor-btn .icon{
+    width: 40px;
+} */
+
+    #encerrando .link-btn:active {
+        scale: 0.95;
+    }
+
+    #encerrando .link-btn:hover {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    #encerrando .link-btn:hover .cursor-btn {
+        rotate: 0deg;
+    }
+
+
+    .link-btn .icon {
+        margin-left: 15px;
+    }
 
 }
