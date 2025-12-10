@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliber consultoria - Quem somos</title>
+    <link rel="icon" href="assets/img/icone_Do_Navegador.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <div class="container-logo">
+            <a href="home.html">
+                <img class="img-logo" src="assets/img/logo.png" alt="Logo-cliber consultoria">
+            </a>
+        </div>
+        <nav id="nav-desktop">
+            <ul>
+                <li><a href="" class="link link-vaga">Vagas</a></li>
+                <li><a href="/home.html#solucoes" class="link link-servicos">Serviços</a></li>
+                <li><a href="quemSomos.html" class="link link-quem-somos">Quem somos</a></li>
+                <li><a href="" class="link link-contato">Contato</a></li>
+                <div class=" login-cadastrar">
+                    <li><a href="" class="link link-cadastrar">Cadastrar</a></li>
+                    <span></span>
+                    <li><a href="" class="link-login">Login</a></li>
+                </div>
+                <div class="displayNone area-exclusiva">
+                    <a href="">
+                        <p>Olá, usuário</p>
+                        <p>Acesse sua área exclusiva</p>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+        <nav id="nav-tablet">
+            <img class="bntAbrir " src="assets/img/icons/Menu.png" alt="">
+            <img class="btnFechar displayNone" src="assets/img/icons/Close.png" alt="">
+        </nav>
+    </header>
+    <main>
+        <section id="sobreSolucao" class="sobreSolucao">
+            <dialog class="menu-tablet displayNone">
+                <a href="" class="link">Vagas</a>
+                <a href="#solucoes" class="link">Serviços</a>
+                <a href="quemSomos.html" class="link">Quem somos</a>
+                <a href="" class="link">Contato</a>
+
+                <div class="login-cadastrar-tablet displayNone">
+                    <a href="" class="link-login">Login</a>
+                    <span></span>
+                    <a href="" class="link-cadastrar">Cadastrar</a>
+                </div>
+                <div class="area-exclusiva displayNone">
+                    <a href="">
+                        <p>Olá, usuário</p>
+                        <p>Acesse sua área exclusiva</p>
+                    </a>
+                </div>
+            </dialog>
+            <dialog class="modal-login-cadastrar" id="modal-login">
+                <div class="form-container">
+                    <form action="">
+                        <img src="assets/img/icons/Close.png" alt="close-modal" class="close-modal">
+                        <h2>Login</h2>
+                        <!-- div destinada a alinhar e centralizar elementos -->
+                        <div class="alinha-inputs">
+                            <div class="label-input">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" autocomplete="off">
+                            </div>
+                            <div class="label-input">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" id="senha">
+                                <p class="senhaIncorreta">Usuário ou senha incorretas.</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-login">Entrar</button>
+                        <button type="button" class="btn btn-cadastrar">Cadastrar</button>
+                    </form>
+                </div>
+            </dialog>
+            <div class="limitador limitador-btn-voltar">
+                <a href="home.html" class="btn-voltar">
+                    <img src="assets/img/icons/seta_bege.png" alt="Ícone de Seta">
+                    Voltar
+                </a>
+            </div>
+            <div class="limitador limitador-titulo-p">
+                <div class="padding-left-container">
+                    <h1 class="titulo-solucao">Recrutamento e Seleção com Propósito e Agilidade</h1>
+                    <p class="p-solucao">Na Cliber Consultoria, conduzimos processos seletivos que equilibram
+                        tecnologia, empatia e estratégia organizacional. Nosso foco é identificar talentos que estejam
+                        alinhados à cultura, aos valores e aos objetivos do negócio.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="logo-justificada-container">
+            <img class="logo-justificada" src="assets/img/logo.png" alt="Logo-justificada-cliber-consultoria">
+        </div>
+        <div class="redes-sociais-container">
+            <div class="redes-sociais">
+                <a href="#"><img src="assets/img/icons/Instagram.png" alt=""></a>
+                <a href="#"><img src="assets/img/icons/WhatsApp_white.png" alt=""></a>
+                <a href="#"><img src="assets/img/icons/Email.png" alt=""></a>
+            </div>
+            <p>Cliber Consultoria - Todos os direitos Reservados.</p>
+        </div>
+        <div class="btn-e-dev-container">
+            <div class="btn-topo">
+                <a href="#cabecalho">Topo
+                    <img src="assets/img/icons/Left.png" alt="">
+                </a>
+            </div>
+            <a href="">
+                <p class="dev">Desenvolvido por Ruan D'elia</p>
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/abrirFecharMenu.js"></script>
+    <script src="assets/js/abrirFecharModal.js"></script>
+    <script src="assets/js/ativaLoginUsuario.js"></script>
+    <script src="assets/js/animaBtnVoltar.js">
+        
+    </script>
+</body>
+
+</html>

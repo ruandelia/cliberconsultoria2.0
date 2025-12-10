@@ -106,8 +106,8 @@
     height: fit-content;
 }
 
-.img-container h5,
-p {
+.cv-ia .img-container h5,
+.cv-ia p {
     text-align: left;
     margin: 10px 0;
 }

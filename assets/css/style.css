@@ -16,3 +16,70 @@
 @import url(pages/quemSomos/accordionSection.css);
 @import url(pages/quemSomos/encerrando.css);
 @import url(pages/quemSomos/responsives/responsives.css);
+
+.sobreSolucao{
+    background: url(../img/banner-recrutamento-seleção.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 600px;
+    color: var(--cor-bege);
+    font-family: var(--fonte-montserrat);
+    position: relative;
+}
+
+.sobreSolucao .limitador{
+    width: 75%;
+    transition: all 0.5s;
+}
+
+
+.sobreSolucao .limitador-btn-voltar.is-active{
+    .btn-voltar{
+        transform: translateX(-20px);
+        transition: all 0.2s;
+        img{
+            transform: translateX(20px);
+            transition: all 0.2s;
+        }
+    }
+    .sobreSolucao .limitador-titulo-p{
+        width: 90% !important;
+        transition: all 0.2s;
+    }
+}
+
+.sobreSolucao .btn-voltar{
+    display: inline-block;
+    color: var(--cor-bege);
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin: 30px 0;
+}
+
+/* .sobreSolucao .btn-voltar:active{
+    
+} */
+
+.sobreSolucao .btn-voltar img{
+    rotate: 180deg;
+    max-width: 50px;
+}
+
+.padding-left-container{
+    padding-left: 15px;
+}
+
+.titulo-solucao{
+    font-weight: 600;
+}
+
+.p-solucao{
+    font-size: 1.5rem;
+    font-style: italic;
+    width: 60%;
+    font-weight: 500;
+}

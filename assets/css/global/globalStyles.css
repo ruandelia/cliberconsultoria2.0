@@ -119,3 +119,8 @@ html, body {
         imediatamente e a animação começa do nada. */
     opacity: 0;
 }
+
+button{
+    background: transparent;
+    border: none;
+}
