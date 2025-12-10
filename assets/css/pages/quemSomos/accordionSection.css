@@ -1,0 +1,110 @@
+.accordion-container {
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordion-container .container {
+    width: 60%;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#ac-1,
+#ac-2,
+#ac-3,
+#ac-4 {
+    width: fit-content;
+}
+
+/* 2. ESTILO DO BOTÃO DO CABEÇALHO (QUANDO ESTÁ FECHADO) */
+.accordion .accordion-button {
+    /* Cor de fundo do botão (quando não está aberto) */
+    background-color: transparent;
+    /* Azul primário */
+    /* Remover sombra */
+    box-shadow: none;
+    font-size: 1.2rem;
+    background-color: var(--cor-azul-claro-30) !important;
+    border: 2px solid var(--cor-azul-claro);
+    color: var(--cor-bege) !important;
+    padding-right: 1.6rem;
+    display: flex;
+    /* Alinha o conteúdo verticalmente ao centro */
+    align-items: center;
+    /* Coloca o texto e o ícone nas extremidades */
+    justify-content: space-between;
+    margin-right: 1.5rem;
+}
+
+/* 4. ESTILO DO CORPO DO ACCORDION (O CONTEÚDO QUE ABRE) */
+.accordion .accordion-body {
+    /* Cor de fundo do conteúdo */
+    background-color: transparent;
+    /* Outro cinza claro */
+    color: var(--cor-bege);
+    /* Cor do texto do conteúdo */
+    /* Remover padding padrão e adicionar o seu */
+    padding: 15px;
+    background-color: var(--cor-azul-claro-30) !important;
+    font-style: italic;
+    border-radius: 0 0 8px 8px;
+}
+
+/* 🎯 1. QUANDO O ACCORDION ESTÁ ABERTO (Botão SEM a classe .collapsed) */
+/* O raio deve ser aplicado SOMENTE nos cantos superiores (top-left, top-right) */
+.accordion .accordion-button:not(.collapsed) {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    /* Força os cantos inferiores a ficarem retos (0) */
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* 🎯 2. QUANDO O ACCORDION ESTÁ FECHADO (Botão COM a classe .collapsed) */
+/* O raio deve ser aplicado nos 4 cantos, mas você deve ser específico no último item 
+   se houver mais de um. Assumindo que este é o único item ou você quer este efeito nele: */
+.accordion .accordion-button.collapsed {
+    border-radius: 8px !important;
+    /* Arredonda todos os 4 cantos */
+}
+
+.accordion {
+    position: relative;
+    --bs-accordion-border-width: 0px;
+    /* 1. Altera a variável de cor de fundo usada em todo o item do accordion */
+    /* Isso afeta o cabeçalho e o corpo (body) */
+    --bs-accordion-bg: transparent;
+    font-family: var(--fonte-comfortaa);
+    width: fit-content;
+    border-radius: 20px !important;
+}
+
+.accordion .accordion-button::after {
+    position: static !important;
+    /* 1. AUMENTA A LARGURA E ALTURA DA CAIXA */
+    /* Por padrão, o Bootstrap usa 1.25rem. Mude para o tamanho desejado. */
+    width: 2rem;
+    /* Exemplo: Aumenta a largura em 0.25rem */
+    height: 2rem;
+    /* Exemplo: Aumenta a altura em 0.25rem */
+
+    /* 2. AUMENTA O TAMANHO DA IMAGEM DE FUNDO */
+    /* Esta propriedade é crucial para que o ícone preencha a nova caixa. */
+    background-size: 2rem;
+    /* Deve ser o mesmo valor de width/height */
+
+    /* Mantenha o seu código de 'filter' aqui para manter a cor */
+    /* filter: ... seu filtro ...; */
+}
+
+.accordion {
+    /* Código com cor #f5f5dc para o ícone fechado */
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f5f5dc'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+    /* Código com cor #ffffff para o ícone aberto */
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}

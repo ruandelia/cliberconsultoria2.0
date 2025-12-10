@@ -1,0 +1,78 @@
+
+#encerrando .container {
+    /* background-color: rgba(74, 54, 54, 0.146); */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 80px 10px;
+
+}
+
+#encerrando .container .titulo-encerrando {
+    font-size: 2rem;
+}
+
+#encerrando .texto-img-container {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 20px;
+    padding-left: 3px;
+}
+
+#encerrando .texto-container {
+    /* background-color: rgba(0, 128, 0, 0.081); */
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#encerrando .img-container img {
+    width: 200px;
+}
+
+#encerrando .texto-container p {
+
+    font-size: 1rem;
+}
+
+#encerrando .texto-container .link-btn {
+    background-color: var(--cor-vermelho-30);
+    color: var(--cor-bege);
+    border-color: var(--cor-vermelho);
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#encerrando .texto-container .link-btn .cursor-btn {
+    background-color: var(--cor-vermelho);
+    padding: 5px;
+    width: 30px !important;
+    rotate: -80deg;
+    top: 5px;
+    right: 5px;
+}
+
+/* #encerrando .texto-container .link-btn .cursor-btn .icon{
+    width: 40px;
+} */
+
+#encerrando .link-btn:active {
+    scale: 0.95;
+}
+
+#encerrando .link-btn:hover {
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+#encerrando .link-btn:hover .cursor-btn {
+    rotate: 0deg;
+}
+
+
+.link-btn .icon {
+    margin-left: 25px;
+}

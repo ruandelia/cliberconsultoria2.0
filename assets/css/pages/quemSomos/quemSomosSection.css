@@ -1,0 +1,63 @@
+
+
+.titulo-section.elemento {
+    animation-delay: 0.2s;
+}
+
+.containers>.elemento:nth-child(1) {
+    animation-delay: 0.7s;
+    /* Depois do H1 */
+}
+
+.containers>.elemento:nth-child(2) {
+    animation-delay: 1.2s;
+    /* Depois do 1º elemento interno */
+}
+
+.containers>.elemento:nth-child(3) {
+    animation-delay: 1.7s;
+    /* Depois do 2º elemento interno */
+}
+
+#fundo-quemSomos {
+    background: #00010B;
+    background: linear-gradient(180deg, rgba(0, 1, 11, 1) 0%, rgba(0, 13, 27, 1) 75%, rgba(0, 0, 0, 1) 100%);
+    color: var(--cor-bege);
+    font-family: var(--fonte-montserrat);
+}
+
+#quemSomos-section {
+    position: relative;
+}
+
+.titulo-section {
+    text-align: center;
+    padding: 80px 0;
+    font-weight: 600;
+    font-family: var(--fonte-comfortaa);
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.containers .quemSomos-div-container {
+    background-color: var(--cor-vermelho-30);
+    border: 3px solid var(--cor-vermelho);
+    width: 60%;
+    border-radius: 10px;
+    padding: 15px;
+    font-style: italic;
+    /* box-shadow: 1px 1px 12px var(--cor-vermelho); */
+}
+
+.quemSomos-div-container .titulo {
+    font-weight: 500;
+}
+
+.quemSomos-div-container p {
+    font-weight: 500;
+}

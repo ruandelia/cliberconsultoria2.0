@@ -25,25 +25,29 @@ btnFechar.addEventListener("click", (evento) => {
 });
 
 document.addEventListener("click", (event) => {
-    // 1. O clique não pode ser nos botões de abrir/fechar,
-    //    pois eles já têm seus próprios eventos para funcionar.
+    // 1. O clique não pode ser nos botões de abrir/fechar.
     const isBotao = btnAbrir.contains(event.target) || btnFechar.contains(event.target);
 
-    // 2. Verifica se o menu está atualmente aberto (ou seja, NÃO tem a classe "displayNone")
-    const estaAberto = !menuAberto.classList.contains("displayNone"); 
+    // CORREÇÃO: Verifica se o menu está aberto olhando para a classe CORRETA ("displayBlock")
+    const estaAberto = menuAberto.classList.contains("displayBlock"); 
 
-    // 3. Verifica se o clique foi fora da área do menu (o menu não contém o alvo do clique)
+    // 3. Verifica se o clique foi fora da área do menu
     const cliqueFora = !menuAberto.contains(event.target); 
 
     // Se estiver aberto E clicou fora E não foi em um dos botões, ele fecha.
     if(estaAberto && cliqueFora && !isBotao){
-        // Ações para fechar o menu:
-        menuAberto.classList.add("displayNone");
+        
+        // Ação 1: Remove a classe para iniciar a animação de FECHAMENTO (desliza para fora)
         menuAberto.classList.remove("displayBlock");
+        
+        // Ação 2: Usa setTimeout para adicionar o 'display: none' APÓS A ANIMAÇÃO (1s)
+        // Isso remove o elemento do layout e resolve o problema de rolagem horizontal
+        setTimeout(() => {
+            menuAberto.style.display = 'none';
+        }, 1000); // <-- 1000ms deve ser igual à sua transição CSS (1s)
+
+        // Ações de botão
         btnFechar.classList.add("displayNone"); 
         btnAbrir.classList.remove("displayNone");
-        
-        // Se você não está usando "displayBlock" em lugar nenhum, pode remover esta linha:
-        // menuAberto.classList.remove("displayBlock");
     }
-})
+});

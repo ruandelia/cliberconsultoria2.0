@@ -1,0 +1,107 @@
+
+
+@media(max-width:769px) {
+    .titulo-section {
+        padding: 50px 0;
+    }
+
+    .containers .quemSomos-div-container {
+        width: 80%;
+    }
+
+    .accordion-container .container {
+        width: 80%;
+    }
+     #encerrando .container {
+        width: 80% !important;
+        padding-bottom: 80px;
+    }
+}
+
+@media(max-width:626px) {
+
+    .containers .quemSomos-div-container {
+        width: 85%;
+        padding: 10px;
+    }
+
+    .containers .quemSomos-div-container p {
+        font-size: 0.9rem;
+    }
+
+    .accordion-container .container {
+        width: 85%;
+    }
+
+    .accordion .accordion-button {
+        font-size: 1rem;
+    }
+
+    #encerrando .container {
+        width: 85% !important;
+        padding-bottom: 80px;
+    }
+
+    #encerrando .container .titulo-encerrando {
+        font-size: 1.3rem;
+    }
+
+    #encerrando .texto-container {
+        /* background-color: rgba(0, 128, 0, 0.081); */
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #encerrando .img-container img {
+        width: 140px;
+    }
+
+    #encerrando .texto-container p {
+        font-size: 0.9rem;
+    }
+
+    #encerrando .texto-container .link-btn {
+        background-color: var(--cor-vermelho-30);
+        color: var(--cor-bege);
+        border-color: var(--cor-vermelho);
+        box-shadow: none;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+
+    #encerrando .texto-container .link-btn .cursor-btn {
+        background-color: var(--cor-vermelho);
+        padding: 3px;
+        width: 16px !important;
+        rotate: -80deg;
+        top: 5px;
+        right: 5px;
+    }
+
+    /* #encerrando .texto-container .link-btn .cursor-btn .icon{
+    width: 40px;
+} */
+
+    #encerrando .link-btn:active {
+        scale: 0.95;
+    }
+
+    #encerrando .link-btn:hover {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    #encerrando .link-btn:hover .cursor-btn {
+        rotate: 0deg;
+    }
+
+
+    .link-btn .icon {
+        margin-left: 15px;
+    }
+
+}

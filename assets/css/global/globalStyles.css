@@ -85,3 +85,37 @@ html, body {
 .displayBlock {
     display: block !important;
 }
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        /* Começa invisível */
+        transform: translateY(20px);
+        /* Começa 20 pixels abaixo */
+    }
+
+    100% {
+        opacity: 1;
+        /* Termina totalmente visível */
+        transform: translateY(0);
+        /* Termina na posição normal */
+    }
+}
+
+.elemento {
+    /* 1. Define a animação a ser usada, duração e função de tempo */
+    animation-name: aparecer;
+    animation-duration: 0.5s;
+    /* O elemento levará 0.5 segundos para aparecer */
+    animation-timing-function: ease-out;
+    /* Começa rápido e desacelera */
+
+    /* 2. MUITO IMPORTANTE: Garante que os estilos do 100% (totalmente visível)
+        sejam mantidos APÓS o término da animação. */
+    animation-fill-mode: forwards;
+
+    /* 3. Define o estado inicial: o elemento DEVE estar invisível (opacidade 0)
+        ANTES da animação começar. Se você não fizer isso, ele aparece
+        imediatamente e a animação começa do nada. */
+    opacity: 0;
+}
