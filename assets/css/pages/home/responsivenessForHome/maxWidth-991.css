@@ -55,14 +55,6 @@
     }
 
 
-    footer{
-        gap: 7rem !important;
-    }
-    footer .logo-justificada{
-        max-width: 100px !important;
-    }
-    footer .redes-sociais-container p, .btn-e-dev-container p{
-        font-size: 0.8rem;
-    }
+  
 
 }

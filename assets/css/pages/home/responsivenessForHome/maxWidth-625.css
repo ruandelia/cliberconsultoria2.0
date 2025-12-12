@@ -109,34 +109,5 @@
         font-size: 0.7rem;
     }
 
-    footer{
-        flex-direction: column;
-        gap: 2.5rem !important;
-        height: fit-content;
-    }
     
-    footer .redes-sociais a img{
-        max-width: 20px !important;
-    }
-    footer .redes-sociais-container p, .btn-e-dev-container .dev{
-        font-size: 1rem;
-    }
-    .logo-justificada-container img{
-        max-width: 100px !important;
-    }
-    .btn-topo{
-        padding: 6px !important;
-        border-radius: 5px !important;
-    }
-    .btn-topo a{
-        font-size: 0.9rem !important;
-        padding-bottom: 1px !important;
-    }
-    .btn-topo a img{
-        max-width: 10px !important;
-    }
-    .btn-topo{  
-        left: 50%;
-        transform: translateX(-50%);
-    }
 }

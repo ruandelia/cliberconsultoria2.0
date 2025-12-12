@@ -10,16 +10,10 @@ footer {
     gap: 15rem;
     color: var(--cor-branco);
     font-family: var(--fonte-comfortaa);
-
-    img {
-        max-width: 150px;
-    }
 }
 
-footer .logo-justificada-container {
-    img {
-        max-width: 150px;
-    }
+footer .logo-justificada-container img{
+    max-width: 110px;
 }
 
 footer .redes-sociais-container {
@@ -28,11 +22,11 @@ footer .redes-sociais-container {
 }
 
 .redes-sociais img {
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 .redes-sociais a img {
-    width: 35px;
+    width: 25px;
 }
 
 .btn-e-dev-container .btn-topo {
@@ -57,9 +51,98 @@ footer .redes-sociais-container {
 .btn-topo a {
     /* top: 10px; */
     padding-bottom: 5px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .btn-e-dev-container img {
     max-width: 18px
 }
+
+@media (max-width: 1224px) {
+    .logo-justificada-container img{
+        width: 110px;
+    }
+    .redes-sociais a img{
+        max-width: 25px;
+    }
+    .redes-sociais-container p{
+        font-size: 10px;
+    }
+    .btn-topo{
+        padding: 6px !important;
+    }
+    .btn-topo a{
+        font-size: 1rem !important;
+        padding-bottom: 1px !important;
+    }
+    .btn-e-dev-container a{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 991px) {
+footer{
+        flex-direction: column;
+        gap: 2.5rem !important;
+        height: 325px !important;
+    }
+    
+    footer .redes-sociais a img{
+        max-width: 20px !important;
+    }
+    footer .redes-sociais-container p, .btn-e-dev-container .dev{
+        font-size: 1rem;
+    }
+    .logo-justificada-container img{
+        max-width: 100px !important;
+    }
+    .btn-topo{
+        padding: 6px !important;
+        border-radius: 5px !important;
+    }
+    .btn-topo a{
+        font-size: 0.9rem !important;
+        padding-bottom: 1px !important;
+    }
+    .btn-topo a img{
+        max-width: 10px !important;
+    }
+    .btn-topo{  
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 625px){
+    footer{
+        flex-direction: column;
+        gap: 2.5rem !important;
+        height: 400px;
+    }
+    
+    footer .redes-sociais a img{
+        max-width: 20px !important;
+    }
+    footer .redes-sociais-container p, .btn-e-dev-container .dev{
+        font-size: 1rem;
+    }
+    .logo-justificada-container img{
+        max-width: 100px !important;
+    }
+    .btn-topo{
+        padding: 6px !important;
+        border-radius: 5px !important;
+    }
+    .btn-topo a{
+        font-size: 0.9rem !important;
+        padding-bottom: 1px !important;
+    }
+    .btn-topo a img{
+        max-width: 10px !important;
+    }
+    .btn-topo{  
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+

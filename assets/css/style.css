@@ -17,11 +17,12 @@
 @import url(pages/quemSomos/encerrando.css);
 @import url(pages/quemSomos/responsives/responsives.css);
 
-.sobreSolucao{
+.sobreSolucao {
     background: url(../img/banner-recrutamento-seleção.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,28 +32,30 @@
     position: relative;
 }
 
-.sobreSolucao .limitador{
+.sobreSolucao .limitador {
     width: 75%;
     transition: all 0.5s;
 }
 
 
-.sobreSolucao .limitador-btn-voltar.is-active{
-    .btn-voltar{
+.sobreSolucao .limitador-btn-voltar.is-active {
+    .btn-voltar {
         transform: translateX(-20px);
         transition: all 0.2s;
-        img{
+
+        img {
             transform: translateX(20px);
             transition: all 0.2s;
         }
     }
-    .sobreSolucao .limitador-titulo-p{
+
+    .sobreSolucao .limitador-titulo-p {
         width: 90% !important;
         transition: all 0.2s;
     }
 }
 
-.sobreSolucao .btn-voltar{
+ .btn-voltar {
     display: inline-block;
     color: var(--cor-bege);
     font-weight: 600;
@@ -64,22 +67,290 @@
     
 } */
 
-.sobreSolucao .btn-voltar img{
+ .btn-voltar img {
     rotate: 180deg;
     max-width: 50px;
 }
 
-.padding-left-container{
+.padding-left-container {
     padding-left: 15px;
 }
 
-.titulo-solucao{
+.titulo-solucao {
     font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
 }
 
-.p-solucao{
-    font-size: 1.5rem;
+.p-solucao {
+    font-size: 1.2rem;
     font-style: italic;
     width: 60%;
     font-weight: 500;
+}
+
+.sobreSolucao .accordion-container {
+    margin: 40px 0;
+}
+
+.sobreSolucao .accordion {
+    width: fit-content;
+}
+
+.sobreSolucao .container {
+    padding-left: 0px;
+}
+
+.sobreSolucao .accordion-button {
+    display: flex !important;
+    gap: 15px;
+    box-shadow: none;
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-bege);
+    font-family: var(--fonte-montserrat);
+    font-weight: 400;
+    border: 2px solid var(--cor-azul-dark);
+    padding: 8px;
+    font-size: 1rem;
+    /* Esta variável controla a cor do ícone SVG. */
+    --bs-accordion-btn-icon-color: #fff;
+    /* Esta variável controla a cor do ícone quando o accordion está aberto. */
+    --bs-accordion-btn-active-icon-color: var(--cor-bege);
+}
+
+/* Correção para o fundo branco */
+.sobreSolucao .accordion-item {
+    border: none !important;
+    margin: 20px 0;
+
+    /* DEFININDO A COR DE FUNDO PADRÃO DO ITEM */
+    --bs-accordion-bg: transparent;
+    /* Altere para a sua cor escura (ou transparente) */
+}
+
+/* Correção para o problema 3: Cor do Fundo e Blur */
+.sobreSolucao .accordion-body {
+    color: var(--cor-bege);
+    font-family: var(--fonte-montserrat);
+    font-weight: 500;
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+
+    /* From https://css.glass */
+background: rgba(82, 82, 82, 0.21);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9px);
+-webkit-backdrop-filter: blur(9px);
+}
+
+.accordion .accordion-button.collapsed {
+    border-radius: 6px !important;
+    /* Arredonda todos os 4 cantos */
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    /* (Mantenha seu border-radius aqui) */
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+
+    /* NOVO: Aplica o fundo escuro FORÇADAMENTE no estado aberto */
+    background-color: var(--cor-azul-escuro) !important;
+
+    /* NOVO: Remove a sombra que aparece ao clicar/focar, que pode ser branca */
+    box-shadow: none !important;
+}
+
+/* NOVO: Regra para o HOVER (mouse sobre) no botão ABERTO */
+.accordion .accordion-button:not(.collapsed):hover {
+    background-color: var(--cor-azul-escuro) !important;
+    /* Mantenha a cor escura no hover */
+}
+
+.sobreSolucao .accordion {
+    /* Código com cor #f5f5dc para o ícone fechado */
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f5f5dc'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+    /* Código com cor #ffffff para o ícone aberto */
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.sobreSolucao .accordion .accordion-button::after {
+    position: static !important;
+    /* 1. AUMENTA A LARGURA E ALTURA DA CAIXA */
+    /* Por padrão, o Bootstrap usa 1.25rem. Mude para o tamanho desejado. */
+    width: 1.5rem;
+    /* Exemplo: Aumenta a largura em 0.25rem */
+    height: 1.5rem;
+    /* Exemplo: Aumenta a altura em 0.25rem */
+
+    /* 2. AUMENTA O TAMANHO DA IMAGEM DE FUNDO */
+    /* Esta propriedade é crucial para que o ícone preencha a nova caixa. */
+    background-size: 1.5rem;
+    /* Deve ser o mesmo valor de width/height */
+
+    /* Mantenha o seu código de 'filter' aqui para manter a cor */
+    /* filter: ... seu filtro ...; */
+}
+
+/* Neutraliza o efeito de foco (outline) no botão para TODOS os estados */
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Garante que o fundo não mude para branco ao clicar/focar */
+.accordion-button:focus:not(.collapsed) {
+    background-color: var(--cor-azul-escuro) !important;
+}
+
+.sobreSolucao .link-btn {
+    background-color: var(--cor-vermelho-30);
+    color: var(--cor-bege);
+    border-color: var(--cor-vermelho);
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sobreSolucao .link-btn .cursor-btn {
+    background-color: var(--cor-vermelho);
+    padding: 4px;
+    width: 20px !important;
+    rotate: -80deg;
+    top: 5px;
+    right: 5px;
+}
+
+.sobreSolucao .link-btn:active {
+    scale: 0.95;
+}
+
+.sobreSolucao .link-btn:hover {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.sobreSolucao .link-btn:hover .cursor-btn {
+    rotate: 0deg;
+}
+
+
+.encerrando-solucao .link-btn .icon {
+    margin-left: 25px;
+}
+
+.encerrando-solucao{
+    background: #000000;
+    background: linear-gradient(122deg, rgba(0, 0, 0, 1) 16%, rgba(0, 23, 48, 1) 43%, rgba(0, 23, 48, 1) 54%, rgba(0, 0, 0, 1) 88%);
+    background-size: cover;
+    background-position: center;
+    border-top: 5px solid var(--cor-azul-escuro);
+    color: var(--cor-bege);
+    font-family: var(--fonte-comfortaa);
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.encerrando-solucao .link-btn {
+    background-color: var(--cor-vermelho-30);
+    color: var(--cor-bege);
+    border-color: var(--cor-vermelho);
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.encerrando-solucao .link-btn .cursor-btn {
+    background-color: var(--cor-vermelho);
+    padding: 4px;
+    width: 20px !important;
+    rotate: -80deg;
+    top: 5px;
+    right: 5px;
+}
+
+.encerrando-solucao .link-btn:active {
+    scale: 0.95;
+}
+
+.encerrando-solucao .link-btn:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.encerrando-solucao .link-btn:hover .cursor-btn {
+    rotate: 0deg;
+}
+
+
+.encerrando-solucao .link-btn .icon {
+    margin-left: 25px;
+}
+
+.encerrando-solucao .limitador-pai{
+    display: flex;
+    justify-content: center;
+}
+
+.encerrando-solucao .limitador{
+    width: 75%;
+}
+
+.encerrando-solucao .titulo-encerrando-solucao{
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.encerrando-solucao .p-encerrando-solucao{
+    font-size: 1.2rem;
+    
+}
+
+.encerrando-solucao .txt-img-container{
+    /* background-color: rgba(255, 192, 203, 0.431); */
+    width: 80%;
+}
+
+.encerrando-solucao .voltar-saberMais-container{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 80%;
+}
+
+.encerrando-solucao .voltar-saberMais-container .btn-voltar{
+    margin: 0;
+}
+
+.encerrando-solucao .voltar-saberMais-container .btn-voltar{
+    display: flex;
+    align-items: center;
+    img{
+        max-width: 30px;
+    }
+    font-size: 1.2rem;
+}
+
+.encerrando-solucao .link-btn{
+    font-size: 1rem;
+
+}
+
+.encerrando-solucao .txt-container{
+    /* background-color: rgba(0, 128, 0, 0.394); */
+    width: 70%;
+}
+
+.encerrando-solucao .img-container{
+    position: relative;
+}
+
+.encerrando-solucao .img-container img{
+    position: absolute;
+    top: -30px;
+    max-width: 250px;
 }
