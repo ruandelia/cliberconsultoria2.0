@@ -5,13 +5,7 @@
         font-size: 12px;
     }
 
-    .cabecalho {
-        gap: 3rem !important;
-    }
-
-    .cabecalho ul {
-        gap: 5rem !important;
-    }
+    
 
     .card {
         max-width: 230px !important;

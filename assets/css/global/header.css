@@ -114,3 +114,23 @@
     font-family: var(--fonte-cinzel);
     font-size: 0.8rem;
 }
+
+@media (max-width:1024px) {
+    .cabecalho {
+        gap: 3rem !important;
+    }
+
+    .cabecalho ul {
+        gap: 5rem !important;
+    }
+}
+
+@media(max-width:991px){
+    .cabecalho {
+        gap: 3rem !important;
+    }
+
+    .cabecalho ul {
+        gap: 5rem !important;
+    }
+}
