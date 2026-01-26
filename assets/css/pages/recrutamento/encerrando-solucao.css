@@ -1,0 +1,120 @@
+
+
+.encerrando-solucao .link-btn .icon {
+    margin-left: 25px;
+}
+
+.encerrando-solucao{
+    background: #000000;
+    background: linear-gradient(122deg, rgba(0, 0, 0, 1) 16%, rgba(0, 23, 48, 1) 43%, rgba(0, 23, 48, 1) 54%, rgba(0, 0, 0, 1) 88%);
+    background-size: cover;
+    background-position: center;
+    border-top: 5px solid var(--cor-azul-escuro);
+    color: var(--cor-bege);
+    font-family: var(--fonte-comfortaa);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.encerrando-solucao .link-btn {
+    background-color: var(--cor-vermelho-30);
+    color: var(--cor-bege);
+    border-color: var(--cor-vermelho);
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.encerrando-solucao .link-btn .cursor-btn {
+    background-color: var(--cor-vermelho);
+    padding: 4px;
+    width: 20px !important;
+    rotate: -80deg;
+    top: 5px;
+    right: 5px;
+}
+
+.encerrando-solucao .link-btn:active {
+    scale: 0.95;
+}
+
+.encerrando-solucao .link-btn:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.encerrando-solucao .link-btn:hover .cursor-btn {
+    rotate: 0deg;
+}
+
+
+.encerrando-solucao .link-btn .icon {
+    margin-left: 25px;
+}
+
+.encerrando-solucao .limitador-pai{
+    display: flex;
+    justify-content: center;
+}
+
+.encerrando-solucao .limitador{
+    width: 75%;
+}
+
+.encerrando-solucao .titulo-encerrando-solucao{
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.encerrando-solucao .p-encerrando-solucao{
+    font-size: 1.2rem;
+    
+}
+
+.encerrando-solucao .txt-img-container{
+    /* background-color: rgba(255, 192, 203, 0.431); */
+    width: 80%;
+}
+
+.encerrando-solucao .voltar-saberMais-container{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 80%;
+}
+
+.encerrando-solucao .voltar-saberMais-container .btn-voltar{
+    margin: 0;
+}
+
+.encerrando-solucao .voltar-saberMais-container .btn-voltar{
+    display: flex;
+    align-items: center;
+    img{
+        max-width: 30px;
+    }
+    font-size: 1.2rem;
+}
+
+.encerrando-solucao .link-btn{
+    font-size: 1rem;
+
+}
+
+.encerrando-solucao .txt-container{
+    /* background-color: rgba(0, 128, 0, 0.394); */
+    width: 70%;
+}
+
+.encerrando-solucao .img-container{
+    position: relative;
+}
+
+.encerrando-solucao .img-container img{
+    position: absolute;
+    top: -30px;
+    max-width: 250px;
+}
