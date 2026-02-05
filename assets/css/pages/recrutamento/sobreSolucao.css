@@ -299,16 +299,16 @@
     }
 
     .btn-voltar {
-        margin: 25px 0;
-        margin-bottom: 45px;
+        margin: 30px 0;
+        margin-bottom: 60px;
     }
 
     .sobreSolucao{
-        min-height: 600px;
+        min-height: 650px;
     }
 
     .sobreSolucao .limitador {
-        width: 85% !important;
+        width: 90% !important;
     }
 
     /* .padding-left-container{
@@ -316,7 +316,7 @@
     }
  */
     .titulo-solucao {
-        font-size: 1.46rem;
+        font-size: 1.5rem;
         white-space: nowrap;
         font-weight: 700;
     }
@@ -327,7 +327,7 @@
     }
 
     .sobreSolucao .accordion-item{
-        margin: 25px 0;
+        margin: 30px 0;
         
     }
 
@@ -360,7 +360,7 @@
     }    
 
     .encerrando-solucao .limitador{
-        width: 85% !important;
+        width: 90% !important;
     }
 
     .encerrando-solucao .titulo-encerrando-solucao {
