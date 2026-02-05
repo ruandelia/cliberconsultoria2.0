@@ -22,11 +22,21 @@
     }
     .frase-banner{
         /* background-color: pink; */
-        font-size: 1rem !important;
+        font-size: 1.3rem !important;
         text-wrap: nowrap;
     }
+
+    .section-banner .link-btn{
+        top: 35px;
+        font-size: 1rem;
+    }
+
     .section-banner .link-btn .icon{
-        margin-left: 8px;
+        margin-left: 10px;
+    }
+
+    .section-banner .link-btn .cursor-btn{
+        max-width: 15px;
     }
     .solucoes .titulo-solucoes{
         margin-top: 100px;
@@ -51,17 +61,17 @@
         margin-bottom: 120px;
     }
     .cv-ia .container{
-        margin-left: 30px;
+        margin-left: 40px;
     }
 
     .cv-ia .titulo{
-        font-size: 1.25rem;
+        font-size: 1.6rem;
         text-wrap: nowrap !important;
         margin:  20px 0;
     }
 
     .cv-ia .txt-container{
-        gap: 1.6rem !important;
+        gap: 1rem !important;
         /* background-color: pink; */
         width: 100%;
     }
