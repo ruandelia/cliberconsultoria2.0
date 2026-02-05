@@ -298,13 +298,17 @@
         font-size: 9px;
     }
 
+    body{
+        /* overflow-x: hidden; */
+    }
+
     .btn-voltar {
         margin: 30px 0;
         margin-bottom: 60px;
     }
 
     .sobreSolucao{
-        min-height: 650px;
+        min-height: 620px;
     }
 
     .sobreSolucao .limitador {
@@ -378,10 +382,9 @@
     }
 
     .encerrando-solucao .voltar-saberMais-container{
-        width: 100% !important;
+        width: 80% !important;
         margin-top: 0 !important;
         height: 35px;
-        /* background-color: rgba(209, 153, 153, 0.138); */
         position: absolute;
     }
 
@@ -393,7 +396,8 @@
 
     .encerrando-solucao .voltar-saberMais-container .link-btn{
         position: relative;
-        right: 200px;
+        right: 20%;
+        top: 2px;
         font-size: 1rem;
         padding: 8px !important;
         margin: 0px !important;
