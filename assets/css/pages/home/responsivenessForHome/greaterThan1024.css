@@ -66,6 +66,7 @@
     .texto-banner .link-btn {
         top: 60px;
         padding: 13px;
+        padding-right: 15px !important;
         border-radius: 15px;
     }
 
@@ -74,9 +75,9 @@
         top: 6px;
     }
 
-    .texto-banner .link-btn .icon{
-        padding: 3px !important;
-        max-width: 5px !important;
+    .texto-banner .link-btn .cursor-btn{
+      padding: 3px ;
+      max-width: 18px ;
     }
 
     .card {
@@ -122,7 +123,7 @@
 }
 
 
-@media (max-width:1440px) {
+@media (max-width:1640px) {
     .cabecalho{
         height:80px;
     }
@@ -139,7 +140,7 @@
     }
 
     .section-banner {
-        height: 550px;
+        height: 650px;
     }
 
     .texto-banner .frase-banner {
@@ -149,7 +150,7 @@
     .texto-banner .link-btn {
         top: 60px;
         padding: 12.5px;
-        font-size: 10px;
+        font-size: 0.9rem;
         border-radius: 12.5px;
     }
 
@@ -197,14 +198,21 @@
 
     .cv-ia .container {
         width: 890px;
+        margin-left: 60px;
     }
 
     .cv-ia .titulo {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
+
+    .cv-ia .txt-container p{
+        font-size: 1.45rem !important;
+        width: 70%;    
+    }
+
     .cv-ia .img-container{
         top: 140px;
-        right: 20px;
+        right: 120px;
         padding: 20px;
     }
     .cv-ia .img-container img {
@@ -221,7 +229,7 @@
     }
     .cv-ia .txt-container{
         width: 70%;
-        gap: 2.8rem !important;
+        gap: 1.5rem !important;
     }
     .cv-ia .txt-container p {
         /* width: 90%; */

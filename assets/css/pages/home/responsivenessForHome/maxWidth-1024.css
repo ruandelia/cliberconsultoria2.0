@@ -38,6 +38,7 @@
     .cv-ia .container {
         width: 600px;
         margin-bottom: 120px;
+        margin-left: 0;
     }
 
     .cv-ia .titulo {

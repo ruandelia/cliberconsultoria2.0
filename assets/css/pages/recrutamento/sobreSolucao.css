@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 600px;
+    /* min-height: 600px; */
     color: var(--cor-bege);
     font-family: var(--fonte-montserrat);
     position: relative;
@@ -72,7 +72,7 @@
 
 .sobreSolucao .accordion-container {
     margin: 30px 0;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .sobreSolucao .accordion {
@@ -110,7 +110,7 @@
 /* Correção para o fundo branco */
 .sobreSolucao .accordion-item {
     border: none !important;
-    margin: 20px 0;
+    margin: 25px 0;
 
     /* DEFININDO A COR DE FUNDO PADRÃO DO ITEM */
     --bs-accordion-bg: transparent;
@@ -130,7 +130,7 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9px);
     -webkit-backdrop-filter: blur(9px);
-    
+
 }
 
 .accordion .accordion-button.collapsed {
@@ -231,7 +231,7 @@
         font-size: 12px;
     }
 
-    .sobreSolucao .limitador {
+    .limitador {
         width: 82%;
     }
 
@@ -246,12 +246,149 @@
 }
 
 @media (max-width: 800px) {
+
     .titulo-solucao {
         font-size: 1.7rem;
     }
 
     .p-solucao {
+        font-size: 1.1rem;
+        width: 80%;
+    }
+
+    .encerrando-solucao .titulo-encerrando-solucao {
+        font-size: 1.6rem !important;
+    }
+
+    .encerrando-solucao .p-encerrando-solucao {
+        font-size: 1rem !important;
+    }
+
+    .encerrando-solucao .txt-img-container {
+        /* background-color: rgba(255, 192, 203, 0.431); */
+        width: 90% !important;
+    }
+
+    .encerrando-solucao .img-container img {
+        position: absolute;
+        top: -30px;
+        max-width: 200px !important;
+    }
+
+    .encerrando-solucao .btn-voltar {
+        display: flex;
+        align-items: center;
+        font-size: 1rem !important;
+
+        img {
+            max-width: 20px;
+        }
+    }
+
+    .encerrando-solucao .link-btn .cursor-btn {
+        padding: 1px;
+        max-width: 18px;
+    }
+
+
+}
+
+@media (max-width: 624px) {
+    html {
+        font-size: 9px;
+    }
+
+    .btn-voltar {
+        margin: 20px 0 !important;
+    }
+
+    .sobreSolucao .limitador {
+        width: 85% !important;
+    }
+
+    /* .padding-left-container{
+        padding-left: 20px !important;
+    }
+ */
+    .titulo-solucao {
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+
+    .p-encerrando-solucao {
+        font-size: 1rem !important;
+    }
+
+    .sobreSolucao .accordion-item{
+        margin: 15px 0;
+        
+    }
+
+    .sobreSolucao .accordion-button.collapsed, .sobreSolucao .accordion-button:focus:not(.collapsed){
+        font-size: 1.2rem !important;
+        padding: 8px;
+    }
+
+    .sobreSolucao .link-btn .cursor-btn{
+        max-width: 16px;
+        padding: 3px;
+        margin-left: 10px;
+    }
+
+    .sobreSolucao .accordion-container{
+        margin-bottom: 50px !important;
+    }
+
+    .encerrando-solucao{
+        padding: 6rem 0 !important;
+        /* padding-top: 4rem !important;*/
+        padding-bottom: 9rem !important; 
+    }    
+
+    .encerrando-solucao .limitador{
+        width: 85% !important;
+    }
+
+    .encerrando-solucao .titulo-encerrando-solucao {
+        font-size: 1.3rem !important;
+        margin-bottom: 20px !important;
+        white-space: nowrap;
+    }
+
+    .encerrando-solucao .p-encerrando-solucao {
+        font-size: 0.9rem !important;
+    }
+
+    .encerrando-solucao .img-container img{
+        max-width: 130px !important;
+    }
+
+    .encerrando-solucao .voltar-saberMais-container{
+        width: 100% !important;
+        margin-top: 0 !important;
+        height: 35px;
+        /* background-color: rgba(209, 153, 153, 0.138); */
+        position: absolute;
+    }
+
+    .encerrando-solucao .voltar-saberMais-container .btn-voltar{
+        font-size: 1rem !important;
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+
+    .encerrando-solucao .voltar-saberMais-container .link-btn{
+        position: relative;
+        right: 200px;
         font-size: 1rem;
-        width: 65%;
+        padding: 5px !important;
+        margin: 0px !important;
+    }
+
+    .encerrando-solucao .voltar-saberMais-container .link-btn .cursor-btn{
+        max-width: 15px;
+        padding: 2px;
     }
 }
+
+    

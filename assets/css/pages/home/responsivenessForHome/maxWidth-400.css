@@ -27,11 +27,19 @@
        padding-left: 25px !important;
     }
     .card .img-container img{
-        max-width: 180px !important;
+        /* max-width: 180px !important; */
+    }
+
+    .card h1{
+        font-size: 0.8px !important;
+    }
+
+    .card p{
+        font-size: 0.8rem !important;
     }
 
     .cv-ia{
-        margin-top: 150px !important;
+        margin-top: 200px !important;
         justify-content: flex-start !important;
     }
 
