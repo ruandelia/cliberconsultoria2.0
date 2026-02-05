@@ -299,7 +299,12 @@
     }
 
     .btn-voltar {
-        margin: 20px 0 !important;
+        margin: 25px 0;
+        margin-bottom: 45px;
+    }
+
+    .sobreSolucao{
+        min-height: 600px;
     }
 
     .sobreSolucao .limitador {
@@ -311,38 +316,47 @@
     }
  */
     .titulo-solucao {
-        font-size: 1.4rem;
+        font-size: 1.46rem;
         white-space: nowrap;
+        font-weight: 700;
     }
 
-    .p-encerrando-solucao {
-        font-size: 1rem !important;
+    .p-solucao {
+        font-size: 1.3rem !important;
+        width: 90%;
     }
 
     .sobreSolucao .accordion-item{
-        margin: 15px 0;
+        margin: 25px 0;
         
     }
 
     .sobreSolucao .accordion-button.collapsed, .sobreSolucao .accordion-button:focus:not(.collapsed){
-        font-size: 1.2rem !important;
+        font-size: 1.25rem !important;
         padding: 8px;
     }
 
+    .sobreSolucao .link-btn{
+        font-size: 1.2rem;
+    }
+
+    .sobreSolucao .link-btn .icon{
+        padding-left: 5px;
+    }
+
     .sobreSolucao .link-btn .cursor-btn{
-        max-width: 16px;
-        padding: 3px;
-        margin-left: 10px;
+        max-width: 18px;
+        padding: 4px;
     }
 
     .sobreSolucao .accordion-container{
-        margin-bottom: 50px !important;
+        margin-bottom: 80px !important;
     }
 
     .encerrando-solucao{
-        padding: 6rem 0 !important;
+        padding: 8rem 0 !important;
         /* padding-top: 4rem !important;*/
-        padding-bottom: 9rem !important; 
+        padding-bottom: 10rem !important; 
     }    
 
     .encerrando-solucao .limitador{
@@ -356,7 +370,7 @@
     }
 
     .encerrando-solucao .p-encerrando-solucao {
-        font-size: 0.9rem !important;
+        font-size: 1rem !important;
     }
 
     .encerrando-solucao .img-container img{
@@ -381,7 +395,7 @@
         position: relative;
         right: 200px;
         font-size: 1rem;
-        padding: 5px !important;
+        padding: 8px !important;
         margin: 0px !important;
     }
 
