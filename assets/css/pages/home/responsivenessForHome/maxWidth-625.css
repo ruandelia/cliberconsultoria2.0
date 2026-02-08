@@ -46,10 +46,10 @@
        padding-left: 30px !important;
     }
     .card h4{
-        font-size: 1.2rem !important;
+        font-size: 1.4rem !important;
     }
     .card p{
-        font-size: 0.9rem !important;
+        font-size: 1rem !important;
     }
     .cv-ia{
         margin-top: 220px !important;
@@ -77,7 +77,7 @@
     }
 
     .cv-ia .txt-container p{
-        font-size: 1.1rem !important;
+        font-size: 1.2rem !important;
         width: 100%;
     }
 
@@ -88,8 +88,8 @@
     }
 
     .cv-ia .link-btn .cursor-btn{
-        padding: 3px !important;
-        max-width: 16px;
+        padding: 2px !important;
+        max-width: 15px;
     }
 
     .cv-ia .icon{

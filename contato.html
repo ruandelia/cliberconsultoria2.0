@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliber consultoria - Contato</title>
+    <link rel="icon" href="assets/img/icone_Do_Navegador.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <div class="container-logo">
+            <a href="home.html">
+                <img class="img-logo" src="assets/img/logo.png" alt="Logo-cliber consultoria">
+            </a>
+        </div>
+        <nav id="nav-desktop">
+            <ul>
+                <li><a href="" class="link link-vaga">Vagas</a></li>
+                <li><a href="#solucoes" class="link link-servicos">Serviços</a></li>
+                <li><a href="quemSomos.html" class="link link-quem-somos">Quem somos</a></li>
+                <li><a href="contato.html" class="link link-contato">Contato</a></li>
+                <div class=" login-cadastrar">
+                    <li><a href="" class="link link-cadastrar">Cadastrar</a></li>
+                    <span></span>
+                    <li><a href="" class="link-login">Login</a></li>
+                </div>
+                <div class="displayNone area-exclusiva">
+                    <a href="">
+                        <p>Olá, usuário</p>
+                        <p>Acesse sua área exclusiva</p>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+        <nav id="nav-tablet">
+            <img class="bntAbrir " src="assets/img/icons/Menu.png" alt="">
+            <img class="btnFechar displayNone" src="assets/img/icons/Close.png" alt="">
+        </nav>
+    </header>
+    <main id="main-contatos">
+        <div class="fundo-contatos">
+            <!-- Modal menu -->
+            <dialog class="menu-tablet displayNone">
+                <a href="" class="link">Vagas</a>
+                <a href="/home.html#solucoes" class="link">Serviços</a>
+                <a href="quemSomos.html" class="link">Quem somos</a>
+                <a href="contato.html" class="link">Contato</a>
+                <div class="login-cadastrar-tablet displayNone">
+                    <a href="" class="link-login">Login</a>
+                    <span></span>
+                    <a href="" class="link-cadastrar">Cadastrar</a>
+                </div>
+                <div class="area-exclusiva displayNone">
+                    <a href="">
+                        <p>Olá, usuário</p>
+                        <p>Acesse sua área exclusiva</p>
+                    </a>
+                </div>
+            </dialog>
+            <!-- Modal Login -->
+            <dialog class="modal-login-cadastrar" id="modal-login">
+                <div class="form-container">
+                    <form action="">
+                        <img src="assets/img/icons/Close.png" alt="close-modal" class="close-modal">
+                        <h2>Login</h2>
+                        <!-- div destinada a alinhar e centralizar elementos -->
+                        <div class="alinha-inputs">
+                            <div class="label-input">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" autocomplete="off">
+                            </div>
+                            <div class="label-input">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" id="senha">
+                                <p class="senhaIncorreta">Usuário ou senha incorretas.</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-login">Entrar</button>
+                        <button type="button" class="btn btn-cadastrar">Cadastrar</button>
+                    </form>
+                </div>
+            </dialog>
+            <!-- ============================================ Conteúdo ========================================================== -->
+            <!-- <h1 class="teste">Teste simples de conteúdo.</h1> -->
+            <div class="contato-fale-conosco-container">
+                <div class="contato-container">
+                    <h1 class="titulo-contato">Contato</h1>
+                    <p class="p-contato">Deixe sua mensagem</p>
+
+                    <form action="" class="form-contato">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="nome" id="nome" name="nome">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="emali" class="email">
+                        <label for="msg">Mensagem</label>
+                        <textarea name="msg" id="msg" class="msg"></textarea>
+                        <button type="submit" class="btn-enviar">Enviar<i class="icon"><img class="cursor-btn"
+                                    src="assets/img/icons/near_me_45dp_FFF1D7_FILL0_wght400_GRAD0_opsz48.png"
+                                    alt=""></i></button>
+                    </form>
+                </div>
+                <div class="fale-conosco-container">
+                    <h1 class="titulo-fale-conosco">Fale Conosco!</h1>
+                    <div class="container">
+
+                        <div class="cima">
+                            <p class="p-contato">Estamos a uma mensagem de distância</p>
+                            <div class="zap-container">
+                                <button class="btn-cv link-btn"><a href="">Conversar Agora<i class="icon"><img
+                                                class="cursor-btn"
+                                                src="assets/img/icons/near_me_45dp_FFF1D7_FILL0_wght400_GRAD0_opsz48.png"
+                                                alt=""></i></a></button>
+                                <div class="zap">
+                                    <p>11 99999-9999</p>
+                                    <img src="assets/img/icons/WhatsApp.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="baixo">
+                            <button class="btn-converse">Converse com a Cliber por e-mail <img
+                                   class="anima-btn" src="assets/img/icons/seta_bege.png" alt=""></button>
+                            <p class="texto-escondido">Seja para esclarecer dúvidas, solicitar uma proposta ou compartilhar suas necessidades, nosso time está disponível para atender você com atenção e cuidado.</p> 
+                            <div class="email-container">
+                                <button class="btn-cv link-btn "><a href="">Enviar mensagem<i class="icon"><img
+                                                class="cursor-btn"
+                                                src="assets/img/icons/near_me_45dp_FFF1D7_FILL0_wght400_GRAD0_opsz48.png"
+                                                alt=""></i></a></button>
+                                                <p>cliberconsultoria@gmail.com <img src="assets/img/icons/Email.png" alt=""></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="logo-justificada-container">
+            <img class="logo-justificada" src="assets/img/logo.png" alt="Logo-justificada-cliber-consultoria">
+        </div>
+        <div class="redes-sociais-container">
+            <div class="redes-sociais">
+                <a href="#"><img src="assets/img/icons/Instagram.png" alt=""></a>
+                <a href="#"><img src="assets/img/icons/WhatsApp_white.png" alt=""></a>
+                <a href="#"><img src="assets/img/icons/Email.png" alt=""></a>
+            </div>
+            <p>Cliber Consultoria - Todos os direitos Reservados.</p>
+        </div>
+        <div class="btn-e-dev-container">
+            <div class="btn-topo">
+                <a href="#cabecalho">Topo
+                    <img src="assets/img/icons/Left.png" alt="">
+                </a>
+            </div>
+            <a href="">
+                <p class="dev">Desenvolvido por Ruan D'elia</p>
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/abrirFecharMenu.js"></script>
+    <script src="assets/js/abrirFecharModal.js"></script>
+    <script src="assets/js/ativaLoginUsuario.js"></script>
+    <script src="assets/js/meuAccordion.js">
+        
+    </script>
+</body>
+
+</html>
