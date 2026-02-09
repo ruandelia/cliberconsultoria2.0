@@ -23,7 +23,7 @@
     position: absolute;
 } */
 
-.fundo-contatos{
+.fundo-contatos {
     background: url(../img/banner-contatos.png);
     background-position: center;
     background-size: cover;
@@ -34,22 +34,22 @@
     font-family: var(--fonte-comfortaa);
 }
 
-.teste{
+.teste {
     color: var(--cor-bege);
 }
 
-.contato-fale-conosco-container{
+.contato-fale-conosco-container {
     display: flex;
 }
 
-.fale-conosco-container{
+.fale-conosco-container {
     position: relative;
     /* background-color: rgba(133, 198, 198, 0.271); */
     width: 55%;
     padding: 6rem 0;
 }
 
-.contato-container{
+.contato-container {
     position: relative;
     width: 45%;
     padding: 6rem 0;
@@ -61,21 +61,22 @@
     gap: 20px;
 }
 
-.fale-conosco-container{
+.fale-conosco-container {
     padding-left: 10rem;
 }
 
-.titulo-contato, .titulo-fale-conosco{
+.titulo-contato,
+.titulo-fale-conosco {
     text-align: center;
     font-weight: 200;
     font-size: 3.5rem;
 }
 
-.titulo-fale-conosco{
+.titulo-fale-conosco {
     font-size: 3rem;
 }
 
-.contato-container .p-contato{
+.contato-container .p-contato {
     text-align: center;
     font-family: var(--fonte-montserrat);
     font-weight: 600;
@@ -83,20 +84,21 @@
 }
 
 
-.contato-container .form-contato{
+.contato-container .form-contato {
     /* background-color: rgba(240, 128, 128, 0.071); */
     display: flex;
     flex-direction: column;
     width: 26%;
 }
 
-.form-contato label{
+.form-contato label {
     font-size: 1.5rem;
     font-family: var(--fonte-cinzel);
-    
+
 }
 
-.form-contato input, .form-contato .msg{
+.form-contato input,
+.form-contato .msg {
     margin-bottom: 25px;
     border-radius: 2.5px;
     border: none;
@@ -106,23 +108,24 @@
     transition: all 0.5s ease-in-out;
 }
 
- input:focus, .msg{
+input:focus,
+.msg {
     outline: none;
     border: none;
     font-weight: 800;
 
 }
 
-input:focus{
+input:focus {
     width: 250px;
     transition: all 1s;
 }
 
-.contato-container .form-contato input::placeholder{
+.contato-container .form-contato input::placeholder {
     font-weight: 800;
 }
 
-.form-contato .btn-enviar{
+.form-contato .btn-enviar {
     position: relative;
     font-family: var(--fonte-cinzel);
     color: var(--cor-bege);
@@ -135,11 +138,13 @@ input:focus{
     padding: 5px;
     align-self: center;
     transition: 1s all;
-    .cursor-btn{
+
+    .cursor-btn {
         transform: rotate(0deg);
         transition: all 1s ease;
     }
-    .icon{
+
+    .icon {
         opacity: 0;
         transform: rotate(-90deg);
         transition: all 1s ease;
@@ -150,7 +155,7 @@ input:focus{
     padding: 3px;
 } */
 
-.form-contato .btn-enviar .cursor-btn{
+.form-contato .btn-enviar .cursor-btn {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -160,18 +165,20 @@ input:focus{
     border-radius: 50%;
 }
 
-.form-contato .btn-enviar:hover{
+.form-contato .btn-enviar:hover {
     width: 100%;
-    .cursor-btn{
+
+    .cursor-btn {
         transform: rotate(360deg);
     }
-    .icon{
+
+    .icon {
         opacity: 1;
         transform: rotate(360deg);
     }
 }
 
-.fale-conosco-container .container{
+.fale-conosco-container .container {
     /* background-color: rgba(0, 255, 255, 0.042); */
     display: flex;
     justify-content: space-between;
@@ -180,23 +187,24 @@ input:focus{
     padding-left: 0 !important;
     min-height: 250px;
 }
+
 /* 
 .fale-conosco-container .container .cima{
     background-color: pink;
 } */
 
-.fale-conosco-container .titulo-fale-conosco{
+.fale-conosco-container .titulo-fale-conosco {
     text-align: left;
     margin-bottom: 30px;
 }
 
-.zap-container{
+.zap-container {
     display: flex;
     justify-content: space-between;
     width: 40%;
 }
 
-.fale-conosco-container .p-contato{
+.fale-conosco-container .p-contato {
     font-size: 1.2rem;
     text-align: left;
     background-color: var(--cor-azul-escuro-30);
@@ -233,36 +241,38 @@ input:focus{
 .link-btn .icon {
     margin-left: 20px;
 }
-.zap-container{
+
+.zap-container {
     display: flex;
     justify-content: space-between;
     /* background-color: red; */
     width: fit-content;
 }
 
-.zap{
+.zap {
     display: flex;
     align-items: center;
     margin-left: 4rem;
 }
 
-.zap img{
+.zap img {
     max-width: 25px;
     max-height: 20px;
 }
 
-.zap p{
+.zap p {
     margin-bottom: 0;
 }
 
-.btn-converse{
+.btn-converse {
     color: var(--cor-bege);
     background-color: var(--cor-azul-escuro-30);
     border: 2px solid var(--cor-azul-claro);
     padding: 5px;
     font-size: 1.1rem;
     border-radius: 10px;
-    img{
+
+    img {
         max-width: 20px;
         transform: rotate(90deg);
         margin: 0 5px;
@@ -270,11 +280,11 @@ input:focus{
     }
 }
 
-.fale-conosco-container .anima-btn.ativado{
-        transform: rotate(-90deg) !important;
+.fale-conosco-container .anima-btn.ativado {
+    transform: rotate(-90deg) !important;
 }
 
-.fale-conosco-container .baixo{
+.fale-conosco-container .baixo {
     /* background-color: rgba(0, 128, 0, 0.072); */
 }
 
@@ -282,64 +292,123 @@ input:focus{
     background-color: var(--cor-preto);
     width: 85%;
     font-size: 0.9rem;
-    padding: 0 5px; /* Reduzi o padding vertical para 0 quando fechado */
+    padding: 0 5px;
+    /* Reduzi o padding vertical para 0 quando fechado */
     border-radius: 10px;
-    margin-top: 0;   /* Margin 0 para não ocupar espaço fechado */
-    
+    margin-top: 0;
+    /* Margin 0 para não ocupar espaço fechado */
+
     /* O SEGREDO ESTÁ AQUI */
     opacity: 0;
-    max-height: 0;      /* Força a altura a ser zero */
-    overflow: hidden;   /* Esconde o texto que "sobrar" da altura zero */
-    visibility: hidden; /* Garante que o elemento não seja clicável/focado */
+    max-height: 0;
+    /* Força a altura a ser zero */
+    overflow: hidden;
+    /* Esconde o texto que "sobrar" da altura zero */
+    visibility: hidden;
+    /* Garante que o elemento não seja clicável/focado */
     transform: translateY(-10px);
     transition: 0.5s all ease-in-out;
 }
 
 .fale-conosco-container .texto-escondido.ativo {
     opacity: 1;
-    max-height: 200px;  /* Um valor maior que o seu conteúdo */
+    max-height: 200px;
+    /* Um valor maior que o seu conteúdo */
     visibility: visible;
     margin-top: 9px;
     padding: 5px;
     transform: translateY(0px);
 }
 
-.fale-conosco-container .email-container{
+.fale-conosco-container .email-container {
     display: flex;
     align-items: center;
     /* background-color: rgba(0, 255, 255, 0.036); */
     width: fit-content;
 }
 
-.fale-conosco-container .email-container p{
+.fale-conosco-container .email-container p {
     margin-top: 5px;
     margin-left: 4rem;
+
     /* background-color: aquamarine; */
-    img{
+    img {
         max-width: 20px;
     }
 }
 
-@media(min-width: 992px) and (max-width: 1999.98px){
-    .contato-container{
+@media(min-width: 992px) and (max-width: 1999.98px) {
+    .contato-container {
         width: 37%;
         padding: 6rem 0;
     }
-    .fale-conosco-container{
+
+    .fale-conosco-container {
         width: 63%;
         padding: 6rem 0;
         padding-left: 13rem;
     }
-    .contato-container form{
+
+    .contato-container form {
         width: 100%;
     }
-    .contato-container .form-contato{
+
+    .contato-container .form-contato {
         width: 48%;
     }
-    .fale-conosco-container .container{
+
+    .fale-conosco-container .container {
         min-height: 300px;
-    }    
-    .fale-conosco-container .email-container p{
+    }
+
+    .fale-conosco-container .email-container p {
         margin-left: 3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contato-container {
+        width: 50%;
+        padding: 6rem 0;
+    }
+
+    .contato-container .titulo-contato,
+    .fale-conosco-container .titulo-fale-conosco {
+        font-size: 3rem;
+    }
+
+    .contato-container .p-contato {
+        font-size: 1.1rem;
+    }
+
+    .fale-conosco-container {
+        width: 50%;
+        padding: 6rem 0;
+        /* padding-left: 8rem; */
+    }
+
+    .contato-container .form-contato {
+        width: 40%;
+    }
+
+    input:focus {
+        width: 200px;
+        transition: all 1s;
+    }
+
+    .form-contato input,
+    .form-contato .msg {
+
+        font-size: 1rem;
+
+    }
+
+    .fale-conosco-container .container {
+        min-height: 300px;
+    }
+
+    .fale-conosco-container .email-container p {
+        margin-left: 1rem;
+        font-size: 0.9rem !important;
     }
 }
