@@ -319,3 +319,27 @@ input:focus{
         max-width: 20px;
     }
 }
+
+@media(min-width: 992px) and (max-width: 1999.98px){
+    .contato-container{
+        width: 37%;
+        padding: 6rem 0;
+    }
+    .fale-conosco-container{
+        width: 63%;
+        padding: 6rem 0;
+        padding-left: 13rem;
+    }
+    .contato-container form{
+        width: 100%;
+    }
+    .contato-container .form-contato{
+        width: 48%;
+    }
+    .fale-conosco-container .container{
+        min-height: 300px;
+    }    
+    .fale-conosco-container .email-container p{
+        margin-left: 3rem;
+    }
+}
