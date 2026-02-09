@@ -411,4 +411,48 @@ input:focus {
         margin-left: 1rem;
         font-size: 0.9rem !important;
     }
+
+    .fale-conosco-container .titulo-fale-conosco {
+        font-size: 2.5rem;
+        margin-top: 5px;
+    }
+
+    .fale-conosco-container p,
+    .btn-converse,
+    .fale-conosco-container .link-btn {
+        font-size: 1rem !important;
+    }
+}
+
+@media(max-width:626px) {
+    .contato-fale-conosco-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .contato-container, .fale-conosco-container{
+        padding: 0;
+    }
+    .contato-container{
+        width: 100%;
+        padding: 5rem 0;
+    }
+    .contato-container .titulo-contato{
+        font-size: 4rem;
+    }
+    .contato-container .p-contato{
+        font-size: 1.5rem;
+    }
+    .contato-container .form-contato{
+        width: 37%;
+    }
+    .contato-container .form-contato input:focus{
+        width: 190px;
+    }
+    .fale-conosco-container{
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
 }
