@@ -429,30 +429,56 @@ input:focus {
         display: flex;
         flex-direction: column;
     }
-    .contato-container, .fale-conosco-container{
+
+    .contato-container,
+    .fale-conosco-container {
         padding: 0;
     }
-    .contato-container{
+
+    .contato-container {
         width: 100%;
-        padding: 5rem 0;
+        padding: 7rem 0;
     }
-    .contato-container .titulo-contato{
+
+    .contato-container .titulo-contato {
         font-size: 4rem;
     }
-    .contato-container .p-contato{
+
+    .contato-container .p-contato {
         font-size: 1.5rem;
     }
-    .contato-container .form-contato{
+
+    .contato-container .form-contato {
         width: 37%;
     }
-    .contato-container .form-contato input:focus{
+
+    .contato-container .form-contato input:focus {
         width: 190px;
     }
-    .fale-conosco-container{
-        padding-left: 0px;
+
+    .fale-conosco-container {
+        padding-left: 9rem;
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding-bottom: 7rem;
     }
-    
+
+    .baixo img p {
+        max-width: 5px !important;
+    }
+
+    .zap img {
+        max-width: 20px;
+        max-height: 18px;
+    }
+
+    .fale-conosco-container .email-container p {
+        font-size: 1rem;
+        margin-left: 1rem;
+        img{
+            max-width: 15px;
+        }
+    }
+
 }
