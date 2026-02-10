@@ -92,12 +92,91 @@
             </dialog>
             <section class="form-cadastro">
                 <form action="">
-                    <label for="primeiro-nome">
-                        Primeiro nome
-                    </label>
-                    <input type="text" name="primeiro-nome" id="primeiro-nome">
-                    <label for="segundo-nome">Segundo nome</label>
-                    <input type="text" name="segundo-nome" id="segundo-nome">
+                    <fieldset>
+                        <legend class="titulo-form">Cadastrar</legend>
+                    </fieldset>
+                    <div class="nomes-email-container">
+                        <div class="nomes-container">
+                            <div class="alinha-input">
+                                <label for="primeiro-nome">
+                                    Primeiro nome
+                                </label>
+                                <input type="text" name="primeiro-nome" id="primeiro-nome">
+                            </div>
+                            <div class="alinha-input">
+                                <label for="segundo-nome">Segundo nome</label>
+                                <input type="text" name="segundo-nome" id="segundo-nome">
+                            </div>
+                        </div>
+                        <div class="email-senha-container">
+                            <div class="alinha-input">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="alinha-input">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" id="senha">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tipos-container">
+                        <h1 class="tipo-de-perfil-titulo">Qual Tipo de perfil</h1>
+                        <div class="tipo-de-perfil-1">
+                            <div class="opcoes-container">
+                                <!-- <select name="" id="">
+                                <option value="">Teste Básico 1</option>
+                                <option value="">Teste Básico 1</option>
+                            </select> -->
+                                <label for="opcao-1" class="opcao-1">
+                                    <input type="radio" name="opcao" id="opcao-1">
+                                    <h2 class="titulo-opcao">Perfil Empresa <img src="assets/img/icons/Building.png"
+                                            alt=""></h2>
+                                    <p>Você representa uma empresa?</p>
+                                    <p>Crie um perfil corporativo para encontrar soluções de RH e os melhores talentos
+                                        para sua equipe. </p>
+                                    <p>Com este acesso, você poderá:</p>
+                                    <ul>
+                                        <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Solicitar orçamentos
+                                            para nossos serviços de consultoria.</li>
+                                        <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Conhecer nossas
+                                            soluções de Recrutamento, Clima e Cultura.</li>
+                                        <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Entrar em contato
+                                            direto com nossos especialistas para fortalecer seu time.</li>
+                                    </ul>
+                                    <img src="assets/img/icons/Cursor.png" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="tipo-de-perfil-2">
+                            <div class="opcoes-container">
+                                <!-- <select name="" id="">
+                                <option value="">Teste Básico 1</option>
+                                <option value="">Teste Básico 1</option>
+                            </select> -->
+                                <label for="opcao-2" class="opcao-2">
+                                    <input type="radio" name="opcao" id="opcao-2">
+                                    <h2 class="titulo-opcao">Perfil Candidato<img src="assets/img/icons/User.png"
+                                            alt=""></h2>
+                                    <p>Buscando uma nova oportunidade?</p>
+                                    <p>Cadastre-se como profissional para encontrar vagas, participar de processos
+                                        seletivos e impulsionar sua carreira com a ajuda da nossa tecnologia.</p>
+                                    <p>Com este acesso, você poderá:</p>
+                                    <ul>
+                                        <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Cadastrar seu
+                                            currículo em nosso banco de talentos.</li>
+                                        <li><img src="assets/img/icons/Mandriva.png" alt="">Turbinar seu perfil com a
+                                            análise e sugestões da nossa Inteligência Artificial.</li>
+                                        <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Explorar e se
+                                            candidatar às vagas abertas com facilidade.</li>
+                                    </ul>
+                                    <img src="assets/img/icons/Cursor.png" alt="">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar<i class="icon"><img class="cursor-btn"
+                                src="assets/img/icons/near_me_45dp_FFF1D7_FILL0_wght400_GRAD0_opsz48.png"
+                                alt=""></i></button>
                 </form>
             </section>
     </main>
