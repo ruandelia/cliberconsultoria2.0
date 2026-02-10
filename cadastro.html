@@ -30,7 +30,7 @@
                 <li><a href="quemSomos.html" class="link link-quem-somos">Quem somos</a></li>
                 <li><a href="contato.html" class="link link-contato">Contato</a></li>
                 <div class=" login-cadastrar">
-                    <li><a href="cadastro.html" class="link link-cadastrar">Cadastrar</a></li>
+                    <li><a href="" class="link link-cadastrar">Cadastrar</a></li>
                     <span></span>
                     <li><a href="" class="link-login">Login</a></li>
                 </div>
@@ -47,8 +47,8 @@
             <img class="btnFechar displayNone" src="assets/img/icons/Close.png" alt="">
         </nav>
     </header>
-    <main id="main-contatos">
-        <div class="fundo-contatos">
+    <main id="main-cadastro">
+        <div class="fundo-cadastro">
             <!-- Modal menu -->
             <dialog class="menu-tablet displayNone">
                 <a href="" class="link">Vagas</a>
@@ -58,7 +58,7 @@
                 <div class="login-cadastrar-tablet displayNone">
                     <a href="" class="link-login">Login</a>
                     <span></span>
-                    <a href="cadastro.html" class="link-cadastrar">Cadastrar</a>
+                    <a href="" class="link-cadastrar">Cadastrar</a>
                 </div>
                 <div class="area-exclusiva displayNone">
                     <a href="">
@@ -90,60 +90,16 @@
                     </form>
                 </div>
             </dialog>
-            <!-- ============================================ Conteúdo ========================================================== -->
-            <!-- <h1 class="teste">Teste simples de conteúdo.</h1> -->
-            <div class="contato-fale-conosco-container">
-                <div class="contato-container">
-                    <h1 class="titulo-contato">Contato</h1>
-                    <p class="p-contato">Deixe sua mensagem</p>
-
-                    <form action="" class="form-contato">
-                        <label for="nome">Nome</label>
-                        <input type="text" class="nome" id="nome" name="nome">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="emali" class="email">
-                        <label for="msg">Mensagem</label>
-                        <textarea name="msg" id="msg" class="msg"></textarea>
-                        <button type="submit" class="btn-enviar">Enviar<i class="icon"><img class="cursor-btn"
-                                    src="assets/img/icons/near_me_45dp_FFF1D7_FILL0_wght400_GRAD0_opsz48.png"
-                                    alt=""></i></button>
-                    </form>
-                </div>
-                <div class="fale-conosco-container">
-                    <h1 class="titulo-fale-conosco">Fale Conosco!</h1>
-                    <div class="container">
-
-                        <div class="cima">
-                            <p class="p-contato">Estamos a uma mensagem de distância</p>
-                            <div class="zap-container">
-                                <button class="btn-cv link-btn"><a href="">Conversar Agora<i class="icon"><img
-                                                class="cursor-btn"
-                                                src="assets/img/icons/near_me_45dp_FFF1D7_FILL0_wght400_GRAD0_opsz48.png"
-                                                alt=""></i></a></button>
-                                <div class="zap">
-                                    <p>11 99999-9999</p>
-                                    <img src="assets/img/icons/WhatsApp.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="baixo">
-                            <button class="btn-converse">Converse com a Cliber por e-mail <img
-                                   class="anima-btn" src="assets/img/icons/seta_bege.png" alt=""></button>
-                            <p class="texto-escondido">Seja para esclarecer dúvidas, solicitar uma proposta ou compartilhar suas necessidades, nosso time está disponível para atender você com atenção e cuidado.</p> 
-                            <div class="email-container">
-                                <button class="btn-cv link-btn "><a href="">Enviar mensagem<i class="icon"><img
-                                                class="cursor-btn"
-                                                src="assets/img/icons/near_me_45dp_FFF1D7_FILL0_wght400_GRAD0_opsz48.png"
-                                                alt=""></i></a></button>
-                                                <p>cliberconsultoria@gmail.com <img src="assets/img/icons/Email.png" alt=""></p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+            <section class="form-cadastro">
+                <form action="">
+                    <label for="primeiro-nome">
+                        Primeiro nome
+                    </label>
+                    <input type="text" name="primeiro-nome" id="primeiro-nome">
+                    <label for="segundo-nome">Segundo nome</label>
+                    <input type="text" name="segundo-nome" id="segundo-nome">
+                </form>
+            </section>
     </main>
     <footer>
         <div class="logo-justificada-container">
@@ -164,19 +120,13 @@
                 </a>
             </div>
             <a href="">
-                <p class="dev">Desenvolvido por Ruan D'elia</p>
+                <p>Desenvolvido por Ruan D'elia</p>
             </a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
     <script src="assets/js/abrirFecharMenu.js"></script>
     <script src="assets/js/abrirFecharModal.js"></script>
     <script src="assets/js/ativaLoginUsuario.js"></script>
-    <script src="assets/js/meuAccordion.js">
-        
-    </script>
 </body>
 
 </html>
