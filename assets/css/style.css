@@ -58,4 +58,57 @@ border: 2px solid var(--cor-azul-medio);
 
 .form-cadastro .nomes-email-container{
     background-color: rgba(94, 94, 94, 0.041);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-cadastro .nomes-container, .form-cadastro .email-senha-container{
+    /* background-color: rgba(187, 0, 0, 0.384); */
+    display: flex;
+    gap: 10px;
+}
+
+.form-cadastro .alinha-input{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.form-cadastro #primeiro-nome{
+    width: 80%;
+}
+
+.form-cadastro #segundo-nome{
+    width: 120%;
+    align-self: flex-end;
+}
+
+.form-cadastro #label-segundo-nome{
+    width: 120%;
+    align-self: flex-end;
+}
+
+.form-cadastro #email{
+    width: 150%;
+}
+
+.form-cadastro #senha{
+    width: 50%;
+    align-self: flex-end;
+}
+
+.form-cadastro #label-senha{
+    align-self: flex-end;
+    width: 50%;
+}
+
+.form-cadastro input::placeholder{
+    color: blue;
+}
+
+.form-cadastro input:focus{
+    outline: none;
+    /* border: none; */
 }
