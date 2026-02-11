@@ -53,7 +53,7 @@
     justify-content: center;
     align-items: center;
     padding: 5rem;
-    
+
 }
 
 .form-cadastro form {
@@ -149,7 +149,8 @@
     margin: auto;
     gap: 20px;
     padding: 20px;
-    align-items: stretch; /* O segredo: força os filhos a terem a mesma altura */
+    align-items: stretch;
+    /* O segredo: força os filhos a terem a mesma altura */
 }
 
 .form-cadastro #opcao-1,
@@ -169,9 +170,9 @@
     flex: 1;
 }
 
-.form-cadastro .primeiro-p{
+/* .form-cadastro .primeiro-p{
     width: 70%;
-}
+} */
 
 /* Quando a div tiver a classe 'ativo', ela ganha a borda */
 .form-cadastro .opcoes-container.ativo {
@@ -208,6 +209,7 @@
 .opcoes-container ul {
     font-size: 0.9rem;
     padding-left: 0;
+
     img {
         max-width: 20px;
     }
@@ -222,12 +224,12 @@
     transform: rotate(70deg);
 }
 
-.form-cadastro .alinha-btn{
+.form-cadastro .alinha-btn {
     display: flex;
     justify-content: center;
 }
 
-.btn-enviar{
+.btn-enviar {
     position: relative;
     color: var(--cor-bege);
     background-color: var(--cor-azul-claro-30);
@@ -238,16 +240,25 @@
     padding: 10px 50px;
 }
 
-/* .btn-enviar span{
-    margin-right: 25px;
-} */
+@media(max-width: 992px) {
 
-/* .btn-enviar .cursor-btn{
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    max-width: 22px;
-    padding: 3px;
-    border-radius: 50%;
-    background-color: var(--cor-azul-claro);
-} */
+    .form-cadastro .nomes-container,
+    .form-cadastro .email-senha-container {
+        padding: 0 5rem;
+    }
+
+    .form-cadastro .display-flex {
+        max-width: 90%;
+    }
+}
+
+@media(max-width: 624px){
+    .form-cadastro .nomes-container,
+    .form-cadastro .email-senha-container {
+        padding: 0 2.5rem;
+    }
+
+    .form-cadastro .display-flex {
+        max-width: 100%;
+    }
+}
