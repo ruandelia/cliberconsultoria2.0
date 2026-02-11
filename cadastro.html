@@ -48,48 +48,49 @@
         </nav>
     </header>
     <main id="main-cadastro">
+        <dialog class="menu-tablet displayNone">
+            <a href="" class="link">Vagas</a>
+            <a href="/home.html#solucoes" class="link">Serviços</a>
+            <a href="quemSomos.html" class="link">Quem somos</a>
+            <a href="contato.html" class="link">Contato</a>
+            <div class="login-cadastrar-tablet displayNone">
+                <a href="" class="link-login">Login</a>
+                <span></span>
+                <a href="" class="link-cadastrar">Cadastrar</a>
+            </div>
+            <div class="area-exclusiva displayNone">
+                <a href="">
+                    <p>Olá, usuário</p>
+                    <p>Acesse sua área exclusiva</p>
+                </a>
+            </div>
+        </dialog>
+        <!-- Modal Login -->
+        <dialog class="modal-login-cadastrar" id="modal-login">
+            <div class="form-container">
+                <form action="">
+                    <img src="assets/img/icons/Close.png" alt="close-modal" class="close-modal">
+                    <h2>Login</h2>
+                    <!-- div destinada a alinhar e centralizar elementos -->
+                    <div class="alinha-inputs">
+                        <div class="label-input">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" autocomplete="off">
+                        </div>
+                        <div class="label-input">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha">
+                            <p class="senhaIncorreta">Usuário ou senha incorretas.</p>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-login">Entrar</button>
+                    <a href="cadastro.html" class="btn btn-cadastrar">Cadastrar</a>
+                </form>
+            </div>
+        </dialog>
         <div class="fundo-cadastro">
             <!-- Modal menu -->
-            <dialog class="menu-tablet displayNone">
-                <a href="" class="link">Vagas</a>
-                <a href="/home.html#solucoes" class="link">Serviços</a>
-                <a href="quemSomos.html" class="link">Quem somos</a>
-                <a href="contato.html" class="link">Contato</a>
-                <div class="login-cadastrar-tablet displayNone">
-                    <a href="" class="link-login">Login</a>
-                    <span></span>
-                    <a href="" class="link-cadastrar">Cadastrar</a>
-                </div>
-                <div class="area-exclusiva displayNone">
-                    <a href="">
-                        <p>Olá, usuário</p>
-                        <p>Acesse sua área exclusiva</p>
-                    </a>
-                </div>
-            </dialog>
-            <!-- Modal Login -->
-            <dialog class="modal-login-cadastrar" id="modal-login">
-                <div class="form-container">
-                    <form action="">
-                        <img src="assets/img/icons/Close.png" alt="close-modal" class="close-modal">
-                        <h2>Login</h2>
-                        <!-- div destinada a alinhar e centralizar elementos -->
-                        <div class="alinha-inputs">
-                            <div class="label-input">
-                                <label for="email">Email</label>
-                                <input type="text" id="email" autocomplete="off">
-                            </div>
-                            <div class="label-input">
-                                <label for="senha">Senha</label>
-                                <input type="password" name="senha" id="senha">
-                                <p class="senhaIncorreta">Usuário ou senha incorretas.</p>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-login">Entrar</button>
-                        <a href="cadastro.html" class="btn btn-cadastrar">Cadastrar</a>
-                    </form>
-                </div>
-            </dialog>
+
             <section class="form-cadastro">
                 <form action="">
                     <fieldset>
@@ -120,63 +121,68 @@
                         </div>
                     </div>
                     <div class="tipos-container">
-                        <h1 class="tipo-de-perfil-titulo">Qual Tipo de perfil</h1>
-                        <div class="tipo-de-perfil-1">
-                            <div class="opcoes-container">
-                                <!-- <select name="" id="">
-                                <option value="">Teste Básico 1</option>
-                                <option value="">Teste Básico 1</option>
-                            </select> -->
-                                <label for="opcao-1" class="opcao-1">
-                                    <input type="radio" name="opcao" id="opcao-1">
-                                    <h2 class="titulo-opcao">Perfil Empresa <img src="assets/img/icons/Building.png"
-                                            alt=""></h2>
-                                    <p>Você representa uma empresa?</p>
-                                    <p>Crie um perfil corporativo para encontrar soluções de RH e os melhores talentos
-                                        para sua equipe. </p>
-                                    <p>Com este acesso, você poderá:</p>
-                                    <ul>
-                                        <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Solicitar orçamentos
-                                            para nossos serviços de consultoria.</li>
-                                        <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Conhecer nossas
-                                            soluções de Recrutamento, Clima e Cultura.</li>
-                                        <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Entrar em contato
-                                            direto com nossos especialistas para fortalecer seu time.</li>
-                                    </ul>
-                                    <img src="assets/img/icons/Cursor.png" alt="">
-                                </label>
+                        <h1 class="tipo-de-perfil-titulo">Qual Tipo de perfil?</h1>
+                        <div class="display-flex">
+                            <div class="tipo-de-perfil-1">
+                                <h2 class="titulo-opcao">Perfil Empresa <img src="assets/img/icons/Building.png" alt="">
+                                </h2>
+                                <div class="opcoes-container">
+                                    <label for="opcao-1" class="opcao-1">
+                                        <input type="radio" name="opcao" id="opcao-1">
+
+                                        <h3>Você representa uma empresa?</h3>
+                                        <p>Crie um perfil corporativo para encontrar soluções de RH e os melhores
+                                            talentos
+                                            para sua equipe. </p>
+                                        <p>Com este acesso, você poderá:</p>
+                                        <ul>
+                                            <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Solicitar
+                                                orçamentos
+                                                para nossos serviços de consultoria.</li>
+                                            <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Conhecer nossas
+                                                soluções de Recrutamento, Clima e Cultura.</li>
+                                            <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Entrar em
+                                                contato
+                                                direto com nossos especialistas para fortalecer seu time.</li>
+                                        </ul>
+                                        <img class="cursor" src="assets/img/icons/cursor-google.svg" alt="">
+                                    </label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="tipo-de-perfil-2">
-                            <div class="opcoes-container">
-                                <!-- <select name="" id="">
+                            <div class="tipo-de-perfil-2">
+                                <h2 class="titulo-opcao">Perfil Candidato<img src="assets/img/icons/User.png" alt="">
+                                </h2>
+                                <div class="opcoes-container">
+                                    <!-- <select name="" id="">
                                 <option value="">Teste Básico 1</option>
                                 <option value="">Teste Básico 1</option>
                             </select> -->
-                                <label for="opcao-2" class="opcao-2">
-                                    <input type="radio" name="opcao" id="opcao-2">
-                                    <h2 class="titulo-opcao">Perfil Candidato<img src="assets/img/icons/User.png"
-                                            alt=""></h2>
-                                    <p>Buscando uma nova oportunidade?</p>
-                                    <p>Cadastre-se como profissional para encontrar vagas, participar de processos
-                                        seletivos e impulsionar sua carreira com a ajuda da nossa tecnologia.</p>
-                                    <p>Com este acesso, você poderá:</p>
-                                    <ul>
-                                        <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Cadastrar seu
-                                            currículo em nosso banco de talentos.</li>
-                                        <li><img src="assets/img/icons/Mandriva.png" alt="">Turbinar seu perfil com a
-                                            análise e sugestões da nossa Inteligência Artificial.</li>
-                                        <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Explorar e se
-                                            candidatar às vagas abertas com facilidade.</li>
-                                    </ul>
-                                    <img src="assets/img/icons/Cursor.png" alt="">
-                                </label>
+                                    <label for="opcao-2" class="opcao-2">
+                                        <input type="radio" name="opcao" id="opcao-2" checked>
+
+                                        <h3>Buscando uma nova oportunidade?</h3>
+                                        <p class="primeiro-p">Cadastre-se como profissional para encontrar vagas,
+                                            participar de processos
+                                            seletivos e impulsionar sua carreira com a ajuda da nossa tecnologia.</p>
+                                        <p>Com este acesso, você poderá:</p>
+                                        <ul>
+                                            <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Cadastrar seu
+                                                currículo em nosso banco de talentos.</li>
+                                            <li><img src="assets/img/icons/Mandriva.png" alt="">Turbinar seu perfil com
+                                                a
+                                                análise e sugestões da nossa Inteligência Artificial.</li>
+                                            <li><img src="assets/img/icons/Checked Checkbox.png" alt="">Explorar e se
+                                                candidatar às vagas abertas com facilidade.</li>
+                                        </ul>
+                                        <img class="cursor" src="assets/img/icons/cursor-google.svg" alt="">
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn-enviar">Enviar<i class="icon"><img class="cursor-btn"
-                                src="assets/img/icons/near_me_45dp_FFF1D7_FILL0_wght400_GRAD0_opsz48.png"
-                                alt=""></i></button>
+                    <div class="alinha-btn">
+                        <button type="submit" class="btn-enviar"><span>Enviar</span></button>
+                    </div>
                 </form>
             </section>
     </main>
@@ -206,6 +212,7 @@
     <script src="assets/js/abrirFecharMenu.js"></script>
     <script src="assets/js/abrirFecharModal.js"></script>
     <script src="assets/js/ativaLoginUsuario.js"></script>
+    <script src="assets/js/animaInput.js"></script>
 </body>
 
 </html>
