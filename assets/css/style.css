@@ -166,7 +166,7 @@
     padding: 20px;
     border-radius: 5px;
     border: 2px solid #333;
-    min-height: 250px;
+    min-height: 200px;
     flex: 1;
 }
 
@@ -268,5 +268,21 @@
 
     .opcoes-container .cursor{
         display: none;
+    }
+
+    .opcoes-container ul img{
+        max-width: 15px;
+    }
+
+    .titulo-opcao{
+        font-size: 2.2rem;
+    }
+
+    .opcoes-container p{
+        font-size: 1.2rem;
+    }
+
+    .opcoes-container ul{
+        font-size: 1rem;
     }
 }
