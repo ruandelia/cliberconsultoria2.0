@@ -253,6 +253,9 @@
 }
 
 @media(max-width: 624px){
+    .fundo-cadastro {
+        padding: 2.5rem;
+    }
     .form-cadastro .nomes-container,
     .form-cadastro .email-senha-container {
         padding: 0 2.5rem;
@@ -260,5 +263,10 @@
 
     .form-cadastro .display-flex {
         max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .opcoes-container .cursor{
+        display: none;
     }
 }
