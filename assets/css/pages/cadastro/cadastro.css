@@ -1,0 +1,267 @@
+
+#main-cadastro {
+    position: relative;
+}
+
+/* Para navegadores modernos */
+#main-cadastro ::selection {
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-bege);
+}
+
+/* Para versões antigas do Firefox (opcional) */
+#main-cadastro ::-moz-selection {
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-bege);
+}
+
+.fundo-cadastro {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    min-height: 500px;
+    background: url(../../../img/banner-contatos.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* min-height: 800px; */
+    color: var(--cor-bege);
+    font-family: var(--fonte-comfortaa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+}
+
+.form-cadastro form {
+    position: relative;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.6px);
+    -webkit-backdrop-filter: blur(8.6px);
+    border: 2px solid var(--cor-azul-medio);
+    width: fit-content;
+}
+
+.form-cadastro .titulo-form {
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.form-cadastro .nomes-email-container {
+    /* background-color: rgba(94, 94, 94, 0.041); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-cadastro .nomes-container,
+.form-cadastro .email-senha-container {
+    /* background-color: rgba(187, 0, 0, 0.384); */
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 0 20rem;
+}
+
+.form-cadastro .alinha-input {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.form-cadastro #primeiro-nome {
+    width: 80%;
+}
+
+.form-cadastro #segundo-nome {
+    width: 120%;
+    align-self: flex-end;
+}
+
+.form-cadastro #label-segundo-nome {
+    width: 120%;
+    align-self: flex-end;
+}
+
+.form-cadastro #email {
+    width: 150%;
+}
+
+.form-cadastro #senha {
+    width: 50%;
+    align-self: flex-end;
+}
+
+.form-cadastro #label-senha {
+    align-self: flex-end;
+    width: 50%;
+}
+
+/* 
+.form-cadastro input::placeholder{
+    color: blue;
+} */
+
+.form-cadastro input:focus {
+    outline: none;
+    /* border: none; */
+}
+
+.form-cadastro .tipo-de-perfil-titulo {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.form-cadastro .display-flex {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin: auto;
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+    /* O segredo: força os filhos a terem a mesma altura */
+}
+
+.form-cadastro #opcao-1,
+.form-cadastro #opcao-2 {
+    display: none;
+}
+
+.form-cadastro .opcoes-container {
+    background-color: var(--cor-bege);
+    color: var(--cor-azul-escuro);
+    position: relative;
+    transition: all 0.2s;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #333;
+    min-height: 200px;
+    flex: 1;
+}
+
+/* .form-cadastro .primeiro-p{
+    width: 70%;
+} */
+
+/* Quando a div tiver a classe 'ativo', ela ganha a borda */
+.form-cadastro .opcoes-container.ativo {
+    border: 2px solid var(--cor-azul-claro);
+    box-shadow: 1px 1px 5px var(--cor-azul-claro);
+    background-color: rgb(236, 236, 252);
+}
+
+.titulo-opcao {
+    font-size: 2rem;
+
+    img {
+        max-width: 25px;
+        max-height: 25px;
+        margin-left: 5px;
+    }
+}
+
+.opcoes-container .cursor {
+    position: absolute;
+    background-color: var(--cor-azul-escuro);
+    padding: 5px;
+    max-width: 22px;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.opcoes-container h3 {
+    font-size: 1.5rem;
+}
+
+.opcoes-container ul {
+    font-size: 0.9rem;
+    padding-left: 0;
+
+    img {
+        max-width: 20px;
+    }
+}
+
+/* .opcoes-container:hover{
+    border: var(--cor-laranja);
+    box-shadow: 1px 1px 10px var(--cor-laranja);
+} */
+
+.opcoes-container:hover .cursor {
+    transform: rotate(70deg);
+}
+
+.form-cadastro .alinha-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-enviar {
+    position: relative;
+    color: var(--cor-bege);
+    background-color: var(--cor-azul-claro-30);
+    border: 2px solid var(--cor-azul-claro);
+    margin: 4rem 0;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px 50px;
+}
+
+@media(max-width: 992px) {
+
+    .form-cadastro .nomes-container,
+    .form-cadastro .email-senha-container {
+        padding: 0 5rem;
+    }
+
+    .form-cadastro .display-flex {
+        max-width: 90%;
+    }
+}
+
+@media(max-width: 624px){
+    .fundo-cadastro {
+        padding: 2.5rem;
+    }
+    .form-cadastro .nomes-container,
+    .form-cadastro .email-senha-container {
+        padding: 0 2.5rem;
+    }
+
+    .form-cadastro .display-flex {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .opcoes-container .cursor{
+        display: none;
+    }
+
+    .opcoes-container ul img{
+        max-width: 15px;
+    }
+
+    .titulo-opcao{
+        font-size: 2.2rem;
+    }
+
+    .opcoes-container p{
+        font-size: 1.2rem;
+    }
+
+    .opcoes-container ul{
+        font-size: 1rem;
+    }
+}
