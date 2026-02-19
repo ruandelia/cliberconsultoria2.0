@@ -1,3 +1,22 @@
+#solucaoTecnologiaHumano{
+    background: url(../../../img/banner-tecnologia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#solucaoDiversidadeInclusao{
+    background: url(../../../img/banner-diversidade.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#solucaoPesquisaDeClima{
+    background: url(../../../img/banner-pesquisa.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 #solucaoClimaCultura{
     background: url(../../../img/banner-climaCultura.jpg);
     background-position: center;

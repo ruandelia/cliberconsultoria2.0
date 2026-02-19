@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliber consultoria - Diversidade e inclusão</title>
+    <link rel="icon" href="assets/img/icone_Do_Navegador.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <div class="container-logo">
+            <a href="home.html">
+                <img class="img-logo" src="assets/img/logo.png" alt="Logo-cliber consultoria">
+            </a>
+        </div>
+        <nav id="nav-desktop">
+            <ul>
+                <li><a href="" class="link link-vaga">Vagas</a></li>
+                <li><a href="/home.html#solucoes" class="link link-servicos">Serviços</a></li>
+                <li><a href="quemSomos.html" class="link link-quem-somos">Quem somos</a></li>
+                <li><a href="contato.html" class="link link-contato">Contato</a></li>
+                <div class=" login-cadastrar">
+                    <li><a href="cadastro.html" class="link link-cadastrar">Cadastrar</a></li>
+                    <span></span>
+                    <li><a href="" class="link-login">Login</a></li>
+                </div>
+                <div class="displayNone area-exclusiva">
+                    <a href="">
+                        <p>Olá, usuário</p>
+                        <p>Acesse sua área exclusiva</p>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+        <nav id="nav-tablet">
+            <img class="bntAbrir " src="assets/img/icons/Menu.png" alt="">
+            <img class="btnFechar displayNone" src="assets/img/icons/Close.png" alt="">
+        </nav>
+    </header>
+    <main>
+        <section id="solucaoDiversidadeInclusao" class="sobreSolucao">
+            <dialog class="menu-tablet displayNone">
+                <a href="" class="link">Vagas</a>
+                <a href="#solucoes" class="link">Serviços</a>
+                <a href="quemSomos.html" class="link">Quem somos</a>
+                <a href="contato.html" class="link">Contato</a>
+
+                <div class="login-cadastrar-tablet displayNone">
+                    <a href="" class="link-login">Login</a>
+                    <span></span>
+                    <a href="cadastro.html" class="link-cadastrar">Cadastrar</a>
+                </div>
+                <div class="area-exclusiva displayNone">
+                    <a href="">
+                        <p>Olá, usuário</p>
+                        <p>Acesse sua área exclusiva</p>
+                    </a>
+                </div>
+            </dialog>
+            <dialog class="modal-login-cadastrar" id="modal-login">
+                <div class="form-container">
+                    <form action="">
+                        <img src="assets/img/icons/Close.png" alt="close-modal" class="close-modal">
+                        <h2>Login</h2>
+                        <!-- div destinada a alinhar e centralizar elementos -->
+                        <div class="alinha-inputs">
+                            <div class="label-input">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" autocomplete="off">
+                            </div>
+                            <div class="label-input">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" id="senha">
+                                <p class="senhaIncorreta">Usuário ou senha incorretas.</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-login">Entrar</button>
+                        <a href="cadastro.html" class="btn btn-cadastrar">Cadastrar</a>
+                    </form>
+                </div>
+            </dialog>
+            <div class="limitador limitador-btn-voltar">
+                <a href="home.html" class="btn-voltar">
+                    <img src="assets/img/icons/seta_bege.png" alt="Ícone de Seta">
+                    Voltar
+                </a>
+            </div>
+            <div class="limitador limitador-titulo-p">
+                <div class="padding-left-container">
+                    <h1 class="titulo-solucao">Diversidade, Equidade e Inclusão (DE&I)</h1>
+                    <p class="p-solucao">
+                        Construir ambientes mais diversos, equitativos e inclusivos não é apenas uma escolha ética — é
+                        uma estratégia de negócio que impulsiona inovação, engajamento e resultados sustentáveis.
+
+                        Na Cliber Consultoria, apoiamos organizações na estruturação e implantação de programas de DE&I,
+                        com ações que geram impacto real nos indicadores e na cultura corporativa.
+                    </p>
+                    <div class="accordion-container">
+                        <div class="container">
+                            <div class="accordion ac-1" id="ac-1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Criação de políticas, programas e grupos de afinidade
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#ac-1">
+                                        <div class="accordion-body">
+                                            considera as particularidades de cada organização.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="accordion ac-2" id="ac-2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne2"
+                                            aria-expanded="false" aria-controls="collapseOne2">
+                                            Diagnóstico e mapeamento da diversidade organizacional
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne2" class="accordion-collapse collapse" data-bs-parent="#ac-2">
+                                        <div class="accordion-body">
+                                           destacando padrões, oportunidades e pontos críticos.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion ac-3" id="ac-3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne3"
+                                            aria-expanded="false" aria-controls="collapseOne2">
+                                            Definição de metas, indicadores e planos de ação mensuráveis
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne3" class="accordion-collapse collapse" data-bs-parent="#ac-3">
+                                        <div class="accordion-body">
+
+                                            recomendações reais, viáveis e alinhadas aos objetivos do negócio.
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-cv link-btn"><a href="">Saber mais<i class="icon"><img class="cursor-btn"
+                                            src="assets/img/icons/near_me_45dp_FFF1D7_FILL0_wght400_GRAD0_opsz48.png"
+                                            alt=""></i></a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="encerrando-solucao" id="encerrando-solucao">
+            <div class="limitador">
+                <div class="padding-left-container">
+                    <h2 class="titulo-encerrando-solucao">Transformamos Estratégias em Resultados Concretos</h2>
+                    <div class="txt-img-container">
+                        <div class="txt-container">
+                            <p class="p-encerrando-solucao">Na Cliber Consultoria, cada solução é pensada
+                                para gerar impacto real. Atuamos com foco em
+                                desenvolver pessoas, fortalecer culturas e
+                                impulsionar resultados. <span class="p-encerrando-solucao-telas-menores"> Nossos
+                                    projetos não ficam
+                                    na teoria — entregamos diagnósticos precisos, planos
+                                    de ação viáveis e acompanhamos a implementação
+                                    para garantir efetividade e retorno para o negócio.</span></p>
+                            <div class="voltar-saberMais-container">
+                                <a href="home.html" class="btn-voltar">
+                                    <img src="assets/img/icons/seta_bege.png" alt="Ícone de Seta">
+                                    Outras soluções
+                                </a>
+                                <button class="btn-cv link-btn"><a href="">Saber mais<i class="icon"><img
+                                                class="cursor-btn"
+                                                src="assets/img/icons/near_me_45dp_FFF1D7_FILL0_wght400_GRAD0_opsz48.png"
+                                                alt=""></i></a></button>
+                            </div>
+                        </div>
+                        <div class="img-container">
+                            <img src="assets/img/icons/Man with laptop sitting in wheelchair (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="logo-justificada-container">
+            <img class="logo-justificada" src="assets/img/logo.png" alt="Logo-justificada-cliber-consultoria">
+        </div>
+        <div class="redes-sociais-container">
+            <div class="redes-sociais">
+                <a href="#"><img src="assets/img/icons/Instagram.png" alt=""></a>
+                <a href="#"><img src="assets/img/icons/WhatsApp_white.png" alt=""></a>
+                <a href="#"><img src="assets/img/icons/Email.png" alt=""></a>
+            </div>
+            <p>Cliber Consultoria - Todos os direitos Reservados.</p>
+        </div>
+        <div class="btn-e-dev-container">
+            <div class="btn-topo">
+                <a href="#cabecalho">Topo
+                    <img src="assets/img/icons/Left.png" alt="">
+                </a>
+            </div>
+            <a href="">
+                <p class="dev">Desenvolvido por Ruan D'elia</p>
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/abrirFecharMenu.js"></script>
+    <script src="assets/js/abrirFecharModal.js"></script>
+    <script src="assets/js/ativaLoginUsuario.js"></script>
+    <script src="assets/js/animaBtnVoltar.js"></script>
+    <script>
+        // 1. Seleciona o primeiro (e único) elemento <p> com a classe "p-solucao"
+        const pElement = document.querySelector(".p-solucao");
+
+        // 2. O conteúdo que você quer animar
+        const pContent = `
+Na Cliber Consultoria, apoiamos organizações na estruturação e implantação de programas de DE&I, com ações que geram impacto real nos indicadores e na cultura corporativa.`;
+
+        // 3. Divide o conteúdo em um array de caracteres
+        const animaP = pContent.split('');
+
+        // 4. Se houver o parágrafo no HTML, apaga o conteúdo inicial (se houver)
+        if (pElement) {
+            // Importante: limpa o texto que estava no HTML
+            pElement.textContent = 'Construir ambientes mais diversos, equitativos e inclusivos não é apenas uma escolha ética — é uma estratégia de negócio que impulsiona inovação, engajamento e resultados sustentáveis.';
+
+            // 5. Itera sobre cada caractere do array "animaP"
+            animaP.forEach((item, index) => {
+                // Usa setTimeout para adicionar cada caractere com um pequeno atraso
+                setTimeout(() => {
+                    // Adiciona o caractere atual (item) ao texto do elemento <p>
+                    pElement.textContent += item;
+                }, 30 * index); // 35ms de atraso para cada letra (você pode ajustar este valor)
+            });
+        }
+    </script>
+</body>
+
+</html>
