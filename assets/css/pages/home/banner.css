@@ -32,6 +32,35 @@
     font-size: 1.5rem !important;
 } 
 
+/* 1. Estado Base (quando o modal está aberto) */
+.modal-msg-ferramenta[open] {
+    opacity: 1;
+    transform: scale(1);
+    transition: 
+        opacity 0.3s ease-out,
+        transform 0.3s ease-out,
+        overlay 0.3s ease-out allow-discrete,
+        display 0.3s ease-out allow-discrete;
+}
+
+/* 2. Estado de Entrada (de onde ele vem) */
+@starting-style {
+    .modal-msg-ferramenta[open] {
+        opacity: 0;
+        transform: scale(0.9); /* Começa levemente menor */
+    }
+}
+
+/* 3. Estilizando o Fundo (Backdrop) */
+.modal-msg-ferramenta::backdrop {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease-out;
+}
+
+.modal-msg-ferramenta[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido suave */
+}
+
 .timer-container{
     /* background-color: var(--cor-vermelho); */
     width: 100%;
